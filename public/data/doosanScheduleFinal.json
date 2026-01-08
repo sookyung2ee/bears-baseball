@@ -1,0 +1,3662 @@
+[
+  {
+    "year": 2025,
+    "date": "2025-03-22",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-03-22T14:00:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-03-23",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-03-23T14:00:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-03-25",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-03-25T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 8
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-03-26",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-03-26T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-03-27",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-03-27T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-03-28",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-03-28T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 0
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-03-29",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-03-29T17:00:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 13
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-03-30",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-03-30T14:00:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 3
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-01",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-04-01T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-02",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-04-02T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-03",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-04-03T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 1
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-04",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-04-04T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "종료",
+    "score": {
+      "doosanScore": 15,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-05",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-04-05T17:00:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-06",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-04-06T14:00:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "종료",
+    "score": {
+      "doosanScore": 15,
+      "opponentScore": 12
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-08",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-04-08T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 5
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-09",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-04-09T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-10",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-04-10T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 7
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-11",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-04-11T18:30:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-12",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-04-12T14:00:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 0,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-13",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-04-13T14:00:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-15",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-04-15T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-16",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-04-16T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-17",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-04-17T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-18",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-04-18T18:30:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 7,
+      "opponentScore": 1
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-19",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-04-19T14:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 8
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-20",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-04-20T14:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-22",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-04-22T18:30:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-23",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-04-23T18:30:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "종료",
+    "score": {
+      "doosanScore": 8,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-24",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-04-24T18:30:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-25",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-04-25T18:30:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 8
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-26",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-04-26T14:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 7
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-27",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-04-27T14:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 13,
+      "opponentScore": 4
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-29",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-04-29T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 3
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-04-30",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-04-30T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 8
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-01",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-05-01T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 3
+    },
+    "resultText": "tie"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-02",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-05-02T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-03",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-05-03T17:00:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 1
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-04",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-05-04T14:00:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "종료",
+    "score": {
+      "doosanScore": 11,
+      "opponentScore": 6
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-05",
+    "dayOfWeek": "mon",
+    "beginTime": "2025-05-05T14:00:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-06",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-05-06T14:00:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-07",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-05-07T18:30:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-09",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-05-09T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-10",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-05-10T14:00:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-10",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-05-10T17:00:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 6
+    },
+    "resultText": "tie"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-11",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-05-11T14:00:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 11
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-11",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-05-11T18:00:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-13",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-05-13T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전(신)",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-14",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-05-14T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전(신)",
+    "status": "종료",
+    "score": {
+      "doosanScore": 7,
+      "opponentScore": 1
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-15",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-05-15T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전(신)",
+    "status": "종료",
+    "score": {
+      "doosanScore": 8,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-16",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-05-16T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-17",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-05-17T14:00:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-17",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-05-17T18:10:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-18",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-05-18T14:00:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-20",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-05-20T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-21",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-05-21T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 9
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-22",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-05-22T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 5
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-23",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-05-23T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 1
+    },
+    "resultText": "tie"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-24",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-05-24T17:00:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-25",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-05-25T14:00:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-27",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-05-27T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 2
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-28",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-05-28T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 12,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-29",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-05-29T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 12
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-30",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-05-30T18:30:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 4
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-05-31",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-05-31T17:00:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "종료",
+    "score": {
+      "doosanScore": 0,
+      "opponentScore": 1
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-01",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-06-01T14:00:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "종료",
+    "score": {
+      "doosanScore": 0,
+      "opponentScore": 1
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-03",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-06-03T17:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 11
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-04",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-06-04T18:30:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 8
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-05",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-06-05T18:30:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 1
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-06",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-06-06T17:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-07",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-06-07T17:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 9
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-08",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-06-08T17:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-10",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-06-10T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전(신)",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-11",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-06-11T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전(신)",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 9
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-12",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-06-12T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전(신)",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 3
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-13",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-06-13T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-14",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-06-14T17:00:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 1
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-15",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-06-15T17:00:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-17",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-06-17T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 12
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-18",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-06-18T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-19",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-06-19T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 8
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-20",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-06-20T18:30:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-21",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-06-21T17:00:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 5
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-22",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-06-22T17:00:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 13
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-24",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-06-24T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 0
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-25",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-06-25T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-26",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-06-26T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-27",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-06-27T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 10
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-28",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-06-28T17:00:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 3
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-06-29",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-06-29T17:00:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 7,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-01",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-07-01T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-02",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-07-02T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 0
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-03",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-07-03T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-04",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-07-04T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-05",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-07-05T18:00:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-06",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-07-06T18:00:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 8,
+      "opponentScore": 7
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-08",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-07-08T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "종료",
+    "score": {
+      "doosanScore": 8,
+      "opponentScore": 5
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-09",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-07-09T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-10",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-07-10T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 0
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-17",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-07-17T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-18",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-07-18T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-19",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-07-19T18:00:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 0
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-20",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-07-20T18:00:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 1
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-22",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-07-22T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 2
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-23",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-07-23T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 13,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-24",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-07-24T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 4
+    },
+    "resultText": "tie"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-25",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-07-25T18:30:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-26",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-07-26T18:00:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-27",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-07-27T18:00:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 6
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-29",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-07-29T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 6
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-30",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-07-30T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 2
+    },
+    "resultText": "tie"
+  },
+  {
+    "year": 2025,
+    "date": "2025-07-31",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-07-31T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 3
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-01",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-08-01T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 7
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-02",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-08-02T18:00:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 4
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-03",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-08-03T18:00:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 3
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-05",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-08-05T18:30:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-06",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-08-06T18:30:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 10,
+      "opponentScore": 8
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-07",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-08-07T18:30:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-08",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-08-08T18:30:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-09",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-08-09T18:00:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 4
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-10",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-08-10T14:00:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-12",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-08-12T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 3
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-13",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-08-13T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-14",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-08-14T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 5
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-15",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-08-15T18:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 5
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-16",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-08-16T18:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-17",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-08-17T18:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-19",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-08-19T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 5
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-20",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-08-20T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전",
+    "status": "종료",
+    "score": {
+      "doosanScore": 13,
+      "opponentScore": 9
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-21",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-08-21T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-22",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-08-22T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 8,
+      "opponentScore": 13
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-23",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-08-23T18:00:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-24",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-08-24T18:00:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 3
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-26",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-08-26T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-27",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-08-27T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 14
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-28",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-08-28T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 7,
+      "opponentScore": 6
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-29",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-08-29T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "종료",
+    "score": {
+      "doosanScore": 7,
+      "opponentScore": 1
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-30",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-08-30T18:00:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "종료",
+    "score": {
+      "doosanScore": 8,
+      "opponentScore": 8
+    },
+    "resultText": "tie"
+  },
+  {
+    "year": 2025,
+    "date": "2025-08-31",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-08-31T18:00:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-04",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-09-04T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 12,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-05",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-09-05T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 3
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-06",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-09-06T17:00:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-09",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-09-09T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 8
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-10",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-09-10T18:30:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 8
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-12",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-09-12T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 5
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-13",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-09-13T17:00:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 4,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-14",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-09-14T17:00:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 0,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-16",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-09-16T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 1,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-17",
+    "dayOfWeek": "wed",
+    "beginTime": "2025-09-17T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 4
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-18",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-09-18T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-19",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-09-19T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "취소"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-20",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-09-20T17:00:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 15
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-21",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-09-21T14:00:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "종료",
+    "score": {
+      "doosanScore": 3,
+      "opponentScore": 7
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-22",
+    "dayOfWeek": "mon",
+    "beginTime": "2025-09-22T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "종료",
+    "score": {
+      "doosanScore": 9,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-23",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-09-23T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "종료",
+    "score": {
+      "doosanScore": 5,
+      "opponentScore": 7
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-25",
+    "dayOfWeek": "thu",
+    "beginTime": "2025-09-25T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 7,
+      "opponentScore": 0
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-26",
+    "dayOfWeek": "fri",
+    "beginTime": "2025-09-26T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 0,
+      "opponentScore": 3
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-27",
+    "dayOfWeek": "sat",
+    "beginTime": "2025-09-27T17:00:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 2,
+      "opponentScore": 6
+    },
+    "resultText": "lose"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-28",
+    "dayOfWeek": "sun",
+    "beginTime": "2025-09-28T14:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 7,
+      "opponentScore": 2
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2025,
+    "date": "2025-09-30",
+    "dayOfWeek": "tue",
+    "beginTime": "2025-09-30T18:30:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "종료",
+    "score": {
+      "doosanScore": 6,
+      "opponentScore": 0
+    },
+    "resultText": "win"
+  },
+  {
+    "year": 2026,
+    "date": "2026-03-28",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-03-28T14:00:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-03-29",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-03-29T14:00:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-03-31",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-03-31T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-01",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-04-01T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-02",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-04-02T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-03",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-04-03T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-04",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-04-04T17:00:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-05",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-04-05T14:00:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-07",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-04-07T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-08",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-04-08T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-09",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-04-09T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-10",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-04-10T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-11",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-04-11T17:00:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-12",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-04-12T14:00:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-14",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-04-14T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-15",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-04-15T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-16",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-04-16T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-17",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-04-17T18:30:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-18",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-04-18T17:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-19",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-04-19T14:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-21",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-04-21T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-22",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-04-22T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-23",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-04-23T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-24",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-04-24T18:30:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-25",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-04-25T17:00:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-26",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-04-26T14:00:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-28",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-04-28T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-29",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-04-29T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-04-30",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-04-30T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-01",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-05-01T18:30:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-02",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-05-02T17:00:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-03",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-05-03T14:00:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-05",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-05-05T14:00:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-06",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-05-06T18:30:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-07",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-05-07T18:30:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-08",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-05-08T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-09",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-05-09T17:00:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-10",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-05-10T14:00:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-12",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-05-12T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-13",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-05-13T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-14",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-05-14T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-15",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-05-15T18:30:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-16",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-05-16T17:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-17",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-05-17T14:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-19",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-05-19T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-20",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-05-20T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-21",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-05-21T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-22",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-05-22T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-23",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-05-23T17:00:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-24",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-05-24T14:00:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-26",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-05-26T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-27",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-05-27T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-28",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-05-28T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-29",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-05-29T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-30",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-05-30T17:00:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-05-31",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-05-31T14:00:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-02",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-06-02T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-03",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-06-03T17:00:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-04",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-06-04T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-05",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-06-05T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-06",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-06-06T17:00:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-07",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-06-07T17:00:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-09",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-06-09T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-10",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-06-10T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-11",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-06-11T18:30:00",
+    "home": false,
+    "opponent": "롯데",
+    "stadium": "사직",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-12",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-06-12T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-13",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-06-13T17:00:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-14",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-06-14T17:00:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-16",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-06-16T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-17",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-06-17T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-18",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-06-18T18:30:00",
+    "home": true,
+    "opponent": "KT",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-19",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-06-19T18:30:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-20",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-06-20T17:00:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-21",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-06-21T17:00:00",
+    "home": false,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-23",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-06-23T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-24",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-06-24T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-25",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-06-25T18:30:00",
+    "home": false,
+    "opponent": "한화",
+    "stadium": "대전",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-26",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-06-26T18:30:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-27",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-06-27T17:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-28",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-06-28T17:00:00",
+    "home": true,
+    "opponent": "KIA",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-06-30",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-06-30T18:30:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-01",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-07-01T18:30:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-02",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-07-02T18:30:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-03",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-07-03T18:30:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-04",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-07-04T18:00:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-05",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-07-05T14:00:00",
+    "home": false,
+    "opponent": "키움",
+    "stadium": "고척",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-07",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-07-07T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-08",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-07-08T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-09",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-07-09T18:30:00",
+    "home": true,
+    "opponent": "SSG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-16",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-07-16T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-17",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-07-17T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-18",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-07-18T18:00:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-19",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-07-19T18:00:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-21",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-07-21T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-22",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-07-22T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-23",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-07-23T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-24",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-07-24T18:30:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-25",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-07-25T18:00:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-26",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-07-26T18:00:00",
+    "home": true,
+    "opponent": "삼성",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-28",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-07-28T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-29",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-07-29T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-30",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-07-30T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-07-31",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-07-31T18:30:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-01",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-08-01T18:00:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-02",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-08-02T18:00:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-04",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-08-04T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-05",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-08-05T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-06",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-08-06T18:30:00",
+    "home": true,
+    "opponent": "NC",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-07",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-08-07T18:30:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-08",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-08-08T18:00:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-09",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-08-09T18:00:00",
+    "home": false,
+    "opponent": "삼성",
+    "stadium": "대구",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-11",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-08-11T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-12",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-08-12T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-13",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-08-13T18:30:00",
+    "home": true,
+    "opponent": "한화",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-14",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-08-14T18:30:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-15",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-08-15T18:00:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-16",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-08-16T18:00:00",
+    "home": false,
+    "opponent": "KIA",
+    "stadium": "광주",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-18",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-08-18T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-19",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-08-19T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-20",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-08-20T18:30:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-21",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-08-21T18:30:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-22",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-08-22T18:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-23",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-08-23T18:00:00",
+    "home": true,
+    "opponent": "롯데",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-25",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-08-25T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-26",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-08-26T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-27",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-08-27T18:30:00",
+    "home": false,
+    "opponent": "KT",
+    "stadium": "수원",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-28",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-08-28T18:30:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-29",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-08-29T18:00:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-08-30",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-08-30T18:00:00",
+    "home": true,
+    "opponent": "키움",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-09-01",
+    "dayOfWeek": "tue",
+    "beginTime": "2026-09-01T18:30:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-09-02",
+    "dayOfWeek": "wed",
+    "beginTime": "2026-09-02T18:30:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-09-03",
+    "dayOfWeek": "thu",
+    "beginTime": "2026-09-03T18:30:00",
+    "home": true,
+    "opponent": "LG",
+    "stadium": "잠실",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-09-04",
+    "dayOfWeek": "fri",
+    "beginTime": "2026-09-04T18:30:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-09-05",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-09-05T17:00:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "경기전"
+  },
+  {
+    "year": 2026,
+    "date": "2026-09-06",
+    "dayOfWeek": "sun",
+    "beginTime": "2026-09-06T14:00:00",
+    "home": false,
+    "opponent": "SSG",
+    "stadium": "문학",
+    "status": "경기전"
+  }
+]
