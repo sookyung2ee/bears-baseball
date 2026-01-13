@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import CalendarDay from "./CalendarDay";
 import useCalendar from "../hooks/use-calendar";
 
@@ -6,10 +6,35 @@ export default function Calendar() {
   const days = ["일", "월", "화", "수", "목", "금", "토"];
   const [date, setDate] = useState({
     year: new Date().getFullYear(),
+    // month: 3,
     month: new Date().getMonth() + 1,
   });
+  const [games, setGames] = useState([]);
   const { year, month } = date;
-  const { calendar } = useCalendar({ year, month });
+  const monthGames = useMemo(
+    () => games.filter((game) => game.year === year && game.month === month),
+    [games, year, month]
+  );
+  const { calendar } = useCalendar({ year, month, monthGames });
+
+  const gamesByDate = useMemo(() => {
+    const map = {};
+    monthGames.forEach((game) => {
+      if (!map[game.date]) {
+        map[game.date] = [];
+      }
+      map[game.date].push(game);
+    });
+    return map;
+  }, [monthGames]);
+
+  useEffect(() => {
+    fetch("data/doosanScheduleFinal.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setGames(data);
+      });
+  }, []);
 
   const handlePrevMonth = () => {
     setDate((prev) => {
@@ -51,8 +76,9 @@ export default function Calendar() {
             <tr key={i}>
               {week.map((day) => (
                 <CalendarDay
-                  key={`${day.year}-${day.month}-${day.date}`}
+                  key={day.fullDate}
                   day={day}
+                  gamesByDate={gamesByDate[day.fullDate] ?? []}
                 />
               ))}
             </tr>
