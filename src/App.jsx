@@ -1,17 +1,17 @@
 import { useState } from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import NotFound from "./pages/NotFound";
-import Schedule from "./pages/Schedule";
-import Tickets from "./pages/Tickets";
-import MyRecord from "./pages/MyRecord";
-import Root from "./pages/Root";
+import Schedule from "./pages/schedule/Schedule";
+import Tickets from "./pages/tickets/Tickets";
+import MyRecord from "./pages/myrecord/MyRecord";
+import RootLayout from "./layouts/RootLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <RootLayout />,
     errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> },

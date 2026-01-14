@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import CalendarDay from "./CalendarDay";
-import useCalendar from "../hooks/use-calendar";
+import useCalendar from "../../hooks/use-calendar";
 
 export default function Calendar() {
   const days = ["일", "월", "화", "수", "목", "금", "토"];

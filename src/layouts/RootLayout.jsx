@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
 import { Outlet } from "react-router-dom";
-import styles from "./Root.module.css";
+import styles from "./RootLayout.module.css";
+import Navbar from "../Components/layout/Navbar";
 
 export default function Root() {
   return (
