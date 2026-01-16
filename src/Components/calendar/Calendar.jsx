@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import CalendarDay from "./CalendarDay";
 import useCalendar from "../../hooks/use-calendar";
+import useGames from "../../hooks/use-games";
 
 export default function Calendar() {
   const days = ["일", "월", "화", "수", "목", "금", "토"];
@@ -9,7 +10,7 @@ export default function Calendar() {
     // month: 3,
     month: new Date().getMonth() + 1,
   });
-  const [games, setGames] = useState([]);
+  const { games } = useGames();
   const { year, month } = date;
   const monthGames = useMemo(
     () => games.filter((game) => game.year === year && game.month === month),
@@ -27,14 +28,6 @@ export default function Calendar() {
     });
     return map;
   }, [monthGames]);
-
-  useEffect(() => {
-    fetch("data/doosanScheduleFinal.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setGames(data);
-      });
-  }, []);
 
   const handlePrevMonth = () => {
     setDate((prev) => {

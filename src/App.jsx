@@ -9,6 +9,7 @@ import RootLayout from "./layouts/RootLayout";
 import MyRecordLayout from "./layouts/MyRecordLayout";
 import StadiumRecord from "./pages/myrecord/StadiumRecord";
 import HomeRecord from "./pages/myrecord/HomeRecord";
+import { GamesProvider } from "./contexts/GamesContext";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <GamesProvider>
+      <RouterProvider router={router} />
+    </GamesProvider>
+  );
 }
 
 export default App;
