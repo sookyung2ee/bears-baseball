@@ -4,12 +4,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
 import NotFound from "./pages/NotFound";
 import Schedule from "./pages/schedule/Schedule";
-import Tickets from "./pages/tickets/Tickets";
+import Tickets from "./pages/myrecord/Tickets";
 import RootLayout from "./layouts/RootLayout";
 import MyRecordLayout from "./layouts/MyRecordLayout";
 import StadiumRecord from "./pages/myrecord/StadiumRecord";
 import HomeRecord from "./pages/myrecord/HomeRecord";
 import { GamesProvider } from "./contexts/GamesContext";
+import { UserProvider } from "./contexts/UserContext";
 
 const router = createBrowserRouter([
   {
@@ -19,13 +20,13 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "/schedule", element: <Schedule /> },
-      { path: "/tickets", element: <Tickets /> },
       {
         path: "/myrecord",
         element: <MyRecordLayout />,
         children: [
           { index: true, element: <StadiumRecord /> },
           { path: "homerecord", element: <HomeRecord /> },
+          { path: "tickets", element: <Tickets /> },
         ],
       },
     ],
@@ -35,7 +36,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <GamesProvider>
-      <RouterProvider router={router} />
+      <UserProvider>
+        <RouterProvider router={router} />
+      </UserProvider>
     </GamesProvider>
   );
 }
