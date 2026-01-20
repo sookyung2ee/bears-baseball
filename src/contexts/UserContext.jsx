@@ -15,6 +15,7 @@ export function UserProvider({ children }) {
 
   const value = {
     user,
+    setUser,
   };
 
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;

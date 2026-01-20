@@ -9,7 +9,7 @@ import RootLayout from "./layouts/RootLayout";
 import MyRecordLayout from "./layouts/MyRecordLayout";
 import StadiumRecord from "./pages/myrecord/StadiumRecord";
 import HomeRecord from "./pages/myrecord/HomeRecord";
-import { GamesProvider } from "./contexts/GamesContext";
+import { GamesScheduleProvider } from "./contexts/GamesScheduleContext";
 import { UserProvider } from "./contexts/UserContext";
 
 const router = createBrowserRouter([
@@ -35,11 +35,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <GamesProvider>
+    <GamesScheduleProvider>
       <UserProvider>
         <RouterProvider router={router} />
       </UserProvider>
-    </GamesProvider>
+    </GamesScheduleProvider>
   );
 }
 

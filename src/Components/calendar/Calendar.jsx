@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import CalendarDay from "./CalendarDay";
-import useCalendar from "../../hooks/use-calendar";
-import useGames from "../../hooks/use-games";
+import useCalendar from "../../hooks/useCalendar";
+import useGamesSchedule from "../../hooks/usegamesSchedule";
 
 export default function Calendar() {
   const days = ["일", "월", "화", "수", "목", "금", "토"];
@@ -10,11 +10,11 @@ export default function Calendar() {
     // month: 3,
     month: new Date().getMonth() + 1,
   });
-  const { games } = useGames();
+  const { games } = useGamesSchedule();
   const { year, month } = date;
   const monthGames = useMemo(
     () => games.filter((game) => game.year === year && game.month === month),
-    [games, year, month]
+    [games, year, month],
   );
   const { calendar } = useCalendar({ year, month, monthGames });
 

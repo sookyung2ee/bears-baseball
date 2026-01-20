@@ -1,8 +1,8 @@
 import { createContext, useState, useEffect } from "react";
 
-export const GamesContext = createContext(null);
+export const GamesScheduleContext = createContext(null);
 
-export function GamesProvider({ children }) {
+export function GamesScheduleProvider({ children }) {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -16,6 +16,8 @@ export function GamesProvider({ children }) {
   const value = { games };
 
   return (
-    <GamesContext.Provider value={value}>{children}</GamesContext.Provider>
+    <GamesScheduleContext.Provider value={value}>
+      {children}
+    </GamesScheduleContext.Provider>
   );
 }
