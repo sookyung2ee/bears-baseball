@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import RecordDay from "../../Components/record/RecordDay";
 import useGameRecords from "../../hooks/useGameRecords";
-import useAddWatchRecord from "../../hooks/useAddWatchRecord";
+import useWatchRecordManager from "../../hooks/useWatchRecordManager";
 
 const TOTAL = 60;
 const COLS = 6;
@@ -15,7 +15,7 @@ for (let i = 0; i < nums.length; i += COLS) {
 
 export default function StadiumRecord() {
   const sortedRecords = useGameRecords("stadium");
-  const addWatechRecord = useAddWatchRecord();
+  const { addWatechRecord, deleteWatechRecord } = useWatchRecordManager();
   const [isModal, setIsModal] = useState(false);
   const [form, setForm] = useState({ date: "", memo: "", food: "" });
 
@@ -83,6 +83,7 @@ export default function StadiumRecord() {
                   num={num}
                   type="stadium"
                   record={sortedRecords[num - 1] ?? []}
+                  onDelete={deleteWatechRecord}
                 />
               ))}
             </tr>
