@@ -7,10 +7,6 @@ export default function RecordDay({
   onDelete,
   onOpenRecordModal,
 }) {
-  const handleDelete = () => {
-    onDelete({ deletedRecord: record, type });
-  };
-
   const handleCellClick = () => {
     if (!record) return;
     onOpenRecordModal(record);
@@ -22,7 +18,8 @@ export default function RecordDay({
         <button
           onClick={(e) => {
             e.stopPropagation();
-            handleDelete;
+            console.log("hihi");
+            onDelete({ deletedRecord: record, type });
           }}
         >
           삭제

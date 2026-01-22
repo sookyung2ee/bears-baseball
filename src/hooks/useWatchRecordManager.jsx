@@ -6,6 +6,7 @@ export default function useWatchRecordManager() {
   const { games } = useGamesSchedule();
   const addWatechRecord = (record) => {
     const { info, type } = record;
+
     // 더블헤더 고려해서 추후 코드 수정
     const gamesOfDay = games.find((game) => game.date === info.date);
 

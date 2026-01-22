@@ -6,7 +6,7 @@
   "records": {
     "stadium": [
       {
-        "id": "record-1",
+        "id": "record-staudim-1",
         "gameId": "20250503DGU1",
 
         "memo": "양의지 홈런 미쳤다",
@@ -16,7 +16,7 @@
         "createdAt": "2024-05-04T22:30:00"
       },
       {
-        "id": "record-2",
+        "id": "record-staudim-2",
         "gameId": "20250505JAM1",
 
         "memo": "어린이날 더비 승리",
@@ -26,7 +26,7 @@
         "createdAt": "2024-05-06T22:30:00"
       },
       {
-        "id": "record-3",
+        "id": "record-staudim-3",
         "gameId": "20250511JAM2",
 
         "memo": "더블헤더 2차전도 패",
@@ -36,7 +36,7 @@
         "createdAt": "2024-05-06T22:30:00"
       },
       {
-        "id": "record-4",
+        "id": "record-staudim-4",
         "gameId": "20250511JAM1",
 
         "memo": "더블헤더 1차전 패",
@@ -47,7 +47,35 @@
       }
     ],
 
-    "home": [],
+    "home": [
+      {
+        "id": "record-home-1",
+        "gameId": "20250808GCH1",
+
+        "memo": "두산 승",
+        "food": ["집밥"],
+
+        "createdAt": "2024-05-06T22:30:00"
+      },
+      {
+        "id": "record-home-2",
+        "gameId": "20250810GCH1",
+
+        "memo": "두산 패ㅜ",
+        "food": ["집밥"],
+
+        "createdAt": "2024-05-06T22:30:00"
+      },
+      {
+        "id": "record-home-2",
+        "gameId": "20250809GCH1",
+
+        "memo": "고척 2연승",
+        "food": ["집밥"],
+
+        "createdAt": "2024-05-06T22:30:00"
+      }
+    ],
     "ticket": []
   }
 }
