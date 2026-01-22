@@ -1,13 +1,33 @@
 import React from "react";
 
-export default function RecordDay({ num, type, record, onDelete }) {
+export default function RecordDay({
+  num,
+  type,
+  record,
+  onDelete,
+  onOpenRecordModal,
+}) {
   const handleDelete = () => {
     onDelete({ deletedRecord: record, type });
   };
+
+  const handleCellClick = () => {
+    if (!record) return;
+    onOpenRecordModal(record);
+  };
   return (
-    <td>
-      <p>{record.length !== 0 ? record.memo : num}</p>
-      {record.length !== 0 && <button onClick={handleDelete}>삭제</button>}
+    <td onClick={handleCellClick}>
+      <p>{record ? record.memo : num}</p>
+      {record && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            handleDelete;
+          }}
+        >
+          삭제
+        </button>
+      )}
     </td>
   );
 }

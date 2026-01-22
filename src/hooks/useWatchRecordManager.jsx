@@ -10,7 +10,7 @@ export default function useWatchRecordManager() {
     const gamesOfDay = games.find((game) => game.date === info.date);
 
     if (!gamesOfDay) {
-      console.log("일치하는 게임이 없습니다.");
+      alert("일치하는 게임이 없습니다.");
       return;
     }
     setUser((prev) => {

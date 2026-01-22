@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import RecordDay from "../../Components/record/RecordDay";
 import useGameRecords from "../../hooks/useGameRecords";
 import useWatchRecordManager from "../../hooks/useWatchRecordManager";
+import Modal from "../../Components/Modal/Modal";
 
 const TOTAL = 60;
 const COLS = 6;
@@ -17,6 +18,8 @@ export default function StadiumRecord() {
   const sortedRecords = useGameRecords("stadium");
   const { addWatechRecord, deleteWatechRecord } = useWatchRecordManager();
   const [isModal, setIsModal] = useState(false);
+  const [isRecordModal, setIsRecordModal] = useState(false);
+  const [selectedRecord, setSelectedRecord] = useState({});
   const [form, setForm] = useState({ date: "", memo: "", food: "" });
 
   const openModal = () => {
@@ -36,6 +39,16 @@ export default function StadiumRecord() {
     setIsModal(false);
   };
 
+  const openRecordModal = (record) => {
+    setSelectedRecord(record);
+    setIsRecordModal(true);
+    console.log("선택된 record:", record);
+  };
+
+  const closeRecordModal = () => {
+    setIsRecordModal(false);
+  };
+
   return (
     <div>
       <p>StadiumRecord</p>
@@ -44,8 +57,7 @@ export default function StadiumRecord() {
       <p>date: {form.date}</p>
       <p>memo: {form.memo}</p>
       {isModal && (
-        <div>
-          <p>모달 테스트</p>
+        <Modal>
           <form onSubmit={handleSubmit}>
             <label htmlFor="date">날짜</label>
             <input
@@ -71,7 +83,13 @@ export default function StadiumRecord() {
             <button>입력</button>
           </form>
           <button onClick={closeModal}>닫기</button>
-        </div>
+        </Modal>
+      )}
+      {isRecordModal && (
+        <Modal>
+          <p>{selectedRecord.memo}</p>
+          <button onClick={closeRecordModal}>닫기</button>
+        </Modal>
       )}
       <table>
         <tbody>
@@ -82,8 +100,9 @@ export default function StadiumRecord() {
                   key={num}
                   num={num}
                   type="stadium"
-                  record={sortedRecords[num - 1] ?? []}
+                  record={sortedRecords[num - 1] ?? null}
                   onDelete={deleteWatechRecord}
+                  onOpenRecordModal={openRecordModal}
                 />
               ))}
             </tr>
