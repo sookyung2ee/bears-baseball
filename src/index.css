@@ -1,3 +1,13 @@
+:root {
+  --color-navy: #1a1748;
+  --color-navy-dark: #181928;
+  --color-red: #eb1d25;
+  --color-white: #ffffff;
+  --color-gray: #c7c6c6;
+  --color-gray-dark: #b2b2b2;
+  --color-gray-green: #839484;
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

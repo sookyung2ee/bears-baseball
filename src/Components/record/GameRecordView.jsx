@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "../Modal/Modal";
 import RecordDay from "./RecordDay";
+import useGamesSchedule from "../../hooks/usegamesSchedule";
 
 const TOTAL = 60;
 const COLS = 6;
@@ -18,10 +19,16 @@ export default function GameRecordView({
   onDeleteRecord,
   type,
 }) {
+  const { games, loading } = useGamesSchedule();
   const [isModal, setIsModal] = useState(false);
   const [isRecordModal, setIsRecordModal] = useState(false);
   const [selectedRecord, setSelectedRecord] = useState({});
   const [form, setForm] = useState({ date: "", memo: "", food: "" });
+
+  if (loading) {
+    console.log("로딩중");
+    return <div>로딩중...</div>;
+  }
 
   const openModal = () => {
     setIsModal(true);
@@ -37,7 +44,6 @@ export default function GameRecordView({
   const openRecordModal = (record) => {
     setSelectedRecord(record);
     setIsRecordModal(true);
-    console.log("선택된 record:", record);
   };
 
   const closeRecordModal = () => {
@@ -101,6 +107,7 @@ export default function GameRecordView({
                   num={num}
                   type={type}
                   record={sortedRecords[num - 1] ?? null}
+                  games={games}
                   onDelete={onDeleteRecord}
                   onOpenRecordModal={openRecordModal}
                 />
