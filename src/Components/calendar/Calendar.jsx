@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import CalendarDay from "./CalendarDay";
 import useCalendar from "../../hooks/useCalendar";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
