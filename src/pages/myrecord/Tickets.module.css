@@ -45,20 +45,20 @@
 }
 
 .character {
-  width: 200px;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .character img {
-  width: 160px;
+  width: 90%;
   height: auto;
 }
 
 .content {
   height: 100%;
-  flex: 1;
+  flex: 2;
   background-color: var(--color-navy-70);
   border-radius: 28px;
   padding: 0 8px;

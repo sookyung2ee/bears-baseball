@@ -7,8 +7,7 @@ import { logoMap } from "../../constants/logoMap";
 
 export default function Tickets() {
   const { user } = useUser();
-  // const sortedRecords = useGameRecords("stadium");
-  const sortedRecords = [];
+  const sortedRecords = useGameRecords("stadium");
   const { games, loading } = useGamesSchedule();
 
   const gameMap = useMemo(() => {

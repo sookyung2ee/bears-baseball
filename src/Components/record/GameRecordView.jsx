@@ -33,6 +33,8 @@ export default function GameRecordView({
   const [form, setForm] = useState(INITIAL_FORM);
   const [foodInput, setFoodInput] = useState("");
 
+  const typeWord = type === "stadium" ? "직관" : "집관";
+
   if (loading) {
     console.log("로딩중");
     return <div>로딩중...</div>;
@@ -100,7 +102,7 @@ export default function GameRecordView({
       {isModal && (
         <Modal>
           <div className={styles.modalContent}>
-            <header className={styles.modalHeader}>직관 경기 입력</header>
+            <header className={styles.modalHeader}>{typeWord} 경기 입력</header>
             <form className={styles.modalForm} onSubmit={handleSubmit}>
               <label className={styles.label} htmlFor="date">
                 날짜
@@ -187,9 +189,9 @@ export default function GameRecordView({
       )}
       <div className={styles.recordContainer}>
         <section className={styles.recordTop}>
-          <p className={styles.title}>직관스탬프</p>
+          <p className={styles.title}>{typeWord}스탬프</p>
           <button className={styles.addBtn} onClick={openModal}>
-            직관 기록 추가
+            {typeWord} 기록 추가
           </button>
         </section>
         <section className={styles.tableSection}>
