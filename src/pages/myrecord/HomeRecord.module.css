@@ -1,0 +1,5 @@
+.recordContainer {
+  width: 100%;
+  flex: 1;
+  min-width: var(--container-min-width);
+}

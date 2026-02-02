@@ -1,0 +1,75 @@
+td {
+  border: 1px solid var(--color-gray-60);
+  height: 160px;
+}
+
+.emptyCell {
+  text-align: center;
+}
+
+.emptyContainer {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.emptyContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/uniform_home.png") center center / 100% auto
+    no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.emptyContainer p {
+  color: var(--color-navy-90);
+  font-weight: 500;
+}
+
+.recordCell {
+  position: relative;
+  text-align: center;
+}
+
+.resultContainer {
+  display: inline-flex;
+  width: 120px;
+  height: 120px;
+  color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/uniform_home.png") center center / 100% auto
+    no-repeat;
+}
+
+.resultContainer p {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.deletedBtn {
+  display: block;
+  color: var(--color-gray-40);
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  right: 4px;
+  transition: var(--transition-base);
+}
+
+.deletedBtn:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transform: scale(1.1);
+  color: var(--color-pink-20);
+}

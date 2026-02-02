@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "../Modal/Modal";
 import RecordDay from "./RecordDay";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
+import styles from "./GameRecordView.module.css";
 
 const TOTAL = 60;
 const COLS = 6;
@@ -13,6 +14,12 @@ for (let i = 0; i < nums.length; i += COLS) {
   rows.push(nums.slice(i, i + COLS));
 }
 
+const INITIAL_FORM = {
+  date: "",
+  memo: "",
+  food: [],
+};
+
 export default function GameRecordView({
   sortedRecords,
   onAddRecord,
@@ -23,7 +30,8 @@ export default function GameRecordView({
   const [isModal, setIsModal] = useState(false);
   const [isRecordModal, setIsRecordModal] = useState(false);
   const [selectedRecord, setSelectedRecord] = useState({});
-  const [form, setForm] = useState({ date: "", memo: "", food: "" });
+  const [form, setForm] = useState(INITIAL_FORM);
+  const [foodInput, setFoodInput] = useState("");
 
   if (loading) {
     console.log("로딩중");
@@ -34,11 +42,36 @@ export default function GameRecordView({
     setIsModal(true);
   };
 
-  const closeModal = () => setIsModal(false);
+  const closeModal = () => {
+    setForm(INITIAL_FORM);
+    setFoodInput("");
+    setIsModal(false);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
+  };
+
+  const handleFoodChange = (e) => {
+    setFoodInput(e.target.value);
+  };
+
+  const addFood = () => {
+    if (!foodInput.trim()) return;
+    setForm((prev) => ({
+      ...prev,
+      food: [...prev.food, { id: Date.now(), name: foodInput.trim() }],
+    }));
+    setFoodInput("");
+  };
+
+  const deleteFood = (id) => {
+    console.log("id");
+    setForm((prev) => ({
+      ...prev,
+      food: prev.food.filter((f) => f.id !== id),
+    }));
   };
 
   const openRecordModal = (record) => {
@@ -47,6 +80,7 @@ export default function GameRecordView({
   };
 
   const closeRecordModal = () => {
+    console.log("hihihihcloseBtn");
     setIsRecordModal(false);
   };
 
@@ -54,68 +88,132 @@ export default function GameRecordView({
     e.preventDefault();
     onAddRecord(form);
     setIsModal(false);
+    setForm(INITIAL_FORM);
+    setFoodInput("");
   };
 
   return (
     <>
-      <button onClick={openModal}>경기 기록 추가</button>
-      <p>isModal: {isModal.toString()}</p>
+      {/* <p>isModal: {isModal.toString()}</p>
       <p>date: {form.date}</p>
-      <p>memo: {form.memo}</p>
+      <p>memo: {form.memo}</p> */}
       {isModal && (
         <Modal>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="date">날짜</label>
-            <input
-              type="date"
-              name="date"
-              value={form.date}
-              onChange={handleChange}
-            />
-            <label htmlFor="memo">메모</label>
-            <input
-              type="text"
-              name="memo"
-              value={form.memo}
-              onChange={handleChange}
-            />
-            <label htmlFor="food">야구푸드</label>
-            <input
-              type="text"
-              name="food"
-              value={form.food}
-              onChange={handleChange}
-            />
-            <button>입력</button>
-          </form>
-          <button onClick={closeModal}>닫기</button>
+          <div className={styles.modalContent}>
+            <header className={styles.modalHeader}>직관 경기 입력</header>
+            <form className={styles.modalForm} onSubmit={handleSubmit}>
+              <label className={styles.label} htmlFor="date">
+                날짜
+              </label>
+              <input
+                className={styles.input}
+                type="date"
+                name="date"
+                value={form.date}
+                onChange={handleChange}
+              />
+              <label className={styles.label} htmlFor="memo">
+                메모
+              </label>
+              <input
+                className={styles.input}
+                type="text"
+                name="memo"
+                value={form.memo}
+                onChange={handleChange}
+              />
+              <label className={styles.label} htmlFor="food">
+                야구푸드
+              </label>
+              <section className={styles.foodSection}>
+                <div className={styles.foodInput}>
+                  <input
+                    className={styles.input}
+                    type="text"
+                    name="food"
+                    value={foodInput}
+                    onChange={handleFoodChange}
+                  />
+                  <button
+                    className={styles.modalAddFoodBtn}
+                    type="button"
+                    onClick={addFood}
+                  >
+                    입력
+                  </button>
+                </div>
+                {form.food.map((f, i) => (
+                  <div key={f.id} className={styles.foodChips}>
+                    <p className={styles.foodName}>{f.name}</p>
+                    <button
+                      className={styles.foodDelete}
+                      type="button"
+                      onClick={() => deleteFood(f.id)}
+                    >
+                      x
+                    </button>
+                  </div>
+                ))}
+              </section>
+              <section className={styles.modalBtns}>
+                <button
+                  type="button"
+                  className={styles.modalCancle}
+                  onClick={closeModal}
+                >
+                  취소
+                </button>
+                <button type="submit" className={styles.modalEnter}>
+                  입력
+                </button>
+              </section>
+            </form>
+            <button className={styles.closeBtn} onClick={closeModal}>
+              X
+            </button>
+          </div>
         </Modal>
       )}
       {isRecordModal && (
         <Modal>
-          <p>{selectedRecord.memo}</p>
-          <button onClick={closeRecordModal}>닫기</button>
+          <div className={styles.modalContent}>
+            <p>{selectedRecord.memo}</p>
+            {/* 내용 추가 후 정렬 다시 할 예정 */}
+            <button className={styles.closeBtn} onClick={closeRecordModal}>
+              X
+            </button>
+          </div>
         </Modal>
       )}
-      <table>
-        <tbody>
-          {rows.map((row, i) => (
-            <tr key={i}>
-              {row.map((num) => (
-                <RecordDay
-                  key={num}
-                  num={num}
-                  type={type}
-                  record={sortedRecords[num - 1] ?? null}
-                  games={games}
-                  onDelete={onDeleteRecord}
-                  onOpenRecordModal={openRecordModal}
-                />
+      <div className={styles.recordContainer}>
+        <section className={styles.recordTop}>
+          <p className={styles.title}>직관스탬프</p>
+          <button className={styles.addBtn} onClick={openModal}>
+            직관 기록 추가
+          </button>
+        </section>
+        <section className={styles.tableSection}>
+          <table className={styles.recordTable}>
+            <tbody>
+              {rows.map((row, i) => (
+                <tr key={i}>
+                  {row.map((num) => (
+                    <RecordDay
+                      key={num}
+                      num={num}
+                      type={type}
+                      record={sortedRecords[num - 1] ?? null}
+                      games={games}
+                      onDelete={onDeleteRecord}
+                      onOpenRecordModal={openRecordModal}
+                    />
+                  ))}
+                </tr>
               ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+            </tbody>
+          </table>
+        </section>
+      </div>
     </>
   );
 }

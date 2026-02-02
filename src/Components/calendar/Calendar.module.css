@@ -1,0 +1,18 @@
+.dayHeader {
+  padding: 0;
+  border: 1px solid var(--color-gray-60);
+}
+
+.calendar {
+  color: var(--color-gray-20);
+  border: 1px solid var(--color-navy-40);
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.calendarHead {
+  background-color: var(--color-navy-50);
+  opacity: 0.5;
+  height: 2rem;
+}

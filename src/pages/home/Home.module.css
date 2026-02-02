@@ -1,4 +1,49 @@
+p {
+  margin: 0px;
+}
+
 .home {
   width: 100%;
-  height: 100%;
+}
+
+.bubble {
+  position: relative;
+  background: var(--color-navy-80);
+  border-bottom-left-radius: 100em;
+  border-bottom-right-radius: 100em;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: var(--color-navy-80);
+  border-bottom: 0;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
+.bubbleText {
+  color: var(--color-white);
+}
+
+.centerArea {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gomBox {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }

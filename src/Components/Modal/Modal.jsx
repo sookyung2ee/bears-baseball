@@ -1,13 +1,6 @@
 import React from "react";
+import styles from "./Modal.module.css";
 
 export default function Modal({ children }) {
-  return (
-    <div
-      style={{
-        backgroundColor: "yellow",
-      }}
-    >
-      {children}
-    </div>
-  );
+  return <div className={styles.modal}>{children}</div>;
 }

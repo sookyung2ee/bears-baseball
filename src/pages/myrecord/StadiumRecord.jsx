@@ -1,9 +1,8 @@
 import React, { useMemo, useState } from "react";
-import RecordDay from "../../Components/record/RecordDay";
 import useGameRecords from "../../hooks/useGameRecords";
 import useWatchRecordManager from "../../hooks/useWatchRecordManager";
-import Modal from "../../Components/Modal/Modal";
 import GameRecordView from "../../Components/record/GameRecordView";
+import styles from "./StadiumRecord.module.css";
 
 export default function StadiumRecord() {
   const sortedRecords = useGameRecords("stadium");
@@ -19,9 +18,7 @@ export default function StadiumRecord() {
   };
 
   return (
-    <div>
-      <p>StadiumRecord</p>
-
+    <div className={styles.recordContainer}>
       <GameRecordView
         sortedRecords={sortedRecords}
         onAddRecord={handleAdd}

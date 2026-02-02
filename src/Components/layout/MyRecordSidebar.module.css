@@ -1,0 +1,53 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 400px;
+  flex-shrink: 0;
+  background-color: var(--color-navy-50);
+  border: 1px solid var(--color-navy-30);
+  border-radius: 8px;
+  margin-top: 4.5rem;
+  overflow: hidden;
+}
+.userInfo {
+  padding: 2rem;
+  flex: 1;
+}
+
+.userName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+
+.stadiumWinning {
+  color: var(--color-lighblue);
+  font-weight: 500;
+}
+
+.homeWinning {
+  color: var(--color-pink-50);
+  font-weight: 500;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.link {
+  color: var(--color-gray-10);
+  text-decoration-line: none;
+  padding: 1rem;
+  border-top: 1px solid var(--color-navy-30);
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  background-color: var(--color-navy-40);
+  color: white;
+  padding-left: 1.5rem; /* 살짝 밀리는 효과 */
+}
