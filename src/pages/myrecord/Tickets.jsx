@@ -7,19 +7,23 @@ import { logoMap } from "../../constants/logoMap";
 
 export default function Tickets() {
   const { user } = useUser();
-  const sortedRecords = useGameRecords("stadium");
+  // const sortedRecords = useGameRecords("stadium");
+  const sortedRecords = [];
   const { games, loading } = useGamesSchedule();
-
-  if (loading) {
-    return null;
-  }
 
   const gameMap = useMemo(() => {
     return new Map(games.map((game) => [game.gameId, game]));
   }, [games]);
 
+  if (loading || !sortedRecords) {
+    return null;
+  }
   if (!sortedRecords.length) {
-    return <p>관람한 내역이 없습니다.</p>;
+    return (
+      <div className={styles.ticketsContainer}>
+        <p className={styles.emptyMessage}>관람한 내역이 없습니다.</p>
+      </div>
+    );
   }
   return (
     <div className={styles.ticketsContainer}>

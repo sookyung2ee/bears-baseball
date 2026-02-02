@@ -3,6 +3,14 @@
   flex: 1;
   /* padding: var(--container-padding); */
   min-width: var(--container-min-width);
+  color: var(--color-white);
+}
+
+.emptyMessage {
+  height: var(--top-height);
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 .ticketsTop {
@@ -21,7 +29,6 @@
 .title {
   font-size: var(--top-title-font-size);
   font-weight: var(top-title-font-height);
-  color: var(--color-white);
 }
 
 .ticket {
