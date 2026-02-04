@@ -3,8 +3,6 @@ import styles from "./MatchCard.module.css";
 import { logoMap } from "../../constants/logoMap";
 
 export default function MatchCard({ type, game }) {
-  console.log(game);
-
   const isFinished = game.status === "종료";
   const teams = game.home
     ? {
@@ -33,7 +31,10 @@ export default function MatchCard({ type, game }) {
       };
   return (
     <div className={styles.card}>
-      <p className={styles.date}>{game.date}</p>
+      <p className={styles.cardHeader}>
+        <span className={styles.date}>{game.date}</span>
+        <span className={styles.stadium}>{game.stadium}</span>
+      </p>
       <div className={styles.content}>
         <div className={styles.team}>
           <div className={styles.imgBox}>

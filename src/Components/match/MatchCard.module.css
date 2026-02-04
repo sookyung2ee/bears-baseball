@@ -12,11 +12,22 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
+.cardHeader {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
 .date {
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-gray-30);
   letter-spacing: 2px;
+}
+
+.stadium {
+  color: var(--color-white);
+  font-weight: 600;
 }
 
 .content {
@@ -58,6 +69,6 @@
 
 .gameStatus {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-lighblue);
 }
