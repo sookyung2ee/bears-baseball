@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./MyRecordSidebar.module.css";
 
 export default function MyRecordSidebar() {
@@ -10,15 +10,31 @@ export default function MyRecordSidebar() {
         <p className={styles.homeWinning}>통산 집관승률: 70%</p>
       </section>
       <section className={styles.links}>
-        <Link className={styles.link} to=".">
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : styles.link
+          }
+          to="."
+          end
+        >
           직관 기록
-        </Link>
-        <Link className={styles.link} to="homerecord">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : styles.link
+          }
+          to="homerecord"
+        >
           집관 기록
-        </Link>
-        <Link className={styles.link} to="tickets">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : styles.link
+          }
+          to="tickets"
+        >
           티켓 기록
-        </Link>
+        </NavLink>
       </section>
     </nav>
   );
