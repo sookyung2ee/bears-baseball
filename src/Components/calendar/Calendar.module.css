@@ -6,7 +6,7 @@
 .calendar {
   color: var(--color-gray-20);
   border: 1px solid var(--color-navy-40);
-  width: 100%;
+  width: 1200px;
   table-layout: fixed;
   border-collapse: collapse;
 }

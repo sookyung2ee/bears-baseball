@@ -4,6 +4,8 @@ p {
 
 .home {
   width: 100%;
+  padding: var(--page-padding);
+  min-width: 1200px;
 }
 
 .bubble {
@@ -15,6 +17,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: calc(-1 * var(--page-padding-x));
+  margin-right: calc(-1 * var(--page-padding-x));
 }
 
 .bubble:after {
@@ -36,10 +40,11 @@ p {
 }
 
 .centerArea {
-  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 20px;
 }
 
 .gomBox {

@@ -29,6 +29,10 @@
   --color-pink-20: #ffd6e0;
   --color-pink-10: #fff0f5;
 
+  --color-ivory-30: #f6f1e7;
+  --color-ivory-20: #fbf8f2;
+  --color-ivory-10: #fffdf9;
+
   --z-base: 1;
   --z-dropdown: 10;
   --z-sticky: 50;
@@ -42,11 +46,14 @@
   --container-min-width: 800px;
 
   --page-padding: 100px 40px 0 40px;
+  --page-padding-x: 40px;
 
   --top-height: 4rem;
   --top-margin-bottom: 12px;
   --top-title-font-size: 1.5rem;
   --top-title-font-height: 500;
+
+  --page-min-width: 1280px;
 }
 
 body {
