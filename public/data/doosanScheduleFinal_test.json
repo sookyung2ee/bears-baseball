@@ -2637,6 +2637,24 @@
     "home": false,
     "opponent": "NC",
     "stadium": "창원",
+    "status": "종료",
+    "score": {
+      "doosanScore": 8,
+      "opponentScore": 0
+    },
+    "resultText": "win"
+  },
+  {
+    "_comment": "더블헤더 경우",
+    "gameId": "20260328CHW2",
+    "year": 2026,
+    "month": 3,
+    "date": "2026-03-28",
+    "dayOfWeek": "sat",
+    "beginTime": "2026-03-28T14:00:00",
+    "home": false,
+    "opponent": "NC",
+    "stadium": "창원",
     "status": "경기전"
   },
   {

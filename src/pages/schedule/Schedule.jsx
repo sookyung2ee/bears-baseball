@@ -4,7 +4,7 @@ import styles from "./Schedule.module.css";
 
 export default function Schedule() {
   const [date, setDate] = useState({
-    year: 2025,
+    year: 2026,
     // year: new Date().getFullYear(),
     month: 3,
     // month: new Date().getMonth() + 1,

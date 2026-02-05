@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import MatchCard from "../../Components/match/MatchCard";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
+import LoadingSpinner from "../../Components/loading/LoadingSpinner";
 
 const todayDate = new Date();
 const FINISHED_STATUS = ["종료", "취소"];
@@ -10,7 +11,7 @@ export default function Home() {
   const { games, loading } = useGamesSchedule();
 
   if (loading) {
-    return <div>로딩중...</div>;
+    return <LoadingSpinner />;
   }
 
   let prevGame = null;
