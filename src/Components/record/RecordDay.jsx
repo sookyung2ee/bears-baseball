@@ -32,7 +32,6 @@ export default function RecordDay({
     if (!record) return;
     onOpenRecordModal(record);
   };
-  console.log(gameInfo);
 
   const resultMap = { tie: "무승부", lose: "패", win: "승" };
   return (
