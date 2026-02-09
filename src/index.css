@@ -54,6 +54,10 @@
   --top-title-font-height: 500;
 
   --page-min-width: 1280px;
+
+  --mobile-max-width: 767px;
+  --mobile-padding: 0px 8px 78px 8px;
+  --mobile-padding-x: 8px;
 }
 
 body {

@@ -52,3 +52,35 @@ p {
   justify-content: center;
   box-sizing: border-box;
 }
+
+@media (max-width: 1024px) {
+  .home {
+    width: 100%;
+    padding: var(--mobile-padding);
+    min-width: 0;
+    overflow-y: hidden;
+  }
+
+  .bubble {
+    margin-left: calc(-1 * var(--mobile-padding-x));
+    margin-right: calc(-1 * var(--mobile-padding-x));
+  }
+
+  .centerArea {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gomBox {
+    order: 1;
+  }
+
+  .prevMatchCard {
+    order: 2;
+  }
+
+  .nextMatchCard {
+    order: 3;
+  }
+}

@@ -34,3 +34,25 @@
   height: 2px;
   background-color: var(--color-pink-30);
 }
+
+@media (max-width: 1024px) {
+  .nav {
+    height: 70px;
+    top: auto;
+    bottom: 0;
+  }
+
+  .link {
+    font-size: 16px;
+    margin: 0 16px;
+  }
+
+  .link:hover {
+    transform: scale(1.05);
+  }
+
+  .active::after {
+    top: -3px;
+    bottom: auto;
+  }
+}

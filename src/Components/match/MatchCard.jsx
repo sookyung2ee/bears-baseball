@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MatchCard.module.css";
 import { logoMap } from "../../constants/logoMap";
 
-export default function MatchCard({ type, game }) {
+export default function MatchCard({ className = "", type, game }) {
   const isFinished = game.status === "종료";
   const teams = game.home
     ? {
@@ -30,7 +30,7 @@ export default function MatchCard({ type, game }) {
         },
       };
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${className}`}>
       <p className={styles.cardHeader}>
         <span className={styles.date}>{game.date}</span>
         <span className={styles.stadium}>{game.stadium}</span>

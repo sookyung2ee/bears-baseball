@@ -32,11 +32,19 @@ export default function Home() {
         <span className={styles.bubbleText}>최강10번타자</span>
       </article>
       <article className={styles.centerArea}>
-        <MatchCard type="prevMatch" game={prevGame} />
+        <MatchCard
+          className={styles.prevMatchCard}
+          type="prevMatch"
+          game={prevGame}
+        />
         <div className={styles.gomBox}>
           <img src="images/gom_home.png" alt="곰_홈" />
         </div>
-        <MatchCard type="nextMatch" game={nextGame} />
+        <MatchCard
+          className={styles.nextMatchCard}
+          type="nextMatch"
+          game={nextGame}
+        />
       </article>
     </section>
   );
