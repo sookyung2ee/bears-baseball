@@ -28,9 +28,6 @@ export default function Home() {
 
   return (
     <section className={styles.home}>
-      <article className={styles.bubble}>
-        <span className={styles.bubbleText}>최강10번타자</span>
-      </article>
       <article className={styles.centerArea}>
         <MatchCard
           className={styles.prevMatchCard}

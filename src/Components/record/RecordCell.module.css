@@ -1,16 +1,17 @@
-td {
+.stampCell {
   border: 1px solid var(--color-gray-60);
-  height: 160px;
+  padding: 8px;
+  text-align: center;
+  aspect-ratio: 1 / 1;
 }
 
-.emptyCell {
-  text-align: center;
+.container {
+  width: 100%;
+  height: 100%;
 }
 
 .emptyContainer {
   position: relative;
-  width: 120px;
-  height: 120px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -38,12 +39,11 @@ td {
 .recordCell {
   position: relative;
   text-align: center;
+  aspect-ratio: 1 / 1;
 }
 
 .resultContainer {
   display: inline-flex;
-  width: 120px;
-  height: 120px;
   color: black;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +53,7 @@ td {
 }
 
 .resultContainer p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 

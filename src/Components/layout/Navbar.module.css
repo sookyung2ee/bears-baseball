@@ -1,14 +1,15 @@
 .nav {
+  width: var(--container-width);
   background-color: var(--color-navy-80);
-  width: 100vw;
-  min-width: 100vw;
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
+  margin: 0 auto;
 }
 
 .link {
@@ -37,9 +38,11 @@
 
 @media (max-width: 1024px) {
   .nav {
+    position: fixed;
     height: 70px;
     top: auto;
     bottom: 0;
+    width: 100%;
   }
 
   .link {

@@ -44,8 +44,9 @@
 
   --container-padding: 12px 36px;
   --container-min-width: 800px;
+  --container-width: 1400px;
 
-  --page-padding: 100px 40px 0 40px;
+  --page-padding: 0 12px;
   --page-padding-x: 40px;
 
   --top-height: 4rem;

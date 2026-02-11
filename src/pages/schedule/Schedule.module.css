@@ -6,13 +6,12 @@ button {
 }
 
 .schedule {
-  width: 100%;
-  min-width: var(page-min-width);
+  width: var(--container-width);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   background-color: var(--color-navy-60);
-  padding: var(--page-padding);
 }
 
 .header {
@@ -24,4 +23,14 @@ button {
 
 .arrowBtn:hover {
   cursor: pointer;
+}
+
+.mobileCalendar {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .schedule {
+    width: 100%;
+  }
 }

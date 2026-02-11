@@ -3,6 +3,7 @@ import CalendarDay from "./CalendarDay";
 import useCalendar from "../../hooks/useCalendar";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
 import styles from "./Calendar.module.css";
+import MobileCalendar from "./MobileCalendar";
 
 export default function Calendar({ date }) {
   const days = ["일", "월", "화", "수", "목", "금", "토"];
@@ -28,30 +29,35 @@ export default function Calendar({ date }) {
   }, [monthGames]);
 
   return (
-    <table className={styles.calendar}>
-      <thead className={styles.calendarHead}>
-        <tr className={styles.dayRow}>
-          {days.map((day) => (
-            <th className={styles.dayHeader} key={day}>
-              {day}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {calendar.map((week, i) => (
-          <tr key={i}>
-            {week.map((day) => (
-              <CalendarDay
-                key={day.fullDate}
-                day={day}
-                gamesByDate={gamesByDate[day.fullDate] ?? []}
-                isThisMonth={month === day.month}
-              />
+    <>
+      <table className={styles.calendar}>
+        <thead className={styles.calendarHead}>
+          <tr className={styles.dayRow}>
+            {days.map((day) => (
+              <th className={styles.dayHeader} key={day}>
+                {day}
+              </th>
             ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {calendar.map((week, i) => (
+            <tr key={i}>
+              {week.map((day) => (
+                <CalendarDay
+                  key={day.fullDate}
+                  day={day}
+                  gamesByDate={gamesByDate[day.fullDate] ?? []}
+                  isThisMonth={month === day.month}
+                />
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div className={styles.mobileCalendar}>
+        <MobileCalendar monthGames={monthGames} />
+      </div>
+    </>
   );
 }

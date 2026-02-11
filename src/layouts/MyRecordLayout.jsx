@@ -8,7 +8,9 @@ export default function MyRecordLayout() {
     <div className={styles.page}>
       <div className={styles.myRecord}>
         <MyRecordSidebar />
-        <Outlet />
+        <main className={styles.content}>
+          <Outlet />
+        </main>
       </div>
     </div>
   );

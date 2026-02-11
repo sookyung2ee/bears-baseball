@@ -4,41 +4,10 @@ p {
 
 .home {
   width: 100%;
-  padding: var(--page-padding);
-  min-width: 1200px;
-}
-
-.bubble {
-  position: relative;
-  background: var(--color-navy-80);
-  border-bottom-left-radius: 100em;
-  border-bottom-right-radius: 100em;
-  height: 100px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: calc(-1 * var(--page-padding-x));
-  margin-right: calc(-1 * var(--page-padding-x));
+  flex-direction: column;
+  margin: 0 auto;
 }
-
-.bubble:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-top-color: var(--color-navy-80);
-  border-bottom: 0;
-  margin-left: -20px;
-  margin-bottom: -20px;
-}
-
-.bubbleText {
-  color: var(--color-white);
-}
-
 .centerArea {
   display: flex;
   align-items: center;

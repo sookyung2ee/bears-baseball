@@ -7,7 +7,9 @@ export default function RootLayout() {
   return (
     <div className={styles.root}>
       <Navbar />
-      <Outlet />
+      <main className={styles.content}>
+        <Outlet />
+      </main>
     </div>
   );
 }

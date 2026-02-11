@@ -46,14 +46,52 @@
   transition: all 0.2s ease;
 }
 
-.link:hover {
-  background-color: var(--color-navy-40);
-  color: white;
-  padding-left: 1.5rem; /* 살짝 밀리는 효과 */
-}
-
 .active {
   background-color: var(--color-navy-40);
   color: var(--color-lightblue);
   font-weight: 600;
+}
+
+@media (hover: hover) {
+  .link:hover {
+    background-color: var(--color-navy-40);
+    color: white;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    flex: none;
+  }
+
+  .userInfo {
+    padding: 0;
+    border-bottom: 1px solid var(--color-gray-10);
+    padding-bottom: 1rem;
+  }
+
+  .links {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: none;
+  }
+
+  .link {
+    border-top: none;
+    padding: 0;
+  }
+
+  .active {
+    background-color: transparent;
+    color: var(--color-pink-30);
+    font-weight: 600;
+  }
 }

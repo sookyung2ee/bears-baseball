@@ -1,4 +1,19 @@
 .root {
-  display: flex;
-  flex-direction: column;
+  min-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+  width: var(--container-width);
+}
+
+@media (max-width: 1024px) {
+  .root {
+    width: 100%;
+    min-width: 0;
+  }
+  .content {
+    width: 100%;
+  }
 }

@@ -12,11 +12,6 @@ input {
   right: 4px;
 }
 
-.recordContainer {
-  /* padding: var(--container-padding); */
-  min-width: var(--container-min-width);
-}
-
 .recordTop {
   height: var(--top-height);
   display: flex;
@@ -48,9 +43,19 @@ input {
   box-shadow: 0 6px 16px rgba(255, 107, 157, 0.4);
 }
 
-.recordTable {
-  color: white;
+.tableSection {
   width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
+}
+
+.recordGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  border: 1px solid var(--color-gray-60);
+}
+
+@media (max-width: 1024px) {
+  .recordGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

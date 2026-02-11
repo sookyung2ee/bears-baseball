@@ -1,6 +1,5 @@
 .ticketsContainer {
   width: 100%;
-  flex: 1;
   /* padding: var(--container-padding); */
   min-width: var(--container-min-width);
   color: var(--color-white);
@@ -63,4 +62,39 @@
   border-radius: 28px;
   padding: 0 8px;
   color: var(--color-white);
+}
+
+@media (max-width: 1024px) {
+  .ticketsContainer {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .ticketsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ticket {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .character {
+    flex: none;
+  }
+
+  .character img {
+    width: 100px;
+    height: auto;
+  }
+
+  .content {
+    flex: none;
+    height: 200px;
+    width: 100%;
+  }
 }

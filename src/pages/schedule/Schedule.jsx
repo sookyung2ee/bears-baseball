@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Calendar from "../../Components/calendar/Calendar";
 import styles from "./Schedule.module.css";
 
@@ -41,7 +41,9 @@ export default function Schedule() {
           ▶
         </button>
       </header>
-      <Calendar date={date} />
+      <div className={styles.webCalendar}>
+        <Calendar date={date} />
+      </div>
     </section>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./RecordDay.module.css";
+import styles from "./RecordCell.module.css";
 
 const getDate = (fulldate) => {
   const month = String(new Date(fulldate).getMonth() + 1).padStart(2, "0");
@@ -17,11 +17,11 @@ export default function RecordDay({
 }) {
   if (!record) {
     return (
-      <td className={styles.emptyCell}>
-        <div className={styles.emptyContainer}>
+      <div className={`${styles.stampCell} ${styles.emptyCell}`}>
+        <div className={`${styles.emptyContainer} ${styles.container}`}>
           <p>{num}</p>
         </div>
-      </td>
+      </div>
     );
   }
 
@@ -35,8 +35,11 @@ export default function RecordDay({
 
   const resultMap = { tie: "무승부", lose: "패", win: "승" };
   return (
-    <td className={styles.recordCell} onClick={handleCellClick}>
-      <div className={styles.resultContainer}>
+    <div
+      className={`${styles.stampCell} ${styles.recordCell}`}
+      onClick={handleCellClick}
+    >
+      <div className={`${styles.resultContainer} ${styles.container}`}>
         <p>{date}</p>
         <p>{gameInfo.opponent}</p>
         <p>{resultMap[gameInfo.resultText]}</p>
@@ -50,6 +53,6 @@ export default function RecordDay({
           x
         </button>
       </div>
-    </td>
+    </div>
   );
 }

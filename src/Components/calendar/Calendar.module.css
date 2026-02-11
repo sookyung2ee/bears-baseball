@@ -16,3 +16,15 @@
   opacity: 0.5;
   height: 2rem;
 }
+
+@media (max-width: 1024px) {
+  .mobileCalendar {
+    display: block;
+    width: 100vw;
+    padding: var(--mobile-padding);
+  }
+
+  .calendar {
+    display: none;
+  }
+}

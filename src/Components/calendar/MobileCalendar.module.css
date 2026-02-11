@@ -1,0 +1,62 @@
+@media (max-width: 1024px) {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card {
+    color: var(--color-white);
+    width: 100%;
+    border: 2px solid var(--color-gray-70);
+    border-radius: 12px;
+    background-color: var(--color-navy-90);
+  }
+
+  .cardHeader {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--color-gray-70);
+    letter-spacing: 0.1rem;
+  }
+
+  .info {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .leftTeam,
+  .rightTeam {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .leftTeam img,
+  .rightTeam img {
+    width: 3rem;
+  }
+
+  .teamName {
+    width: 2rem;
+  }
+
+  .score {
+    font-weight: 600;
+  }
+}
