@@ -11,6 +11,8 @@ import StadiumRecord from "./pages/myrecord/StadiumRecord";
 import HomeRecord from "./pages/myrecord/HomeRecord";
 import { GamesScheduleProvider } from "./contexts/GamesScheduleContext";
 import { UserProvider } from "./contexts/UserContext";
+import Login from "./pages/login/Login";
+import WishGames from "./pages/wish/WishGames";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,8 @@ const router = createBrowserRouter([
           { path: "tickets", element: <Tickets /> },
         ],
       },
+      { path: "/login", element: <Login /> },
+      { path: "/wishgames", element: <WishGames /> },
     ],
   },
 ]);

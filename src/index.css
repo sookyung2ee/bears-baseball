@@ -59,6 +59,7 @@
   --mobile-max-width: 767px;
   --mobile-padding: 0px 8px 78px 8px;
   --mobile-padding-x: 8px;
+  --mobile-nav-padding: 8px;
 }
 
 body {
