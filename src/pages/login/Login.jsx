@@ -15,6 +15,7 @@ export default function Login() {
   return (
     <div className={styles.login}>
       <div className={styles.contents}>
+        <p className={styles.title}>로그인</p>
         <form className={styles.form}>
           <input
             className={styles.id}

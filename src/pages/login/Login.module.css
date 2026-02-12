@@ -1,3 +1,93 @@
+.login {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.contents {
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 32px;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 4rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.id,
+.pw {
+  height: 52px;
+  padding: 0 18px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid transparent;
+
+  font-size: 1rem;
+  color: var(--color-white);
+
+  transition: var(--transition-base);
+}
+
+.id::placeholder,
+.pw::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.id:focus,
+.pw:focus {
+  border-color: var(--color-navy-20);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.loginBtn {
+  height: 52px;
+  margin-top: 12px;
+  border-radius: 12px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.loginBtn:hover {
+  transform: translateY(-2px);
+}
+
+.active {
+  background-color: var(--color-navy-20);
+}
+
+.join {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.join:hover {
+  color: var(--color-white);
+}
+
 @media (max-width: 1024px) {
   .login {
     min-height: 80vh;
