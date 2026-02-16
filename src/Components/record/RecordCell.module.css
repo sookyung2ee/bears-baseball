@@ -25,10 +25,22 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("/images/uniform_home.png") center center / 100% auto
-    no-repeat;
   opacity: 0.3;
   z-index: -1;
+}
+
+.emptyContainer.stadiumType::before {
+  background: url("/images/uniform_home.png") center center / 100% auto
+    no-repeat;
+}
+
+.emptyContainer.homeType::before {
+  background: url("/images/home_sticker.png") center center / 100% auto
+    no-repeat;
+}
+
+.emptyContainer.homeType > p {
+  transform: translateY(-80%);
 }
 
 .emptyContainer p {
@@ -44,17 +56,45 @@
 
 .resultContainer {
   display: inline-flex;
-  color: black;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/images/uniform_home.png") center center / 100% auto
-    no-repeat;
 }
 
 .resultContainer p {
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+.resultContainer.stadiumType.homeStadium {
+  color: black;
+  background: url("/images/uniform_home.png") center center / 100% auto
+    no-repeat;
+}
+
+.resultContainer.stadiumType.awayStadium {
+  color: var(--color-white);
+  background: url("/images/uniform_away.png") center center / 100% auto
+    no-repeat;
+}
+
+.resultContainer.homeType {
+  color: black;
+  background: url("/images/home_sticker.png") center center / 100% auto
+    no-repeat;
+}
+
+.resultContainer.homeType > p {
+  transform: translateY(-80%);
+}
+
+.resultText.win {
+  color: var(--color-lighblue);
+  font-weight: 700;
+}
+
+.resultText.lose {
+  color: var(--color-gray-40);
 }
 
 .deletedBtn {

@@ -7,6 +7,11 @@ const getDate = (fulldate) => {
   return `${month}.${date}`;
 };
 
+const typeClassMap = {
+  stadium: styles.stadiumType,
+  home: styles.homeType,
+};
+
 export default function RecordDay({
   num,
   type,
@@ -18,7 +23,9 @@ export default function RecordDay({
   if (!record) {
     return (
       <div className={`${styles.stampCell} ${styles.emptyCell}`}>
-        <div className={`${styles.emptyContainer} ${styles.container}`}>
+        <div
+          className={`${styles.emptyContainer} ${styles.container} ${typeClassMap[type]}`}
+        >
           <p>{num}</p>
         </div>
       </div>
@@ -27,6 +34,7 @@ export default function RecordDay({
 
   const gameInfo = games.find((game) => game.gameId === record.gameId);
   const date = getDate(gameInfo.date);
+  console.log(type);
 
   const handleCellClick = () => {
     if (!record) return;
@@ -39,10 +47,22 @@ export default function RecordDay({
       className={`${styles.stampCell} ${styles.recordCell}`}
       onClick={handleCellClick}
     >
-      <div className={`${styles.resultContainer} ${styles.container}`}>
+      <div
+        className={`${styles.container} ${styles.resultContainer} ${typeClassMap[type]} ${
+          type === "stadium"
+            ? gameInfo.home
+              ? styles.homeStadium
+              : styles.awayStadium
+            : null
+        }`}
+      >
         <p>{date}</p>
         <p>{gameInfo.opponent}</p>
-        <p>{resultMap[gameInfo.resultText]}</p>
+        <p
+          className={`${styles.resultText} ${gameInfo.resultText === "win" ? styles.win : styles.lose}`}
+        >
+          {resultMap[gameInfo.resultText]}
+        </p>
         <button
           className={styles.deletedBtn}
           onClick={(e) => {

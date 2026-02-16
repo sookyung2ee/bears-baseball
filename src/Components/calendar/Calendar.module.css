@@ -17,6 +17,10 @@
   height: 2rem;
 }
 
+.mobileCalendar {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .mobileCalendar {
     display: block;
