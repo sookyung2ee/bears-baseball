@@ -4,6 +4,7 @@ import useGameRecords from "../../hooks/useGameRecords";
 import styles from "./Tickets.module.css";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
 import { logoMap } from "../../constants/logoMap";
+import { dayMap } from "../../constants/dayMap";
 
 export default function Tickets() {
   const { user } = useUser();
@@ -61,11 +62,17 @@ export default function Tickets() {
           return (
             <div key={gameInfo.gameId} className={styles.ticket}>
               <div className={styles.character}>
-                <img src="/images/mangGom_mini.png" alt="캐릭터" />
+                <img
+                  src={`/images/ticket_${gameInfo.home ? "home" : "away"}.png`}
+                  alt="캐릭터"
+                />
               </div>
 
               <div className={styles.content}>
-                <p>
+                <p className={styles.dateInfo}>
+                  {gameInfo.date} {dayMap[gameInfo.dayOfWeek]}
+                </p>
+                <div className={styles.scoreInfo}>
                   <span>{teams.left.name}</span>
                   <img
                     src={`/images/logo/${teams.left.logo}.png`}
@@ -73,7 +80,7 @@ export default function Tickets() {
                     style={{ width: "20px" }}
                   />
                   <span>{teams.left.score}</span>
-                  <span>vs</span>
+                  <span className={styles.vs}>vs</span>
                   <span>{teams.right.score}</span>
                   <img
                     src={`/images/logo/${teams.right.logo}.png`}
@@ -81,7 +88,21 @@ export default function Tickets() {
                     style={{ width: "20px" }}
                   />
                   <span>{teams.right.name}</span>
-                </p>
+                </div>
+                <div className={styles.userRecord}>
+                  <div className={styles.seat}>
+                    <p className={styles.recordTitle}>구역</p>
+                    <p>{record.seat}</p>
+                  </div>
+                  <div className={styles.memo}>
+                    <p className={styles.recordTitle}>메모</p>
+                    <p>{record.memo}</p>
+                  </div>
+                  <div className={styles.food}>
+                    <p className={styles.recordTitle}>야구푸드</p>
+                    <p className={styles.foodText}>{record.food.join(", ")}</p>
+                  </div>
+                </div>
               </div>
             </div>
           );

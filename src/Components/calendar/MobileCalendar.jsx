@@ -1,16 +1,7 @@
 import React, { useMemo } from "react";
 import styles from "./MobileCalendar.module.css";
 import { logoMap } from "../../constants/logoMap";
-
-const dayMap = {
-  mon: "월",
-  tue: "화",
-  wed: "수",
-  thu: "목",
-  fri: "금",
-  sat: "토",
-  sun: "일",
-};
+import { dayMap } from "../../constants/dayMap";
 
 export default function MobileCalendar({ monthGames }) {
   console.log(monthGames);
