@@ -15,9 +15,39 @@
   align-content: first baseline;
 }
 
+.topLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .dayNumber {
   display: flex;
   font-size: 1.1rem;
+}
+
+.heartIcon:hover {
+  cursor: pointer;
+}
+
+.fullHeart {
+  color: var(--color-pink-30);
+}
+
+.fullHeart:hover {
+  filter: drop-shadow(0 0 6px rgba(255, 80, 80, 0.8));
+  transform: scale(1.1);
+}
+
+.plusHeart {
+  opacity: 0.8;
+  transition: var(--transition-base);
+}
+
+.plusHeart:hover {
+  transform: scale(1.15);
+  filter: brightness(1.1);
+  opacity: 1;
 }
 
 .gameOpponent {
