@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Login.module.css";
+import { NavLink } from "react-router-dom";
 
 export default function Login() {
   const [form, setForm] = useState({ id: "", pw: "" });
@@ -39,7 +40,9 @@ export default function Login() {
             로그인
           </button>
         </form>
-        <p className={styles.join}>회원가입</p>
+        <NavLink to="/join" className={styles.join}>
+          회원가입
+        </NavLink>
       </div>
     </div>
   );

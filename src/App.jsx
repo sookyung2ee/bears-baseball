@@ -13,6 +13,7 @@ import { GamesScheduleProvider } from "./contexts/GamesScheduleContext";
 import { UserProvider } from "./contexts/UserContext";
 import Login from "./pages/login/Login";
 import WishGames from "./pages/wish/WishGames";
+import Join from "./pages/Join/Join";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       },
       { path: "/login", element: <Login /> },
       { path: "/wishgames", element: <WishGames /> },
+      { path: "/join", element: <Join /> },
     ],
   },
 ]);

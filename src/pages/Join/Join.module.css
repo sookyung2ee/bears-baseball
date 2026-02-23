@@ -1,4 +1,4 @@
-.login {
+.join {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -9,8 +9,8 @@
 .contents {
   width: 100%;
   max-width: 380px;
-  padding: 40px 32px;
   border-radius: 20px;
+  transform: translateY(-10%);
 }
 
 .title {
@@ -18,79 +18,94 @@
   font-weight: 600;
   text-align: center;
   color: var(--color-white);
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 12px 12px;
+  align-items: center;
 }
 
-.id,
-.pw {
+.form label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 4px;
+  font-weight: 600;
+}
+
+.input {
   height: 52px;
+  width: 100%;
   padding: 0 18px;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.08);
   border: 2px solid transparent;
-
   font-size: 1rem;
   color: var(--color-white);
-
   transition: var(--transition-base);
 }
 
-.id::placeholder,
-.pw::placeholder {
+.input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.id:focus,
-.pw:focus {
+.input:focus {
   border-color: var(--color-navy-20);
   background-color: rgba(255, 255, 255, 0.12);
+  outline: none;
 }
 
-.loginBtn {
-  height: 52px;
-  margin-top: 12px;
-  border-radius: 12px;
+.inputError,
+.inputError:focus {
+  border-color: var(--color-pink-40);
+  background-color: rgba(var(--color-pink-40-rgb), 0.08);
+  box-shadow: 0 0 0 2px rgba(var(--color-pink-40-rgb), 0.15);
+}
 
+.inputWrap {
+  position: relative;
+  width: 100%;
+}
+
+.pw {
+  padding-right: 40px;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+}
+
+.joinBtn {
+  grid-column: span 2;
+  height: 52px;
+  margin-top: 20px;
+  border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--color-white);
-
   font-weight: 600;
   letter-spacing: 0.5px;
-
   cursor: pointer;
   transition: var(--transition-base);
 }
 
-.loginBtn:hover {
+.joinBtn:hover {
   transform: translateY(-2px);
 }
 
-.active {
-  background-color: var(--color-navy-20);
-}
-
-.join {
-  display: block;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.join:hover {
-  color: var(--color-white);
+.joinBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 @media (max-width: 1024px) {
-  .login {
+  .join {
     min-height: 80vh;
     display: flex;
     flex-direction: column;
@@ -102,13 +117,10 @@
   }
 
   .form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    gap: 8px;
   }
 
-  .id,
-  .pw {
+  .input {
     height: 48px;
     padding: 0 16px;
     border-radius: 8px;
@@ -119,26 +131,15 @@
     color: var(--color-white);
   }
 
-  .id:focus,
-  .pw:focus {
+  .input:focus {
     border: 2px solid var(--color-navy-20);
   }
 
-  .loginBtn {
+  .joinBtn {
     background-color: var(--color-gray-90);
     height: 48px;
     padding: 0 16px;
     border-radius: 8px;
     margin-top: 24px;
-  }
-
-  .active {
-    background-color: var(--color-navy-20);
-  }
-
-  .join {
-    font-size: 0.7rem;
-    color: var(--color-white);
-    margin-top: 4px;
   }
 }
