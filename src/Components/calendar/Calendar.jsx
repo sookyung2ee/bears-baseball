@@ -4,11 +4,17 @@ import useCalendar from "../../hooks/useCalendar";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
 import styles from "./Calendar.module.css";
 import MobileCalendar from "./MobileCalendar";
+import SelectGameModal from "../wish/SelectGameModal";
+import useUser from "../../hooks/useUser";
+import useWishGames from "../../hooks/useWishGames";
 
 export default function Calendar({ date }) {
   const days = ["일", "월", "화", "수", "목", "금", "토"];
   const { year, month } = date;
   const { games } = useGamesSchedule();
+  const { toggleWishGame } = useWishGames();
+  const { user } = useUser();
+  const wishGames = user?.wishGames || [];
 
   const monthGames = useMemo(
     () => games.filter((game) => game.year === year && game.month === month),
@@ -28,8 +34,32 @@ export default function Calendar({ date }) {
     return map;
   }, [monthGames]);
 
+  const handleWish = (games, info = null) => {
+    let toggleGameId;
+    if (info.isDH) {
+      console.log(info.isDH, info.num);
+      toggleGameId = games.find(
+        (game) => game.gameId.slice(-1) === String(info.num),
+      )?.gameId;
+    } else {
+      toggleGameId = games[0].gameId;
+    }
+
+    toggleWishGame(toggleGameId);
+  };
+
   return (
     <>
+      {/* {isOpenModal && (
+        <SelectGameModal
+          games={selectableGames}
+          modalMode={modalMode}
+          closeModal={() => setIsOpenModal(false)}
+          onSelect={(gameIds) => {
+            gameIds.forEach((id) => toggleWishGame(id));
+          }}
+        />
+      )} */}
       <table className={styles.calendar}>
         <thead className={styles.calendarHead}>
           <tr className={styles.dayRow}>
@@ -49,6 +79,8 @@ export default function Calendar({ date }) {
                   day={day}
                   gamesByDate={gamesByDate[day.fullDate] ?? []}
                   isThisMonth={month === day.month}
+                  wishGames={wishGames}
+                  handleWish={handleWish}
                 />
               ))}
             </tr>

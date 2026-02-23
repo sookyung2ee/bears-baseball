@@ -1,0 +1,78 @@
+.modalContent {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border: 2px solid var(--color-white);
+  border-radius: 12px;
+  position: relative;
+  z-index: var(--z-modal-content);
+  min-width: 300px;
+  min-height: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.closeBtn {
+  background-color: var(--color-gray-70);
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  right: 4px;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+}
+
+.error {
+  text-align: center;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.modalBtns {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  border: none;
+  padding: 0 4px;
+}
+
+.modalCancle {
+  background-color: var(--color-gray-30);
+}
+
+.modalCancle:hover {
+  background-color: var(--color-gray-50);
+  cursor: pointer;
+}
+
+.modalEnter,
+.modalCancle {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: var(--transition-base);
+}
+
+.modalEnter {
+  background-color: var(--color-navy-50);
+}
+
+.modalEnter:hover {
+  background-color: var(--color-pink-30);
+  cursor: pointer;
+}

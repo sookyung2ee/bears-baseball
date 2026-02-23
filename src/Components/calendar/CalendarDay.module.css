@@ -26,6 +26,10 @@
   font-size: 1.1rem;
 }
 
+.heartIcon {
+  font-size: 1.2rem;
+}
+
 .heartIcon:hover {
   cursor: pointer;
 }
@@ -48,6 +52,32 @@
   transform: scale(1.15);
   filter: brightness(1.1);
   opacity: 1;
+}
+
+.dhHearts {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.heartWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heartNum {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -55%);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
 }
 
 .gameOpponent {

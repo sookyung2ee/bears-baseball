@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./CalendarDay.module.css";
 import { logoMap } from "../../constants/logoMap";
-import useUser from "../../hooks/useUser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faHeartCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,9 +10,13 @@ const resultMap = {
   tie: "무",
 };
 
-export default function CalendarDay({ day, gamesByDate, isThisMonth }) {
-  const { user, setUser } = useUser();
-  const wishGames = user?.wishGames || [];
+export default function CalendarDay({
+  day,
+  gamesByDate,
+  isThisMonth,
+  wishGames,
+  handleWish,
+}) {
   const isGameDay = gamesByDate.length >= 1;
   const isDoubleHeader = gamesByDate.length === 2;
   const { opponent, stadium, beginTime } = isGameDay ? gamesByDate[0] : {};
@@ -30,7 +33,14 @@ export default function CalendarDay({ day, gamesByDate, isThisMonth }) {
     ? gamesByDate.some((game) => wishGames.includes(game.gameId))
     : false;
 
+  const wishedDHGames = isDoubleHeader
+    ? gamesByDate.filter((game) => wishGames.includes(game.gameId))
+    : [];
+
   const time = getTime(beginTime);
+
+  const isPastDate = new Date(day.fullDate) < new Date();
+  console.log(day.fullDate, isPastDate);
 
   return (
     <td className={styles.dayCell}>
@@ -50,11 +60,42 @@ export default function CalendarDay({ day, gamesByDate, isThisMonth }) {
               >
                 {day.date}
               </p>
-              {isGameDay && (
-                <FontAwesomeIcon
-                  icon={isWishedDay ? faHeart : faHeartCirclePlus}
-                  className={`${styles.heartIcon} ${isWishedDay ? styles.fullHeart : styles.plusHeart}`}
-                />
+              {!isPastDate && (
+                <>
+                  {!isDoubleHeader && (
+                    <FontAwesomeIcon
+                      icon={isWishedDay ? faHeart : faHeartCirclePlus}
+                      className={`${styles.heartIcon} ${isWishedDay ? styles.fullHeart : styles.plusHeart}`}
+                      onClick={() => handleWish(gamesByDate, { isDH: false })}
+                    />
+                  )}
+                  {isDoubleHeader && (
+                    <>
+                      <div className={styles.dhHearts}>
+                        {[1, 2].map((num) => {
+                          const wishedGame = wishedDHGames.find(
+                            (game) => game.gameId.slice(-1) === String(num),
+                          );
+                          return (
+                            <div key={num} className={styles.heartWrap}>
+                              <FontAwesomeIcon
+                                icon={wishedGame ? faHeart : faHeartCirclePlus}
+                                className={`${styles.heartIcon} ${wishedGame ? styles.fullHeart : styles.plusHeart}`}
+                                onClick={() =>
+                                  handleWish(gamesByDate, {
+                                    isDH: true,
+                                    num: num,
+                                  })
+                                }
+                              />
+                              <p className={styles.heartNum}>{num}</p>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </>
+                  )}
+                </>
               )}
             </div>
             <div className={styles.game}>
