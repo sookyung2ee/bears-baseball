@@ -99,9 +99,8 @@
   transform: translateY(-2px);
 }
 
-.joinBtn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+.actionBtn {
+  background-color: rgba(var(--color-pink-30-rgb), 0.9);
 }
 
 @media (max-width: 1024px) {

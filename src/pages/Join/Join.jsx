@@ -5,26 +5,21 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 export default function Join() {
   const [form, setForm] = useState({ name: "", id: "", pw: "", pwConfirm: "" });
-  const [isPWValid, setIsPWValid] = useState(false);
   const [showPW, setShowPW] = useState(false);
   const [showPWConfirm, setShowPWConfirm] = useState(false);
+
+  const isFormFilled = Object.values(form).every((v) => v !== "");
+  const isPWValid = form.pw === form.pwConfirm;
 
   const handleChange = (e) => {
     e.preventDefault();
     console.log("handleChange");
     const { name, value } = e.target;
-    setForm((prev) => {
-      const newForm = { ...prev, [name]: value.trim() };
-      if (name === "pw" || name === "pwConfirm") {
-        setIsPWValid(newForm.pw === newForm.pwConfirm);
-      }
-      return newForm;
-    });
+    setForm((prev) => ({ ...prev, [name]: value.trim() }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const isFormFilled = Object.values(form).every((v) => v !== "");
     if (!isFormFilled) return alert("항목들을 모두 채워주세요.");
     if (!isPWValid) return alert("비밀번호가 다릅니다.");
   };
@@ -90,7 +85,11 @@ export default function Join() {
             />
           </div>
 
-          <button className={styles.joinBtn}>회원가입</button>
+          <button
+            className={`${styles.joinBtn} ${isFormFilled && isPWValid && styles.actionBtn}`}
+          >
+            회원가입
+          </button>
         </form>
       </div>
     </div>
