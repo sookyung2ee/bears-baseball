@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import styles from "./Login.module.css";
 import { NavLink } from "react-router-dom";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../api/firebase";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  const [form, setForm] = useState({ id: "", pw: "" });
+  const [form, setForm] = useState({ email: "", pw: "" });
+
+  const isActive = form.id && form.pw;
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -11,19 +18,46 @@ export default function Login() {
     setForm((prev) => ({ ...prev, [name]: value.trim() }));
   };
 
-  const isActive = form.id && form.pw;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    //여기선 뭘하지??
+    if (!form.email || !form.pw)
+      return alert("이메일과 비밀번호를 입력해주세요!");
+
+    try {
+      const result = await signInWithEmailAndPassword(
+        auth,
+        form.email,
+        form.pw,
+      );
+
+      console.log("로그인 성공!");
+      navigate("/");
+    } catch (eroor) {
+      console.log(error);
+      if (error.code === "auth/user-not-found") {
+        alert("존재하지 않는 계정이에요.");
+      } else if (error.code === "auth/wrong-password") {
+        alert("비밀번호가 틀렸어요.");
+      } else if (error.code === "auth/invalid-email") {
+        alert("이메일 형식이 올바르지 않아요.");
+      } else {
+        alert("로그인 중 오류가 발생했어요.");
+      }
+    }
+  };
 
   return (
     <div className={styles.login}>
       <div className={styles.contents}>
         <p className={styles.title}>로그인</p>
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <input
             className={styles.id}
             type="text"
-            id="id"
-            name="id"
-            placeholder="아이디"
+            id="email"
+            name="email"
+            placeholder="이메일"
             onChange={handleChange}
           />
           <input
