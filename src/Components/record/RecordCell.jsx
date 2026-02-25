@@ -34,7 +34,6 @@ export default function RecordDay({
 
   const gameInfo = games.find((game) => game.gameId === record.gameId);
   const date = getDate(gameInfo.date);
-  console.log(type);
 
   const handleCellClick = () => {
     if (!record) return;

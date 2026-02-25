@@ -8,7 +8,6 @@ import { auth, signOutWithEmail } from "../../api/firebase";
 export default function Navbar() {
   const { user } = useUser();
 
-  console.log(user);
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>

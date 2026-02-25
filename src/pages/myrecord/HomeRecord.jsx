@@ -10,7 +10,6 @@ export default function HomeRecord() {
   const { addWatechRecord, deleteWatechRecord } = useWatchRecordManager();
 
   const handleAdd = (form) => {
-    console.log(form);
     addWatechRecord({ info: form, type: "home" });
   };
 
