@@ -56,6 +56,10 @@
   background-color: var(--color-pink-30);
 }
 
+.logout:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
   .nav {
     position: fixed;

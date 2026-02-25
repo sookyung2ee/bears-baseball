@@ -12,7 +12,7 @@ export default function Calendar({ date }) {
   const days = ["일", "월", "화", "수", "목", "금", "토"];
   const { year, month } = date;
   const { games } = useGamesSchedule();
-  const { toggleWishGame } = useWishGames();
+  const { toggleWishGame, isLoading } = useWishGames();
   const { user } = useUser();
   const wishGames = user?.wishGames || [];
 
@@ -81,6 +81,7 @@ export default function Calendar({ date }) {
                   isThisMonth={month === day.month}
                   wishGames={wishGames}
                   handleWish={handleWish}
+                  isLoading={isLoading}
                 />
               ))}
             </tr>

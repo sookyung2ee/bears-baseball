@@ -16,6 +16,7 @@ export default function CalendarDay({
   isThisMonth,
   wishGames,
   handleWish,
+  isLoading,
 }) {
   const isGameDay = gamesByDate.length >= 1;
   const isDoubleHeader = gamesByDate.length === 2;
@@ -40,7 +41,6 @@ export default function CalendarDay({
   const time = getTime(beginTime);
 
   const isPastDate = new Date(day.fullDate) < new Date();
-  console.log(day.fullDate, isPastDate);
 
   return (
     <td className={styles.dayCell}>
@@ -66,6 +66,7 @@ export default function CalendarDay({
                     <FontAwesomeIcon
                       icon={isWishedDay ? faHeart : faHeartCirclePlus}
                       className={`${styles.heartIcon} ${isWishedDay ? styles.fullHeart : styles.plusHeart}`}
+                      disabled={isLoading}
                       onClick={() => handleWish(gamesByDate, { isDH: false })}
                     />
                   )}
@@ -81,6 +82,7 @@ export default function CalendarDay({
                               <FontAwesomeIcon
                                 icon={wishedGame ? faHeart : faHeartCirclePlus}
                                 className={`${styles.heartIcon} ${wishedGame ? styles.fullHeart : styles.plusHeart}`}
+                                disabled={isLoading}
                                 onClick={() =>
                                   handleWish(gamesByDate, {
                                     isDH: true,

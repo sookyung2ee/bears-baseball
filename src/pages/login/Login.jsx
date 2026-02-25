@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import styles from "./Login.module.css";
 import { NavLink } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../api/firebase";
+import { auth, signInWithEmail } from "../../api/firebase";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", pw: "" });
 
-  const isActive = form.id && form.pw;
+  const isActive = form.email && form.pw;
 
   const navigate = useNavigate();
 
@@ -20,20 +20,14 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //여기선 뭘하지??
     if (!form.email || !form.pw)
       return alert("이메일과 비밀번호를 입력해주세요!");
 
     try {
-      const result = await signInWithEmailAndPassword(
-        auth,
-        form.email,
-        form.pw,
-      );
-
-      console.log("로그인 성공!");
+      const user = await signInWithEmail(form.email, form.pw);
+      console.log(user);
       navigate("/");
-    } catch (eroor) {
+    } catch (error) {
       console.log(error);
       if (error.code === "auth/user-not-found") {
         alert("존재하지 않는 계정이에요.");
