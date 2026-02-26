@@ -1,13 +1,32 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./MyRecordSidebar.module.css";
+import useUser from "../../hooks/useUser";
+import useUserStats from "../../hooks/useUserStats";
 
 export default function MyRecordSidebar() {
+  const { user } = useUser();
+  const { winningRate } = useUserStats();
+
+  const stadiumWinningRate = winningRate("stadium");
+
+  const homemWinningRate = winningRate("home");
+
   return (
     <nav className={styles.nav}>
       <section className={styles.userInfo}>
-        <p className={styles.userName}>망곰이</p>
-        <p className={styles.stadiumWinning}>통산 직관승률: 60%</p>
-        <p className={styles.homeWinning}>통산 집관승률: 70%</p>
+        {user ? (
+          <>
+            <p className={styles.userName}>{user.nickname}</p>
+            <p className={styles.stadiumWinning}>
+              통산 직관승률: {stadiumWinningRate}%
+            </p>
+            <p className={styles.homeWinning}>
+              통산 집관승률: {homemWinningRate}%
+            </p>
+          </>
+        ) : (
+          <p>로그인 후 표시됩니다</p>
+        )}
       </section>
       <section className={styles.links}>
         <NavLink
