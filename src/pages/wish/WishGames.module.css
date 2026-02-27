@@ -3,7 +3,11 @@
 }
 
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-white);
+  height: var(--top-height);
 }
 
 .cards {

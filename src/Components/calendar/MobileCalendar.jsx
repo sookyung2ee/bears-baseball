@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faHeartCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function MobileCalendar({ monthGames, wishGames, handleWish }) {
-  console.log(wishGames);
   return (
     <ul className={styles.cards}>
       {monthGames.map((game) => {
@@ -22,7 +21,7 @@ export default function MobileCalendar({ monthGames, wishGames, handleWish }) {
         } = game;
 
         const isWishedDay = wishGames.includes(gameId);
-        console.log(isWishedDay, gameId);
+
         const teams = game.home
           ? {
               left: {
