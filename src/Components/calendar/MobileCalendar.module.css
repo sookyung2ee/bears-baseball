@@ -22,17 +22,35 @@
     background-color: var(--color-navy-90);
   }
 
+  .wishCard {
+    border: 3px solid rgba(var(--color-pink-40-rgb), 0.6);
+    background: linear-gradient(
+      180deg,
+      rgba(var(--color-pink-40-rgb), 0.06),
+      rgba(var(--color-pink-40-rgb), 0.02)
+    );
+  }
+
   .cardHeader {
     height: 2.5rem;
     display: flex;
     align-items: center;
-    padding-left: 8px;
-    gap: 0.5rem;
+    justify-content: space-between;
+    padding: 0 8px;
     border-bottom: 2px solid var(--color-gray-70);
+  }
+
+  .dateInfo {
+    display: flex;
+    gap: 0.2rem;
     letter-spacing: 0.1rem;
   }
 
-  .info {
+  .fullHeart {
+    color: var(--color-pink-40);
+  }
+
+  .teamInfo {
     display: flex;
     width: 100%;
     height: 5rem;

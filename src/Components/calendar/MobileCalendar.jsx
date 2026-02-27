@@ -2,9 +2,11 @@ import React, { useMemo } from "react";
 import styles from "./MobileCalendar.module.css";
 import { logoMap } from "../../constants/logoMap";
 import { dayMap } from "../../constants/dayMap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart, faHeartCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
-export default function MobileCalendar({ monthGames }) {
-  console.log(monthGames);
+export default function MobileCalendar({ monthGames, wishGames, handleWish }) {
+  console.log(wishGames);
   return (
     <ul className={styles.cards}>
       {monthGames.map((game) => {
@@ -19,6 +21,8 @@ export default function MobileCalendar({ monthGames }) {
           beginTime,
         } = game;
 
+        const isWishedDay = wishGames.includes(gameId);
+        console.log(isWishedDay, gameId);
         const teams = game.home
           ? {
               left: {
@@ -46,20 +50,30 @@ export default function MobileCalendar({ monthGames }) {
             };
 
         return (
-          <li className={styles.card} key={gameId}>
+          <li
+            className={`${styles.card} ${isWishedDay && styles.wishCard}`}
+            key={gameId}
+          >
             <div className={styles.cardHeader}>
-              <p className={styles.date}>{date}</p>
-              <p>{dayMap[dayOfWeek]}</p>
-              <p className={styles.beginTime}>
-                {new Date(beginTime).toLocaleTimeString("ko-KR", {
-                  hour: "2-digit",
-                  minute: "2-digit",
-                  hour12: false,
-                })}
-              </p>
-              <p>{stadium}</p>
+              <div className={styles.dateInfo}>
+                <p className={styles.date}>{date}</p>
+                <p>{dayMap[dayOfWeek]}</p>
+                <p className={styles.beginTime}>
+                  {new Date(beginTime).toLocaleTimeString("ko-KR", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: false,
+                  })}
+                </p>
+                <p>{stadium}</p>
+              </div>
+              <FontAwesomeIcon
+                icon={isWishedDay ? faHeart : faHeartCirclePlus}
+                className={`${styles.heartIcon} ${isWishedDay ? styles.fullHeart : styles.plusHeart}`}
+                onClick={() => handleWish([game])}
+              />
             </div>
-            <div className={styles.info}>
+            <div className={styles.teamInfo}>
               <div className={styles.leftTeam}>
                 <p className={styles.teamName}>{teams.left.name}</p>
                 <img src={`/images/logo/${teams.left.logo}.png`} alt="" />

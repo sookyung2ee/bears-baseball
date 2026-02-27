@@ -27,14 +27,6 @@ export default function TopNavbar() {
           className={({ isActive }) =>
             isActive ? `${styles.link}  ${styles.active}` : styles.link
           }
-          to="/wishgames"
-        >
-          <FontAwesomeIcon className={styles.icon} icon={faHeart} />
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? `${styles.link}  ${styles.active}` : styles.link
-          }
           to="/login"
         >
           <FontAwesomeIcon className={styles.icon} icon={faCircleUser} />

@@ -40,7 +40,7 @@ export default function useWishGames() {
   //       ...prev,
   //       wishGames: isWishedGame
   //         ? wishGames.filter((id) => id !== gameId)
-  //         : [...wishGames, gameId],
+  //         : [...wishGames, gameId ],
   //     };
   //   });
   // };

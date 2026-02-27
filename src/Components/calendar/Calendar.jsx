@@ -35,8 +35,9 @@ export default function Calendar({ date }) {
   }, [monthGames]);
 
   const handleWish = (games, info = null) => {
+    console.log(games);
     let toggleGameId;
-    if (info.isDH) {
+    if (info?.isDH) {
       console.log(info.isDH, info.num);
       toggleGameId = games.find(
         (game) => game.gameId.slice(-1) === String(info.num),
@@ -89,7 +90,11 @@ export default function Calendar({ date }) {
         </tbody>
       </table>
       <div className={styles.mobileCalendar}>
-        <MobileCalendar monthGames={monthGames} />
+        <MobileCalendar
+          monthGames={monthGames}
+          wishGames={wishGames}
+          handleWish={handleWish}
+        />
       </div>
     </>
   );

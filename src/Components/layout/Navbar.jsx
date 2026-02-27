@@ -4,6 +4,14 @@ import styles from "./Navbar.module.css";
 import useUser from "../../hooks/useUser";
 import { signOut } from "firebase/auth";
 import { auth, signOutWithEmail } from "../../api/firebase";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCalendar,
+  faFolderOpen,
+  faHeart,
+  faHouse,
+  faPenToSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const { user } = useUser();
@@ -22,7 +30,8 @@ export default function Navbar() {
           }
           to="/"
         >
-          Home
+          <span className={styles.text}>Home</span>
+          <FontAwesomeIcon className={styles.icon} icon={faHouse} />
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -30,7 +39,8 @@ export default function Navbar() {
           }
           to="/schedule"
         >
-          Schedule
+          <span className={styles.text}>Schedule</span>
+          <FontAwesomeIcon className={styles.icon} icon={faCalendar} />
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -38,7 +48,10 @@ export default function Navbar() {
           }
           to="/myrecord"
         >
-          MyRecord
+          <span className={styles.text}>MyRecord</span>
+          <FontAwesomeIcon className={styles.icon} icon={faFolderOpen} />
+          {/* <FontAwesomeIcon className={styles.icon} icon={faPenToSquare} /> */}
+          {/* <FontAwesomeIcon className={styles.icon} icon={faClipboardList} /> */}
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -46,7 +59,8 @@ export default function Navbar() {
           }
           to="/wishgames"
         >
-          WISH
+          <span className={styles.text}>WISH</span>
+          <FontAwesomeIcon className={styles.icon} icon={faHeart} />
         </NavLink>
       </div>
       <div className={styles.login}>
