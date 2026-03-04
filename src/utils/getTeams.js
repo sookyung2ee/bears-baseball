@@ -1,6 +1,7 @@
 import { logoMap } from "../constants/logoMap";
 
 export function getTeams(game) {
+  console.log(game);
   const isFinished = game.status === "종료";
 
   const teams = game.home

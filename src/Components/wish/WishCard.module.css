@@ -36,6 +36,13 @@
   font-weight: 600;
 }
 
+.time {
+  font-size: 0.9rem;
+  color: var(--color-white);
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
 .stadium {
   font-size: 0.9rem;
   color: var(--color-white);
