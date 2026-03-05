@@ -5,7 +5,7 @@
   --color-navy-80-rgb: 13, 10, 61;
   --color-navy-70: #14115a;
   --color-navy-70-rgb: 20, 17, 90;
-  --color-navy-60: #1a1748;
+  --color-navy-60: #1a1748; /*배경*/
   --color-navy-60-rgb: 26, 23, 72;
   --color-navy-50: #2a2770;
   --color-navy-50-rgb: 42, 39, 112;
@@ -80,9 +80,10 @@
   --page-padding-x: 40px;
 
   --top-height: 4rem;
-  --top-margin-bottom: 12px;
+  --top-margin-bottom: 0rem;
   --top-title-font-size: 1.5rem;
   --top-title-font-height: 500;
+  --sidbar-top-margin: 4rem;
 
   --page-min-width: 1280px;
 

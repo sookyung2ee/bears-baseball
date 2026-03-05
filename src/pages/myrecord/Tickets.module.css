@@ -1,12 +1,3 @@
-li {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
 .ticketsContainer {
   width: 100%;
   /* padding: var(--container-padding); */
@@ -28,89 +19,15 @@ ul {
   align-items: center;
 }
 
+.title {
+  font-size: var(--top-title-font-size);
+  font-weight: var(--top-title-font-height);
+}
+
 .ticketsList {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-}
-
-.title {
-  font-size: var(--top-title-font-size);
-  font-weight: var(top-title-font-height);
-}
-
-.ticket {
-  width: 100%;
-  min-width: 0;
-  height: 240px;
-  display: flex;
-  align-items: center;
-  border-radius: 32px;
-  padding: 24px;
-  box-sizing: border-box;
-  margin: 4px;
-  background: var(--color-white);
-}
-
-.character {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.character img {
-  width: 90%;
-  height: auto;
-}
-
-.content {
-  height: 100%;
-  flex: 2;
-  background-color: var(--color-navy-70);
-  border-radius: 28px;
-  padding: 0 16px;
-  color: var(--color-white);
-}
-
-.dateInfo {
-  text-align: center;
-  padding: 6px 0;
-  border-bottom: 1px solid var(--color-pink-20);
-}
-
-.scoreInfo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 6px 0;
-  border-bottom: 1px solid var(--color-gray-70);
-}
-
-.vs {
-  color: var(--color-gray-40);
-}
-
-.userRecord {
-  margin-top: 4px;
-}
-
-.seat,
-.memo,
-.food {
-  display: flex;
-}
-
-.recordTitle {
-  width: 5rem;
-  color: var(--color-pink-20);
-  font-weight: 600;
-}
-
-.foodList {
-  display: flex;
-  gap: 0.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -123,27 +40,5 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
-
-  .ticket {
-    width: 100%;
-    min-width: 0;
-    height: auto;
-    flex-direction: column;
-  }
-
-  .character {
-    flex: none;
-  }
-
-  .character img {
-    width: 100px;
-    height: auto;
-  }
-
-  .content {
-    flex: none;
-    height: 200px;
-    width: 100%;
   }
 }

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Modal from "../Modal/Modal";
 import RecordCell from "./RecordCell";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
 import styles from "./GameRecordView.module.css";
@@ -62,7 +61,7 @@ export default function GameRecordView({
       )}
       <div className={styles.recordContainer}>
         <section className={styles.recordTop}>
-          <p className={styles.title}>{typeWord}스탬프</p>
+          <p className={styles.title}>{typeWord} 기록</p>
           <button className={styles.addBtn} onClick={openAddModal}>
             {typeWord} 기록 추가
           </button>
