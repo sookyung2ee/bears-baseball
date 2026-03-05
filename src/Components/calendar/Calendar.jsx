@@ -4,7 +4,6 @@ import useCalendar from "../../hooks/useCalendar";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
 import styles from "./Calendar.module.css";
 import MobileCalendar from "./MobileCalendar";
-import SelectGameModal from "../wish/SelectGameModal";
 import useUser from "../../hooks/useUser";
 import useWishGames from "../../hooks/useWishGames";
 

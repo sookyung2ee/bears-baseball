@@ -7,6 +7,7 @@ button {
 
 .schedule {
   width: var(--container-width);
+  padding: var(--page-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,14 +20,19 @@ button {
   color: var(--color-white);
   display: flex;
   align-items: center;
+  font-size: var(--top-title-font-size);
 }
 
 .arrowBtn:hover {
   cursor: pointer;
 }
 
-.mobileCalendar {
-  display: none;
+.date {
+  margin: 0 8px;
+}
+
+.calendar {
+  width: 100%;
 }
 
 @media (max-width: 1024px) {

@@ -9,6 +9,7 @@
   width: 1200px;
   table-layout: fixed;
   border-collapse: collapse;
+  margin: 0 auto;
 }
 
 .calendarHead {
@@ -24,8 +25,8 @@
 @media (max-width: 1024px) {
   .mobileCalendar {
     display: block;
-    width: 100vw;
-    padding: var(--mobile-padding);
+    /* width: 100%; */
+    /* padding: var(--mobile-padding); */
   }
 
   .calendar {

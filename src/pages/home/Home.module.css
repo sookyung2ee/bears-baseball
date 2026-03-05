@@ -25,7 +25,7 @@ p {
 @media (max-width: 1024px) {
   .home {
     width: 100%;
-    padding: var(--mobile-padding);
+    /* padding: var(--mobile-padding); */
     min-width: 0;
     overflow-y: hidden;
   }

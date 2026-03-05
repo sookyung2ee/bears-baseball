@@ -16,12 +16,13 @@
 .content {
   flex: 1;
   flex-shrink: 0;
+  margin-right: 1rem;
 }
 
 @media (max-width: 1024px) {
-  .page {
+  /* .page {
     padding: var(--mobile-padding);
-  }
+  } */
 
   .content {
     width: 100%;

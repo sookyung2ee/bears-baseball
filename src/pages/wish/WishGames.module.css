@@ -1,5 +1,6 @@
 .page {
   width: 100%;
+  padding: var(--page-padding);
 }
 
 .title {
@@ -8,6 +9,7 @@
   justify-content: center;
   color: var(--color-white);
   height: var(--top-height);
+  font-size: var(--top-title-font-size);
 }
 
 .select {

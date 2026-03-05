@@ -34,14 +34,14 @@ export default function Schedule() {
         <button className={styles.arrowBtn} onClick={handlePrevMonth}>
           ◀
         </button>
-        <span>
+        <span className={styles.date}>
           {date.year}년 {date.month}월
         </span>
         <button className={styles.arrowBtn} onClick={handleNextMonth}>
           ▶
         </button>
       </header>
-      <div className={styles.webCalendar}>
+      <div className={styles.calendar}>
         <Calendar date={date} />
       </div>
     </section>
