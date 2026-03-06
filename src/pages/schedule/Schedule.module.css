@@ -16,19 +16,17 @@ button {
 }
 
 .header {
-  height: var(--top-height);
+  /* height: var(--top-height); */
   color: var(--color-white);
   display: flex;
   align-items: center;
   font-size: var(--top-title-font-size);
+  justify-content: center;
+  gap: 3rem;
 }
 
 .arrowBtn:hover {
   cursor: pointer;
-}
-
-.date {
-  margin: 0 8px;
 }
 
 .calendar {

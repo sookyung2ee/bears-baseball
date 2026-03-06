@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Calendar from "../../Components/calendar/Calendar";
 import styles from "./Schedule.module.css";
+import YearMonthFilter from "../../Components/filter/YearMonthFilter";
+
+const filters = [
+  { name: "year", options: [2025, 2026] },
+  { name: "month", options: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+];
 
 export default function Schedule() {
   const [date, setDate] = useState({
@@ -28,15 +34,22 @@ export default function Schedule() {
     });
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setDate((prev) => ({ ...prev, [name]: parseInt(value) }));
+  };
+
   return (
     <section className={styles.schedule}>
       <header className={styles.header}>
         <button className={styles.arrowBtn} onClick={handlePrevMonth}>
           ◀
         </button>
-        <span className={styles.date}>
-          {date.year}년 {date.month}월
-        </span>
+        <YearMonthFilter
+          filters={filters}
+          date={date}
+          onChange={handleChange}
+        />
         <button className={styles.arrowBtn} onClick={handleNextMonth}>
           ▶
         </button>

@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import styles from "./WishGames.module.css";
 import WishCard from "../../Components/wish/WishCard";
 import useUser from "../../hooks/useUser";
+import YearMonthFilter from "../../Components/filter/YearMonthFilter";
 
-const monthArr = [3, 4, 5, 6, 7, 8, 9, 10, 11];
+const filters = [
+  { name: "year", options: ["all", 2025, 2026] },
+  { name: "month", options: ["all", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+];
 
 export default function WishGames() {
   const { user } = useUser();
-  const wishGames = user?.wishGames.sort() || [];
+  const wishGames = [...(user?.wishGames || [])].sort();
   const [date, setDate] = useState({ year: "all", month: "all" });
 
   const paddedMonth =
@@ -30,8 +34,9 @@ export default function WishGames() {
 
   return (
     <div className={styles.page}>
-      <p className={styles.title}>위시 리스트</p>
-      <div className={styles.select}>
+      {/* <p className={styles.title}>위시 리스트</p> */}
+      <YearMonthFilter filters={filters} date={date} onChange={handleChange} />
+      {/* <div className={styles.select}>
         <select
           name="year"
           id="year-select"
@@ -61,7 +66,7 @@ export default function WishGames() {
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
       <div className={styles.cards}>
         {filteredWishGames.map((game) => (
           <WishCard key={game} gameId={game} />
