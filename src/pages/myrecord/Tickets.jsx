@@ -30,7 +30,7 @@ export default function Tickets() {
   return (
     <div className={styles.ticketsContainer}>
       <header className={styles.ticketsTop}>
-        <p className={styles.title}>티켓내역</p>
+        <p className={styles.title}>티켓 기록</p>
       </header>
       <div className={styles.ticketsList}>
         {sortedRecords.map((record) => {

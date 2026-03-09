@@ -135,114 +135,109 @@ export default function AddRecordModal({
   };
 
   return (
-    <Modal>
-      <div className={styles.modalContent}>
-        <header className={styles.modalHeader}>{typeWord} 경기 입력</header>
-        <form className={styles.modalForm} onSubmit={handleSubmit}>
-          <label className={styles.title} htmlFor="date">
-            날짜
-          </label>
-          <input
-            className={styles.input}
-            type="date"
-            name="date"
-            value={form.date}
-            onChange={handleChange}
-            onBlur={handleDateConfirm}
-          />
-          <label className={styles.title} htmlFor="memo">
-            메모
-          </label>
-          <input
-            className={styles.input}
-            type="text"
-            name="memo"
-            value={form.memo}
-            onChange={handleChange}
-          />
-          <label className={styles.title} htmlFor="food">
-            야구푸드
-          </label>
-          <section className={styles.foodSection}>
-            <div className={styles.foodInput}>
-              <input
-                className={styles.input}
-                type="text"
-                name="food"
-                value={foodInput}
-                onChange={handleFoodChange}
-              />
-              <button
-                className={styles.modalAddFoodBtn}
-                type="button"
-                onClick={addFood}
-              >
-                입력
-              </button>
-            </div>
-            {form.food.map((f, i) => (
-              <div key={f.id} className={styles.foodChips}>
-                <p className={styles.foodName}>{f.name}</p>
-                <button
-                  className={styles.foodDelete}
-                  type="button"
-                  onClick={() => deleteFood(f.id)}
-                >
-                  x
-                </button>
-              </div>
-            ))}
-            {isDoubleHeader && (
-              <div className={styles.doubleHeadrSelect}>
-                <legend className={styles.title}>더블헤더 경기 선택</legend>
-                <div className={styles.radioBox}>
-                  <input
-                    className={styles.radioInput}
-                    type="radio"
-                    id="DH1"
-                    name="doubleHeader"
-                    value="1"
-                    checked={form.doubleHeader === "1"}
-                    onChange={handleChange}
-                  />
-                  <label className={styles.radioLabel} htmlFor="DH1">
-                    1차전
-                  </label>
-                </div>
-                <div className={styles.radioBox}>
-                  <input
-                    className={styles.radioInput}
-                    type="radio"
-                    id="DH2"
-                    name="doubleHeader"
-                    value="2"
-                    checked={form.doubleHeader === "2"}
-                    onChange={handleChange}
-                  />
-                  <label className={styles.radioLabel} htmlFor="DH2">
-                    2차전
-                  </label>
-                </div>
-              </div>
-            )}
-          </section>
-          <section className={styles.modalBtns}>
+    <Modal onClose={closeModal} theme="light" title={`${typeWord} 경기 입력`}>
+      {/* <header className={styles.modalHeader}>{typeWord} 경기 입력</header> */}
+      <form className={styles.modalForm} onSubmit={handleSubmit}>
+        <label className={styles.title} htmlFor="date">
+          날짜
+        </label>
+        <input
+          className={styles.input}
+          type="date"
+          name="date"
+          value={form.date}
+          onChange={handleChange}
+          onBlur={handleDateConfirm}
+        />
+        <label className={styles.title} htmlFor="memo">
+          메모
+        </label>
+        <input
+          className={styles.input}
+          type="text"
+          name="memo"
+          value={form.memo}
+          onChange={handleChange}
+        />
+        <label className={styles.title} htmlFor="food">
+          야구푸드
+        </label>
+        <section className={styles.foodSection}>
+          <div className={styles.foodInput}>
+            <input
+              className={styles.input}
+              type="text"
+              name="food"
+              value={foodInput}
+              onChange={handleFoodChange}
+            />
             <button
+              className={styles.modalAddFoodBtn}
               type="button"
-              className={styles.modalCancle}
-              onClick={closeModal}
+              onClick={addFood}
             >
-              취소
-            </button>
-            <button type="submit" className={styles.modalEnter}>
               입력
             </button>
-          </section>
-        </form>
-        <button className={styles.closeBtn} onClick={closeModal}>
-          X
-        </button>
-      </div>
+          </div>
+          {form.food.map((f, i) => (
+            <div key={f.id} className={styles.foodChips}>
+              <p className={styles.foodName}>{f.name}</p>
+              <button
+                className={styles.foodDelete}
+                type="button"
+                onClick={() => deleteFood(f.id)}
+              >
+                x
+              </button>
+            </div>
+          ))}
+          {isDoubleHeader && (
+            <div className={styles.doubleHeadrSelect}>
+              <legend className={styles.title}>더블헤더 경기 선택</legend>
+              <div className={styles.radioBox}>
+                <input
+                  className={styles.radioInput}
+                  type="radio"
+                  id="DH1"
+                  name="doubleHeader"
+                  value="1"
+                  checked={form.doubleHeader === "1"}
+                  onChange={handleChange}
+                />
+                <label className={styles.radioLabel} htmlFor="DH1">
+                  1차전
+                </label>
+              </div>
+              <div className={styles.radioBox}>
+                <input
+                  className={styles.radioInput}
+                  type="radio"
+                  id="DH2"
+                  name="doubleHeader"
+                  value="2"
+                  checked={form.doubleHeader === "2"}
+                  onChange={handleChange}
+                />
+                <label className={styles.radioLabel} htmlFor="DH2">
+                  2차전
+                </label>
+              </div>
+            </div>
+          )}
+        </section>
+        <section className={styles.modalBtns}>
+          <button
+            type="button"
+            className={styles.modalCancle}
+            onClick={closeModal}
+          >
+            취소
+          </button>
+          <button type="submit" className={styles.modalEnter}>
+            입력
+          </button>
+        </section>
+      </form>
     </Modal>
   );
 }

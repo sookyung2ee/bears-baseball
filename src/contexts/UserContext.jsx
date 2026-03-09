@@ -57,9 +57,14 @@ export function UserProvider({ children }) {
 
   // if (loading) return null;
 
+  const logout = () => {
+    setUser(null);
+  };
+
   const value = {
     user,
     setUser,
+    logout, //로컬용
   };
 
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;

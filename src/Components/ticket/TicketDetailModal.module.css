@@ -1,0 +1,37 @@
+/* .modalContent {
+  max-width: 280px;
+} */
+
+.recordItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* color: var(--color-gray-50); */
+  color: var(--color-pink-30);
+}
+
+.value {
+  font-size: 0.95rem;
+  /* color: var(--color-navy-90); */
+  color: var(--color-navy-10);
+  min-width: 0;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.recordTitle {
+  font-weight: 600;
+  color: #444;
+}
+
+.memo .text {
+  background: #f7f7f7;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+}

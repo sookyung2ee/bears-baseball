@@ -4,6 +4,7 @@ import useGamesSchedule from "../../hooks/usegamesSchedule";
 import styles from "./GameRecordView.module.css";
 import AddRecordModal from "./AddRecordModal";
 import RecordDetailModal from "./RecordDetailModal";
+import useUser from "../../hooks/useUser";
 
 const TOTAL = 60;
 
@@ -15,6 +16,7 @@ export default function GameRecordView({
   onDeleteRecord,
   type,
 }) {
+  const { user } = useUser();
   const { games, loading } = useGamesSchedule();
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isRecordModalOpen, setIsRecordModalOpen] = useState(false);
@@ -27,6 +29,8 @@ export default function GameRecordView({
   }
 
   const openAddModal = () => {
+    console.log(user);
+    if (!user) return alert("로그인 후 이용해 주세요");
     setIsAddModalOpen(true);
   };
 

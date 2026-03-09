@@ -2,8 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import useUser from "../../hooks/useUser";
-import { signOut } from "firebase/auth";
-import { auth, signOutWithEmail } from "../../api/firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendar,
@@ -14,7 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
-  const { user } = useUser();
+  const { user, logout } = useUser();
 
   return (
     <nav className={styles.nav}>
@@ -67,7 +65,8 @@ export default function Navbar() {
         {user ? (
           <button
             className={`${styles.link} ${styles.logout}`}
-            onClick={() => signOutWithEmail(auth)}
+            // onClick={() => signOutWithEmail(auth)}
+            onClick={logout}
           >
             로그아웃
           </button>
