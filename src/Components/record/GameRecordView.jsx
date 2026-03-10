@@ -3,8 +3,8 @@ import RecordCell from "./RecordCell";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
 import styles from "./GameRecordView.module.css";
 import AddRecordModal from "./AddRecordModal";
-import RecordDetailModal from "./RecordDetailModal";
 import useUser from "../../hooks/useUser";
+import RecordDetailModal from "../Modal/RecordDetailModal";
 
 const TOTAL = 60;
 
@@ -59,7 +59,8 @@ export default function GameRecordView({
       )}
       {isRecordModalOpen && (
         <RecordDetailModal
-          selectedRecord={selectedRecord}
+          record={selectedRecord}
+          type={type}
           onClose={() => setIsRecordModalOpen(false)}
         />
       )}

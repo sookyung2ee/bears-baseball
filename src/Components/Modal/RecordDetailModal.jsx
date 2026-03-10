@@ -1,27 +1,40 @@
 import React from "react";
-import Modal from "../Modal/Modal";
-import styles from "./TicketDetailModal.module.css";
+import Modal from "./Modal";
+import styles from "./RecordDetailModal.module.css";
 
-export default function TicketDetailModal({ record, onClose }) {
+export default function TicketDetailModal({
+  record,
+  onClose,
+  type = "stadium",
+}) {
   const { memo, seat, food } = record;
 
   return (
     <Modal onClose={onClose} theme="dark" title="상세 내역">
       <div className={styles.modalContent}>
-        <div className={styles.recordItem}>
-          <p className={styles.label}>📍 구역</p>
-          <p className={styles.value}>{seat}</p>
-        </div>
+        {type !== "home" && (
+          <div className={styles.recordItem}>
+            <p className={styles.label}>
+              <span className={styles.emoji}>📍</span> 구역
+            </p>
+            <p className={styles.value}>{seat}</p>
+          </div>
+        )}
 
         <div className={styles.recordItem}>
-          <p className={styles.label}>📝 메모</p>
+          <p className={styles.label}>
+            <span className={styles.emoji}>📝</span> 메모
+          </p>
           <p className={styles.value}>{memo}</p>
         </div>
-
-        <div className={styles.recordItem}>
-          <p className={styles.label}>🍗 음식</p>
-          <p className={styles.value}>{food.join(", ")}</p>
-        </div>
+        {type !== "home" && (
+          <div className={styles.recordItem}>
+            <p className={styles.label}>
+              <span className={styles.emoji}>🍗</span> 음식
+            </p>
+            <p className={styles.value}>{food.join(", ")}</p>
+          </div>
+        )}
         {/* <div className={styles.recordContent}>
           <div className={styles.seat}>
             <p className={styles.recordTitle}>구역</p>

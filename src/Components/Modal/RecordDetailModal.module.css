@@ -16,6 +16,12 @@
   color: var(--color-pink-30);
 }
 
+.emoji {
+  display: inline-block;
+  width: 1.1rem;
+  text-align: center;
+}
+
 .value {
   font-size: 0.95rem;
   /* color: var(--color-navy-90); */

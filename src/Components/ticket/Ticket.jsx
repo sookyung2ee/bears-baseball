@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Ticket.module.css";
 import { dayMap } from "../../constants/dayMap";
-import TicketDetailModal from "./TicketDetailModal";
+import RecordDetailModal from "../Modal/RecordDetailModal";
 
 export default function Ticket({ gameInfo, teams, record }) {
   const seatRef = useRef(null);
@@ -29,10 +29,10 @@ export default function Ticket({ gameInfo, teams, record }) {
   return (
     <>
       {isOpenModal && (
-        <TicketDetailModal
+        <RecordDetailModal
           record={record}
           onClose={() => setIsOpenModal(false)}
-        ></TicketDetailModal>
+        />
       )}
       <div className={styles.ticket}>
         <div className={styles.character}>

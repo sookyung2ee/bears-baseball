@@ -28,7 +28,7 @@
 
 .modalContent {
   padding: 2rem;
-  max-width: 360px;
+  width: 360px;
   border-radius: 16px;
   position: relative;
   background-color: var(--modal-bg);
