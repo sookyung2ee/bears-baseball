@@ -14,13 +14,15 @@ export default function GameRecordView({
   sortedRecords,
   onAddRecord,
   onDeleteRecord,
+  onUpdateRecord,
   type,
 }) {
   const { user } = useUser();
   const { games, loading } = useGamesSchedule();
-  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
-  const [isRecordModalOpen, setIsRecordModalOpen] = useState(false);
-  const [selectedRecord, setSelectedRecord] = useState({});
+  const [modal, setModal] = useState({
+    type: null,
+    record: null,
+  });
 
   const typeWord = type === "stadium" ? "직관" : "집관";
 
@@ -31,16 +33,30 @@ export default function GameRecordView({
   const openAddModal = () => {
     console.log(user);
     if (!user) return alert("로그인 후 이용해 주세요");
-    setIsAddModalOpen(true);
+    setModal({ type: "edit", record: null });
   };
 
   const openRecordModal = (record) => {
-    setSelectedRecord(record);
-    setIsRecordModalOpen(true);
+    setModal({ type: "detail", record });
   };
 
-  const handleAddRecord = (record) => {
-    onAddRecord(record);
+  const openEditModal = (record) => {
+    console.log("hi");
+    console.log(record);
+    setModal({ type: "edit", record });
+  };
+
+  const closeModal = () => {
+    setModal({ type: null, record: null });
+  };
+
+  const handleSubmit = (record, isEdit) => {
+    console.log(record);
+    if (isEdit) {
+      onUpdateRecord(record);
+    } else {
+      onAddRecord(record);
+    }
   };
 
   return (
@@ -48,20 +64,22 @@ export default function GameRecordView({
       {/* <p>isModal: {isModal.toString()}</p>
       <p>date: {form.date}</p>
       <p>memo: {form.memo}</p> */}
-      {isAddModalOpen && (
+      {(modal.type === "add" || modal.type === "edit") && (
         <AddRecordModal
           typeWord={typeWord}
-          isOpen={isAddModalOpen}
-          onClose={() => setIsAddModalOpen(false)}
-          onSubmit={handleAddRecord}
+          onClose={closeModal}
+          onSubmit={handleSubmit}
           games={games}
+          type={type}
+          initialRecord={modal.record}
         />
       )}
-      {isRecordModalOpen && (
+      {modal.type === "detail" && (
         <RecordDetailModal
-          record={selectedRecord}
+          record={modal.record}
           type={type}
-          onClose={() => setIsRecordModalOpen(false)}
+          onClose={closeModal}
+          onEdit={openEditModal}
         />
       )}
       <div className={styles.recordContainer}>

@@ -1,6 +1,28 @@
 /* .modalContent {
   max-width: 280px;
 } */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.editBtn {
+  background-color: transparent;
+  border: 1px solid var(--color-pink-30);
+  color: var(--color-pink-30);
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.editBtn:hover {
+  background-color: var(--color-pink-30);
+  color: var(--color-white);
+}
 
 .recordItem {
   display: flex;

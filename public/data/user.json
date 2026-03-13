@@ -10,9 +10,14 @@
       {
         "id": "record-staudim-1",
         "gameId": "20250503DGU1",
+        "date": "2025-05-03",
 
         "memo": "양의지 홈런 미쳤다ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ",
-        "food": ["치킨", "요아정", "dddddasdfasdfaefjasdifjalskdjfia;"],
+        "food": [
+          { "id": 1, "name": "치킨" },
+          { "id": 2, "name": "요아정" },
+          { "id": 3, "name": "dddddasdfasdfaefjasdifjalskdjfia;" }
+        ],
         "seat": "1루 네이비 asdfasdfadawefasdf",
 
         "createdAt": "2024-05-04T22:30:00"
@@ -20,9 +25,13 @@
       {
         "id": "record-staudim-2",
         "gameId": "20250505JAM1",
+        "date": "2025-05-05",
 
         "memo": "어린이날 더비 승리",
-        "food": ["잭슨피자", "백미당"],
+        "food": [
+          { "id": 1, "name": "잭슨피자" },
+          { "id": 2, "name": "백미당" }
+        ],
         "seat": "중앙네이비",
 
         "createdAt": "2024-05-06T22:30:00"
@@ -30,9 +39,13 @@
       {
         "id": "record-staudim-3",
         "gameId": "20250511JAM2",
+        "date": "2025-05-11",
 
         "memo": "더블헤더 2차전도 패",
-        "food": ["잭슨피자", "백미당"],
+        "food": [
+          { "id": 1, "name": "잭슨피자" },
+          { "id": 2, "name": "백미당" }
+        ],
         "seat": "중앙네이비",
 
         "createdAt": "2024-05-06T22:30:00"
@@ -40,9 +53,14 @@
       {
         "id": "record-staudim-4",
         "gameId": "20250511JAM1",
+        "date": "2025-05-11",
 
         "memo": "더블헤더 1차전 패",
-        "food": ["잭슨피자", "물회", "꿔바로우"],
+        "food": [
+          { "id": 1, "name": "잭슨피자" },
+          { "id": 2, "name": "물회" },
+          { "id": 3, "name": "꿔바로우" }
+        ],
         "seat": "테이블석",
 
         "createdAt": "2024-05-06T22:30:00"
@@ -53,6 +71,7 @@
       {
         "id": "record-home-1",
         "gameId": "20250808GCH1",
+        "date": "2025-08-08",
 
         "memo": "두산 승",
         "food": ["집밥"],
@@ -62,18 +81,18 @@
       {
         "id": "record-home-2",
         "gameId": "20250810GCH1",
+        "date": "2025-08-10",
 
         "memo": "두산 패ㅜ",
-        "food": ["집밥"],
 
         "createdAt": "2024-05-06T22:30:00"
       },
       {
         "id": "record-home-2",
         "gameId": "20250809GCH1",
+        "date": "2025-08-09",
 
         "memo": "고척 2연승",
-        "food": ["집밥"],
 
         "createdAt": "2024-05-06T22:30:00"
       }

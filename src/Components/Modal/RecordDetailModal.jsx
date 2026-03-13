@@ -6,11 +6,23 @@ export default function TicketDetailModal({
   record,
   onClose,
   type = "stadium",
+  onEdit,
 }) {
   const { memo, seat, food } = record;
 
   return (
-    <Modal onClose={onClose} theme="dark" title="상세 내역">
+    <Modal
+      onClose={onClose}
+      theme="dark"
+      header={
+        <div className={styles.header}>
+          <p className={styles.title}>상세 내역</p>
+          <button className={styles.editBtn} onClick={() => onEdit(record)}>
+            수정
+          </button>
+        </div>
+      }
+    >
       <div className={styles.modalContent}>
         {type !== "home" && (
           <div className={styles.recordItem}>
@@ -32,7 +44,7 @@ export default function TicketDetailModal({
             <p className={styles.label}>
               <span className={styles.emoji}>🍗</span> 음식
             </p>
-            <p className={styles.value}>{food.join(", ")}</p>
+            <p className={styles.value}>{food.map((f) => f.name).join(", ")}</p>
           </div>
         )}
         {/* <div className={styles.recordContent}>

@@ -66,7 +66,7 @@ export default function RecordDay({
           className={styles.deletedBtn}
           onClick={(e) => {
             e.stopPropagation();
-            onDelete({ deletedRecord: record, type });
+            onDelete(record);
           }}
         >
           x

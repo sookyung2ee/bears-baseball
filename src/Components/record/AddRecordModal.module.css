@@ -16,6 +16,13 @@
   margin: 12px 0 4px 0;
 }
 
+.star {
+  color: var(--color-red);
+  font-size: 1rem;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
 .input {
   height: 2rem;
   padding: 0 12px;
@@ -24,9 +31,17 @@
   border-radius: 4px;
 }
 
+.foodSection {
+  width: 100%;
+}
+
 .foodInput {
   display: flex;
   gap: 0.5rem;
+}
+
+.food {
+  flex: 1;
 }
 
 .modalAddFoodBtn {
@@ -123,6 +138,6 @@
   width: 30%;
 }
 
-.modalEnter:hover {
+.active {
   background-color: var(--color-pink-30);
 }

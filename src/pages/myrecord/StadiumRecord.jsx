@@ -6,15 +6,19 @@ import styles from "./StadiumRecord.module.css";
 
 export default function StadiumRecord() {
   const sortedRecords = useGameRecords("stadium");
-  const { addWatechRecord, deleteWatechRecord } = useWatchRecordManager();
+  const { addWatchRecord, deleteWatchRecord, updateWatchRecord } =
+    useWatchRecordManager();
 
   const handleAdd = (form) => {
-    console.log(form);
-    addWatechRecord({ info: form, type: "stadium" });
+    addWatchRecord({ info: form, type: "stadium" });
   };
 
-  const handleDelete = ({ deletedRecord, type }) => {
-    deleteWatechRecord({ deletedRecord, type });
+  const handleDelete = (form) => {
+    deleteWatchRecord({ info: form, type: "stadium" });
+  };
+
+  const handleUpdate = (form) => {
+    updateWatchRecord({ info: form, type: "stadium" });
   };
 
   return (
@@ -23,6 +27,7 @@ export default function StadiumRecord() {
         sortedRecords={sortedRecords}
         onAddRecord={handleAdd}
         onDeleteRecord={handleDelete}
+        onUpdateRecord={handleUpdate}
         type="stadium"
       />
     </div>

@@ -6,15 +6,19 @@ import styles from "./HomeRecord.module.css";
 
 export default function HomeRecord() {
   const sortedRecords = useGameRecords("home");
-
-  const { addWatechRecord, deleteWatechRecord } = useWatchRecordManager();
+  const { addWatchRecord, deleteWatchRecord, updateWatchRecord } =
+    useWatchRecordManager();
 
   const handleAdd = (form) => {
-    addWatechRecord({ info: form, type: "home" });
+    addWatchRecord({ info: form, type: "home" });
   };
 
-  const handleDelete = ({ deletedRecord, type }) => {
-    deleteWatechRecord({ deletedRecord, type });
+  const handleDelete = (form) => {
+    deleteWatchRecord({ info: form, type: "home" });
+  };
+
+  const handleUpdate = (form) => {
+    updateWatchRecord({ info: form, type: "home" });
   };
 
   return (
@@ -23,6 +27,7 @@ export default function HomeRecord() {
         sortedRecords={sortedRecords}
         onAddRecord={handleAdd}
         onDeleteRecord={handleDelete}
+        onUpdateRecord={handleUpdate}
         type="home"
       />
     </div>
