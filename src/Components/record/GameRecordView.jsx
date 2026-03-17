@@ -22,6 +22,7 @@ export default function GameRecordView({
   const [modal, setModal] = useState({
     type: null,
     record: null,
+    teams: null,
   });
 
   const typeWord = type === "stadium" ? "직관" : "집관";
@@ -33,25 +34,24 @@ export default function GameRecordView({
   const openAddModal = () => {
     console.log(user);
     if (!user) return alert("로그인 후 이용해 주세요");
-    setModal({ type: "edit", record: null });
+    setModal({ type: "edit", record: null, teams: null });
   };
 
-  const openRecordModal = (record) => {
-    setModal({ type: "detail", record });
+  const openRecordModal = (record, teams) => {
+    console.log("-------teams---------");
+    console.log(teams);
+    setModal({ type: "detail", record, teams });
   };
 
   const openEditModal = (record) => {
-    console.log("hi");
-    console.log(record);
-    setModal({ type: "edit", record });
+    setModal({ type: "edit", record, teams: null });
   };
 
   const closeModal = () => {
-    setModal({ type: null, record: null });
+    setModal({ type: null, record: null, teams: null });
   };
 
   const handleSubmit = (record, isEdit) => {
-    console.log(record);
     if (isEdit) {
       onUpdateRecord(record);
     } else {
@@ -78,6 +78,7 @@ export default function GameRecordView({
         <RecordDetailModal
           record={modal.record}
           type={type}
+          teams={modal.teams}
           onClose={closeModal}
           onEdit={openEditModal}
         />

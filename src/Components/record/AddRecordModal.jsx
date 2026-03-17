@@ -139,10 +139,12 @@ export default function AddRecordModal({
   }, [initialRecord, games]);
 
   const validate = () => {
+    console.log(selectedGame);
     if (!form.date) return "날짜를 선택해 주세요";
     if (isDoubleHeader && !form.doubleHeader)
       return "더블헤더 경기를 선택해 주세요";
-    if (selectedGame.status !== "종료") return "종료되지 않은 게임입니다.";
+    if (selectedGame.status === "취소") return "취소된 게임입니다.";
+    if (selectedGame.status === "경기전") return "종료되지 않은 게임입니다.";
     if (isStadium && !form.seat) return "좌석을 기입해 주세요";
     if (!isStadium && !form.device) return "시청 디바이스를 선택해 주세요";
     return null;
@@ -150,8 +152,6 @@ export default function AddRecordModal({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("hihihihi");
-    console.log(form);
     const error = validate();
     if (error) {
       alert(error);

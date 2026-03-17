@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./RecordCell.module.css";
+import { getTeams } from "../../utils/getTeams";
 
 const getDate = (fulldate) => {
   const month = String(new Date(fulldate).getMonth() + 1).padStart(2, "0");
@@ -33,11 +34,12 @@ export default function RecordDay({
   }
 
   const gameInfo = games.find((game) => game.gameId === record.gameId);
+  const teams = getTeams(gameInfo);
   const date = getDate(gameInfo.date);
 
   const handleCellClick = () => {
     if (!record) return;
-    onOpenRecordModal(record);
+    onOpenRecordModal(record, teams);
   };
 
   const resultMap = { tie: "무승부", lose: "패", win: "승" };

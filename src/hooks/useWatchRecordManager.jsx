@@ -75,9 +75,7 @@ export default function useWatchRecordManager() {
         ...prev,
         records: {
           ...prev.records,
-          [type]: prev.records[type].map((r) =>
-            r.gameId === info.gameId ? info : r,
-          ),
+          [type]: prev.records[type].map((r) => (r.id === info.id ? info : r)),
         },
       };
     });

@@ -126,7 +126,7 @@
   bottom: -1px;
   width: 100%;
   height: 2px;
-  background-color: var(--color-lighblue);
+  background-color: var(--color-lightblue);
 }
 
 .gameResult {
@@ -135,7 +135,7 @@
 }
 
 .winText {
-  color: var(--color-lighblue);
+  color: var(--color-lightblue);
   font-weight: bold;
 }
 

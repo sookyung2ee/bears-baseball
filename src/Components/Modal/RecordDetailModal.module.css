@@ -63,3 +63,16 @@
   padding: 0.4rem 0.5rem;
   border-radius: 6px;
 }
+
+.score {
+  display: flex;
+  gap: 2px;
+}
+
+.teamScore {
+  font-weight: 600;
+}
+
+.doosan {
+  color: var(--color-lightblue);
+}
