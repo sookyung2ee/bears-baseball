@@ -73,8 +73,10 @@
   --transition-base: all 0.2s ease;
 
   --container-padding: 12px 36px;
-  --container-min-width: 800px;
-  --container-width: 1400px;
+  --container-min-width: 100%;
+  /* --container-min-width: 100px; */
+  --container-width: 100%;
+  /* --container-width: 100px; */
 
   --page-padding: 0 0px 24px 0px;
   --page-padding-x: 40px;
@@ -86,13 +88,18 @@
   --sidbar-top-margin: 4rem;
 
   --page-min-width: 1280px;
+  /* --page-min-width: 100px; */
 
   --mobile-max-width: 767px;
   --mobile-padding: 0px 8px 78px 8px;
   --mobile-padding-x: 8px;
   --mobile-nav-padding: 8px;
 }
-
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+  /* overflow-x: hidden; */
+}
 body {
   background-color: var(--color-navy-60);
 }

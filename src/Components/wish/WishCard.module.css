@@ -4,9 +4,7 @@
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px 16px 18px;
-  width: 360px;
-  margin: 0 auto;
-
+  /* margin: 0 auto; */
   border-radius: 16px;
   background: linear-gradient(
     180deg,
@@ -91,4 +89,15 @@
 
 .deleteBtn:active {
   transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .card {
+    min-width: 0;
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+  }
 }

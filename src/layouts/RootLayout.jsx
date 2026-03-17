@@ -6,6 +6,7 @@ import TopNavbar from "../Components/layout/TopNavbar";
 
 export default function RootLayout() {
   return (
+    // <></>
     <div className={styles.root}>
       <div className={styles.mobileHeader}>
         <TopNavbar />

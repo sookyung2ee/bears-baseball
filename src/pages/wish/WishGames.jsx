@@ -34,39 +34,7 @@ export default function WishGames() {
 
   return (
     <div className={styles.page}>
-      {/* <p className={styles.title}>위시 리스트</p> */}
       <YearMonthFilter filters={filters} date={date} onChange={handleChange} />
-      {/* <div className={styles.select}>
-        <select
-          name="year"
-          id="year-select"
-          onChange={handleChange}
-          defaultValue=""
-        >
-          <option value="" disabled hidden>
-            년도
-          </option>
-          <option value="all">ALL</option>
-          <option value="2025">2025</option>
-          <option value="2026">2026</option>
-        </select>
-        <select
-          name="month"
-          id="month-select"
-          onChange={handleChange}
-          defaultValue=""
-        >
-          <option value="" disabled hidden>
-            달
-          </option>
-          <option value="all">ALL</option>
-          {monthArr.map((month) => (
-            <option key={month} value={month}>
-              {month}
-            </option>
-          ))}
-        </select>
-      </div> */}
       <div className={styles.cards}>
         {filteredWishGames.map((game) => (
           <WishCard key={game} gameId={game} />

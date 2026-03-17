@@ -6,7 +6,6 @@ import { getTeams } from "../../utils/getTeams";
 import { getTime } from "../../utils/getTime";
 
 export default function WishCard({ gameId }) {
-  console.log(gameId);
   const { games, loading } = useGamesSchedule();
 
   if (loading) return;
