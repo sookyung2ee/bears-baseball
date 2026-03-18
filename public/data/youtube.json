@@ -1,0 +1,240 @@
+[
+  {
+    "kind": "youtube#searchResult",
+    "etag": "1UDluAlnJkhKjgvFjOzv2ySwNSs",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "_Y8IV1hwlAI"
+    },
+    "snippet": {
+      "publishedAt": "2026-03-18T06:00:24Z",
+      "channelId": "UCsebzRfMhwYfjeBIxNX1brg",
+      "title": "훈련 중인 야구선수에게 필름카메라를 줬더니📸",
+      "description": "두산베어스 #베어스티비 #스프링캠프.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/_Y8IV1hwlAI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/_Y8IV1hwlAI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/_Y8IV1hwlAI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "BEARS TV",
+      "liveBroadcastContent": "none",
+      "publishTime": "2026-03-18T06:00:24Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "hKq4Wc62uOIqHw16wONU0l3gdWo",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "ge8hkoMnl7Y"
+    },
+    "snippet": {
+      "publishedAt": "2026-03-18T03:00:53Z",
+      "channelId": "UCsebzRfMhwYfjeBIxNX1brg",
+      "title": "올 시즌 응원 단상을 책임질 2026 응원단 프로필 촬영📣💗",
+      "description": "2026 시즌 처음 만나는 두산베어스 응원단   많은 응원 부탁드립니다! 타임라인   00:00 시작 00:21 첫만남은 계획대로?✨ 00:46 ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/ge8hkoMnl7Y/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/ge8hkoMnl7Y/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/ge8hkoMnl7Y/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "BEARS TV",
+      "liveBroadcastContent": "none",
+      "publishTime": "2026-03-18T03:00:53Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "yPqdpO2RmcN4-gNARz88RexYdew",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "b7zuSRtr26M"
+    },
+    "snippet": {
+      "publishedAt": "2026-03-17T08:52:31Z",
+      "channelId": "UCsebzRfMhwYfjeBIxNX1brg",
+      "title": "밀어쳐서 넘기는 순이의 진짜 타격 재능✨️",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/b7zuSRtr26M/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/b7zuSRtr26M/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/b7zuSRtr26M/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "BEARS TV",
+      "liveBroadcastContent": "none",
+      "publishTime": "2026-03-17T08:52:31Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "Yy3hKoT9JDrGVNnCNsZ3Yspr80w",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "3-82s-5chzg"
+    },
+    "snippet": {
+      "publishedAt": "2026-03-17T08:52:14Z",
+      "channelId": "UCsebzRfMhwYfjeBIxNX1brg",
+      "title": "&#39;진짜 홈런 타자&#39; #양석환 시범 경기 마수걸이 홈런 쾅!",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/3-82s-5chzg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/3-82s-5chzg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/3-82s-5chzg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "BEARS TV",
+      "liveBroadcastContent": "none",
+      "publishTime": "2026-03-17T08:52:14Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "-y6XZ77-3FkIZ9HEJOEZTHzRamo",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "0vykBlCP0Zs"
+    },
+    "snippet": {
+      "publishedAt": "2026-03-17T08:08:35Z",
+      "channelId": "UCsebzRfMhwYfjeBIxNX1brg",
+      "title": "3월 17일 두산 vs 한화 | 2026 시범경기 H/L",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/0vykBlCP0Zs/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/0vykBlCP0Zs/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/0vykBlCP0Zs/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "BEARS TV",
+      "liveBroadcastContent": "none",
+      "publishTime": "2026-03-17T08:08:35Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "qWrr0TWuJdtOTkl-fy9pFqsqrGY",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "DxpXA5aJ7OU"
+    },
+    "snippet": {
+      "publishedAt": "2026-03-17T06:58:36Z",
+      "channelId": "UCsebzRfMhwYfjeBIxNX1brg",
+      "title": "옛날 얘기해서 신난 AZ들의 라떼토크🗣 [2026 스프링캠프]",
+      "description": "양의지 #이용찬 #정수빈 옛날 얘기 하니까 신나서 조잘조잘 타임라인   00:00 스리슬쩍 합석 시도 00:08 충격의 양캡틴 뜨빔 ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/DxpXA5aJ7OU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/DxpXA5aJ7OU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/DxpXA5aJ7OU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "BEARS TV",
+      "liveBroadcastContent": "none",
+      "publishTime": "2026-03-17T06:58:36Z"
+    }
+  },
+  {
+    "kind": "youtube#searchResult",
+    "etag": "vqSXzy8tFboQs5OLjOkv8P32IyQ",
+    "id": {
+      "kind": "youtube#video",
+      "videoId": "S7_aR2mn2AQ"
+    },
+    "snippet": {
+      "publishedAt": "2026-03-17T03:00:53Z",
+      "channelId": "UCsebzRfMhwYfjeBIxNX1brg",
+      "title": "두산베어스 X 스너글 콜라보 팝업 스토어 BEARSLAND🐻✨️",
+      "description": "DOOSAN BEARS X Snuggle BEARSLAND in SEONGSU 2026.03.10(화) ~ 03.27(금) 성수 맵달SEOUL (서울시 성동구 성수 ...",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/S7_aR2mn2AQ/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/S7_aR2mn2AQ/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/S7_aR2mn2AQ/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "channelTitle": "BEARS TV",
+      "liveBroadcastContent": "none",
+      "publishTime": "2026-03-17T03:00:53Z"
+    }
+  }
+]

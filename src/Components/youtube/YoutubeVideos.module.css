@@ -1,0 +1,110 @@
+.container {
+  width: 1280px;
+  padding: 40px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.title {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  align-self: flex-start;
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  color: var(--color-red);
+}
+
+.videos {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  gap: 1rem;
+  user-select: none;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.videos::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.videoCard {
+  flex: 0 0 auto;
+  width: 300px;
+  border: 2px solid var(--color-gray-70);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.videoCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-lightblue);
+}
+
+.thumbnailBox {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.thumbnailBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoTitle {
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 12px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90vw;
+    gap: 12px;
+  }
+
+  .videos {
+    scroll-snap-type: x mandatory; /* ✅ 스냅 활성화 */
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .thumbnailBox {
+    width: 100%;
+  }
+
+  .thumbnailBox img {
+    width: 100%;
+  }
+
+  .videoCard {
+    flex: 0 0 100%; /* ✅ 너비 100% 고정 */
+    width: 100%;
+    scroll-snap-align: start; /* ✅ 카드 시작점에 스냅 */
+    scroll-snap-stop: always; /* ✅ 한 번에 하나씩만 넘어감 */
+  }
+}

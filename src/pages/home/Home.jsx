@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import MatchCard from "../../Components/match/MatchCard";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
 import LoadingSpinner from "../../Components/loading/LoadingSpinner";
+import YoutubeVideos from "../../Components/youtube/YoutubeVideos";
 
 const todayDate = new Date();
 const FINISHED_STATUS = ["종료", "취소"];
@@ -42,6 +43,9 @@ export default function Home() {
           type="nextMatch"
           game={nextGame}
         />
+      </article>
+      <article>
+        <YoutubeVideos />
       </article>
     </section>
   );

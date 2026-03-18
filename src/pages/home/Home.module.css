@@ -3,7 +3,6 @@ p {
 }
 
 .home {
-  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -14,7 +13,7 @@ p {
   width: 1280px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
   padding-top: 20px;
 }
@@ -28,6 +27,8 @@ p {
 @media (max-width: 1024px) {
   .home {
     width: 100%;
+    min-width: 0;
+    min-height: 0;
     overflow-y: hidden;
   }
 
