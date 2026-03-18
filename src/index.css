@@ -73,12 +73,12 @@
   --transition-base: all 0.2s ease;
 
   --container-padding: 12px 36px;
-  --container-min-width: 100%;
-  /* --container-min-width: 100px; */
-  --container-width: 100%;
-  /* --container-width: 100px; */
+  --container-min-width: 800px;
+  /* --container-min-width: 100%; */
+  --container-width: 1400px;
+  /* --container-width: 100%; */
 
-  --page-padding: 0 0px 24px 0px;
+  --page-padding: 8px 8px 24px 8px;
   --page-padding-x: 40px;
 
   --top-height: 4rem;
@@ -95,13 +95,30 @@
   --mobile-padding-x: 8px;
   --mobile-nav-padding: 8px;
 }
-* {
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
-  /* overflow-x: hidden; */
-}
+
 body {
+  padding: 0;
+  margin: 0;
   background-color: var(--color-navy-60);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+#root {
+  min-width: 1280px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --page-padding: 0px 12px 78px 12px;
+  }
+  #root {
+    width: 100%;
+    min-width: 0;
+  }
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -148,14 +165,3 @@ body {
     background-color: #f9f9f9;
   }
 } */
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}

@@ -1,6 +1,6 @@
 .page {
   width: 100%;
-  padding: var(--page-padding);
+  min-width: 1280px;
 }
 
 .myRecord {
@@ -8,21 +8,21 @@
   gap: 40px;
   background-color: var(--color-navy-60);
   min-height: 100vh;
-  width: var(--container-width);
+  /* width: var(--container-width); */
   margin: 0 auto;
   flex-shrink: 0;
+  justify-content: center;
 }
 
 .content {
-  flex: 1;
+  width: 900px;
   flex-shrink: 0;
-  margin-right: 1rem;
 }
 
 @media (max-width: 1024px) {
-  /* .page {
-    padding: var(--mobile-padding);
-  } */
+  .page {
+    min-width: 0;
+  }
 
   .content {
     width: 100%;

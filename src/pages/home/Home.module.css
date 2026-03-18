@@ -7,8 +7,11 @@ p {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 .centerArea {
+  width: 1280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +28,6 @@ p {
 @media (max-width: 1024px) {
   .home {
     width: 100%;
-    /* padding: var(--mobile-padding); */
-    min-width: 0;
     overflow-y: hidden;
   }
 

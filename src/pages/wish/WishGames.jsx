@@ -34,11 +34,17 @@ export default function WishGames() {
 
   return (
     <div className={styles.page}>
-      <YearMonthFilter filters={filters} date={date} onChange={handleChange} />
-      <div className={styles.cards}>
-        {filteredWishGames.map((game) => (
-          <WishCard key={game} gameId={game} />
-        ))}
+      <div className={styles.contents}>
+        <YearMonthFilter
+          filters={filters}
+          date={date}
+          onChange={handleChange}
+        />
+        <div className={styles.cards}>
+          {filteredWishGames.map((game) => (
+            <WishCard key={game} gameId={game} />
+          ))}
+        </div>
       </div>
     </div>
   );
