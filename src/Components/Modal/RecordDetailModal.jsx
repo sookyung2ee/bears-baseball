@@ -11,7 +11,7 @@ export default function TicketDetailModal({
   onEdit,
 }) {
   const { memo, seat, food, device, date } = record;
-  console.log(teams);
+
   return (
     <Modal
       onClose={onClose}

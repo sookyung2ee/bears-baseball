@@ -5,10 +5,13 @@ import styles from "./GameRecordView.module.css";
 import AddRecordModal from "./AddRecordModal";
 import useUser from "../../hooks/useUser";
 import RecordDetailModal from "../Modal/RecordDetailModal";
+import YearMonthFilter from "../filter/YearMonthFilter";
 
 const TOTAL = 60;
 
 const nums = Array.from({ length: TOTAL }, (_, i) => i + 1);
+
+const filters = [{ name: "year", options: [2025, 2026] }];
 
 export default function GameRecordView({
   sortedRecords,
@@ -17,7 +20,6 @@ export default function GameRecordView({
   onUpdateRecord,
   type,
 }) {
-  console.log(sortedRecords);
   const { user } = useUser();
   const { games, loading } = useGamesSchedule();
   const [modal, setModal] = useState({
@@ -26,11 +28,20 @@ export default function GameRecordView({
     teams: null,
   });
 
+  const [date, setDate] = useState({
+    year: 2026,
+    // year: new Date().getFullYear(),
+  });
+
   const typeWord = type === "stadium" ? "직관" : "집관";
 
   if (loading) {
     return <div>로딩중...</div>;
   }
+
+  const handleChange = (e) => {
+    setDate({ year: Number(e.target.value) });
+  };
 
   const openAddModal = () => {
     if (!user) return alert("로그인 후 이용해 주세요");
@@ -57,6 +68,10 @@ export default function GameRecordView({
     }
   };
 
+  const filteredRecords = sortedRecords.filter((record) =>
+    record.date?.startsWith(String(date.year)),
+  );
+
   return (
     <>
       {/* <p>isModal: {isModal.toString()}</p>
@@ -70,7 +85,7 @@ export default function GameRecordView({
           games={games}
           type={type}
           initialRecord={modal.record}
-          sortedRecords={sortedRecords}
+          sortedRecords={filteredRecords}
         />
       )}
       {modal.type === "detail" && (
@@ -89,6 +104,11 @@ export default function GameRecordView({
             {typeWord} 기록 추가
           </button>
         </section>
+        <YearMonthFilter
+          filters={filters}
+          date={date}
+          onChange={handleChange}
+        />
         <section className={styles.tableSection}>
           <div className={styles.recordGrid}>
             {nums.map((num) => (
@@ -96,7 +116,7 @@ export default function GameRecordView({
                 key={num}
                 num={num}
                 type={type}
-                record={sortedRecords[num - 1] ?? null}
+                record={filteredRecords[num - 1] ?? null}
                 games={games}
                 onDelete={onDeleteRecord}
                 onOpenRecordModal={openRecordModal}

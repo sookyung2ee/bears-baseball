@@ -25,10 +25,8 @@ export default function Login() {
 
     try {
       const user = await signInWithEmail(form.email, form.pw);
-      console.log(user);
       navigate("/");
     } catch (error) {
-      console.log(error);
       if (error.code === "auth/user-not-found") {
         alert("존재하지 않는 계정이에요.");
       } else if (error.code === "auth/wrong-password") {

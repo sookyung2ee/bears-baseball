@@ -24,14 +24,13 @@ export default function Join() {
 
   const handleChange = (e) => {
     e.preventDefault();
-    console.log("handleChange");
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value.trim() }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("가입!");
+
     if (isFireBaseLoading) return;
 
     if (!isFormFilled) return alert("항목들을 모두 채워주세요.");
