@@ -4,12 +4,14 @@ import MatchCard from "../../Components/match/MatchCard";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
 import LoadingSpinner from "../../Components/loading/LoadingSpinner";
 import YoutubeVideos from "../../Components/youtube/YoutubeVideos";
+import useUser from "../../hooks/useUser";
 
 const todayDate = new Date();
 const FINISHED_STATUS = ["종료", "취소"];
 
 export default function Home() {
   const { games, loading } = useGamesSchedule();
+  const { user } = useUser();
 
   if (loading) {
     return <LoadingSpinner />;
@@ -29,6 +31,10 @@ export default function Home() {
 
   return (
     <section className={styles.home}>
+      <div className={styles.bubble}>
+        <p>Hello!</p>
+        <p className={styles.nickname}>{user?.nickname ?? "Guest 👋"}</p>
+      </div>
       <article className={styles.centerArea}>
         <MatchCard
           className={styles.prevMatchCard}

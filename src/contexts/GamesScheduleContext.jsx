@@ -9,7 +9,7 @@ export function GamesScheduleProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/data/doosanScheduleFinal_test.json")
+    fetch("/data/doosanScheduleFinal.json")
       .then((res) => res.json())
       .then((data) => {
         setGames(data);
