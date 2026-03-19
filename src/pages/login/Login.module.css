@@ -52,23 +52,30 @@
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-.loginBtn {
+.btn {
   height: 52px;
   margin-top: 12px;
   border-radius: 12px;
-
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--color-white);
 
   font-weight: 600;
   letter-spacing: 0.5px;
 
   cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.loginBtn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+
   transition: var(--transition-base);
 }
 
-.loginBtn:hover {
-  transform: translateY(-2px);
+.testLoginBtn {
+  background-color: rgba(var(--color-lightblue-rgb), 0.7);
 }
 
 .active {

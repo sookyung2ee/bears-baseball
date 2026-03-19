@@ -31,6 +31,10 @@
   font-weight: 500;
 }
 
+.noUser {
+  color: var(--color-white);
+}
+
 .links {
   flex: 1;
   display: flex;

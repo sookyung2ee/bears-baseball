@@ -28,6 +28,7 @@ export default function AddRecordModal({
   games,
   type,
   initialRecord,
+  sortedRecords,
 }) {
   const isStadium = type === "stadium";
   const isEditType = !!initialRecord;
@@ -139,7 +140,6 @@ export default function AddRecordModal({
   }, [initialRecord, games]);
 
   const validate = () => {
-    console.log(selectedGame);
     if (!form.date) return "날짜를 선택해 주세요";
     if (isDoubleHeader && !form.doubleHeader)
       return "더블헤더 경기를 선택해 주세요";
@@ -147,6 +147,13 @@ export default function AddRecordModal({
     if (selectedGame.status === "경기전") return "종료되지 않은 게임입니다.";
     if (isStadium && !form.seat) return "좌석을 기입해 주세요";
     if (!isStadium && !form.device) return "시청 디바이스를 선택해 주세요";
+
+    const isDuplicate = sortedRecords.some(
+      (record) =>
+        record.gameId === form.gameId && record.id !== initialRecord?.id,
+    );
+    if (isDuplicate) return "이미 기록된 경기입니다.";
+
     return null;
   };
 

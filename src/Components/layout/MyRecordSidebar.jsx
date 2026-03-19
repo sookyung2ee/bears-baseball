@@ -25,7 +25,7 @@ export default function MyRecordSidebar() {
             </p>
           </>
         ) : (
-          <p>로그인 후 표시됩니다</p>
+          <p className={styles.noUser}>로그인 후 표시됩니다</p>
         )}
       </section>
       <section className={styles.links}>

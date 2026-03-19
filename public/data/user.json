@@ -1,6 +1,7 @@
 {
   "id": "user_mock_001",
   "nickname": "곰돌이",
+  "role": "admin",
   "createdAt": "2024-01-01",
 
   "wishGames": ["20250322INC1", "20260329CHW1", "20260328CHW1"],
@@ -89,7 +90,7 @@
         "createdAt": "2024-05-06T22:30:00"
       },
       {
-        "id": "record-home-2",
+        "id": "record-home-3",
         "gameId": "20250809GCH1",
         "date": "2025-08-09",
 

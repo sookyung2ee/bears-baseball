@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import useUser from "../../hooks/useUser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { signOutWithEmail } from "../../api/firebase";
 import {
   faCalendar,
   faFolderOpen,
@@ -65,8 +66,8 @@ export default function Navbar() {
         {user ? (
           <button
             className={`${styles.link} ${styles.logout}`}
-            // onClick={() => signOutWithEmail(auth)}
-            onClick={logout}
+            onClick={() => signOutWithEmail()}
+            // onClick={logout}
           >
             로그아웃
           </button>

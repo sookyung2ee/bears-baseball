@@ -41,6 +41,17 @@ export default function Login() {
     }
   };
 
+  const handleGuestLogin = async () => {
+    const email = "guest@bears.com";
+    const pw = "bears123";
+    try {
+      const user = await signInWithEmail(email, pw);
+      navigate("/");
+    } catch (error) {
+      alert("게스트 로그인 실패");
+    }
+  };
+
   return (
     <div className={styles.login}>
       <div className={styles.contents}>
@@ -63,7 +74,14 @@ export default function Login() {
             onChange={handleChange}
           />
           <button
-            className={`${styles.loginBtn} ${isActive ? styles.active : ""}`}
+            type="button"
+            className={`${styles.btn} ${styles.testLoginBtn}`}
+            onClick={handleGuestLogin}
+          >
+            게스트로 바로 시작하기
+          </button>
+          <button
+            className={`${styles.btn} ${styles.loginBtn} ${isActive ? styles.active : ""}`}
           >
             로그인
           </button>

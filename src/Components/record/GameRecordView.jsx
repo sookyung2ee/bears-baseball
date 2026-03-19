@@ -17,6 +17,7 @@ export default function GameRecordView({
   onUpdateRecord,
   type,
 }) {
+  console.log(sortedRecords);
   const { user } = useUser();
   const { games, loading } = useGamesSchedule();
   const [modal, setModal] = useState({
@@ -32,14 +33,11 @@ export default function GameRecordView({
   }
 
   const openAddModal = () => {
-    console.log(user);
     if (!user) return alert("로그인 후 이용해 주세요");
     setModal({ type: "edit", record: null, teams: null });
   };
 
   const openRecordModal = (record, teams) => {
-    console.log("-------teams---------");
-    console.log(teams);
     setModal({ type: "detail", record, teams });
   };
 
@@ -72,6 +70,7 @@ export default function GameRecordView({
           games={games}
           type={type}
           initialRecord={modal.record}
+          sortedRecords={sortedRecords}
         />
       )}
       {modal.type === "detail" && (

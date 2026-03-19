@@ -36,6 +36,8 @@ export default function Join() {
 
     if (!isFormFilled) return alert("항목들을 모두 채워주세요.");
     if (!isPWValid) return alert("비밀번호가 다릅니다.");
+    if (form.pw.length < 6)
+      return alert("비밀번호는 6자 이상으로 만들어주세요.");
     try {
       setIsFireBaseLoading(true);
       const result = await createUserWithEmailAndPassword(
