@@ -40,6 +40,9 @@ export default function WishGames() {
           date={date}
           onChange={handleChange}
         />
+        <p className={styles.notice}>
+          캘린더에서 가고 싶은 경기를 추가할 수 있어요.
+        </p>
         <div className={styles.cards}>
           {filteredWishGames.map((game) => (
             <WishCard key={game} gameId={game} />

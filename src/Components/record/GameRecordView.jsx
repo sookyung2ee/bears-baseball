@@ -99,12 +99,15 @@ export default function GameRecordView({
       )}
       <div className={styles.recordContainer}>
         <section className={styles.recordTop}>
-          <YearMonthFilter
-            filters={filters}
-            date={date}
-            onChange={handleChange}
-            className={styles.filterCustom}
-          />
+          <div className={styles.filterArea}>
+            <YearMonthFilter
+              filters={filters}
+              date={date}
+              onChange={handleChange}
+              className={styles.filterCustom}
+            />
+            <p className={styles.notice}>2025년도 데이터를 확인해보세요!</p>
+          </div>
           <button className={styles.addBtn} onClick={openAddModal}>
             {typeWord} 기록 추가
           </button>

@@ -1,8 +1,13 @@
-.modalHeader {
+.modalTitle {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
+}
+
+.notice {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 .modalForm {

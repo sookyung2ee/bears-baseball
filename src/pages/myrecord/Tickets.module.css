@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   font-size: 1.2rem;
+  color: var(--color-navy-10);
 }
 
 .ticketsTop {
@@ -19,10 +20,20 @@
   align-items: center;
 }
 
+.filterArea {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 .filterCustom {
   margin: 0;
   padding: 0;
   background: none;
+}
+
+.notice {
+  color: var(--color-navy-10);
 }
 
 .ticketsList {

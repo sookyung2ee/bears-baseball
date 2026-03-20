@@ -175,9 +175,12 @@ export default function AddRecordModal({
       onClose={closeModal}
       theme="light"
       header={
-        <header
-          className={styles.modalHeader}
-        >{`${typeWord} 경기 ${isEditType ? "수정" : "입력"}`}</header>
+        <header className={styles.modalHeader}>
+          <p
+            className={styles.modalTitle}
+          >{`${typeWord} 경기 ${isEditType ? "수정" : "입력"}`}</p>
+          <p className={styles.notice}>* 표시된 항목은 필수 입력입니다.</p>
+        </header>
       }
     >
       {/* <header className={styles.modalHeader}>{`${typeWord} 경기 ${isEditType ? "수정" : "입력"}`}</header> */}

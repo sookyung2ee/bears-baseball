@@ -54,6 +54,11 @@ export default function Schedule() {
           ▶
         </button>
       </header>
+      <p className={styles.notice}>
+        <span className={styles.heart}>하트</span>를 눌러 위시게임에 추가할 수
+        있어요. <span className={styles.accent}>단,</span> 종료된 경기는 추가할
+        수 없어요.
+      </p>
       <div className={styles.calendar}>
         <Calendar date={date} />
       </div>

@@ -29,8 +29,21 @@ button {
   cursor: pointer;
 }
 
+.heart {
+  color: var(--color-pink-30);
+}
+
+.accent {
+  font-weight: 600;
+}
+
 .calendar {
   width: 100%;
+}
+
+.notice {
+  color: var(--color-navy-10);
+  margin-bottom: 12px;
 }
 
 @media (max-width: 1024px) {

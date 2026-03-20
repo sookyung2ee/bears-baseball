@@ -18,6 +18,12 @@
   font-size: var(--top-title-font-size);
 }
 
+.notice {
+  color: var(--color-navy-10);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
 .cards {
   width: 100%;
   display: grid;
