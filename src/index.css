@@ -63,14 +63,14 @@
   --color-ivory-10: #fffdf9;
   --color-ivory-10-rgb: 255, 253, 249;
 
+  --transition-base: all 0.2s ease;
+
   --z-base: 1;
   --z-dropdown: 10;
   --z-sticky: 50;
   --z-modal-overlay: 100;
   --z-modal-content: 101;
   --z-tooltip: 200;
-
-  --transition-base: all 0.2s ease;
 
   --container-padding: 12px 36px;
   --container-min-width: 800px;

@@ -28,6 +28,7 @@ export default function WishCard({ gameId }) {
   const isAttended = user.records.stadium.some(
     (item) => item.gameId === gameId,
   );
+  const isHome = stadium === "잠실";
 
   return (
     <>
@@ -36,7 +37,15 @@ export default function WishCard({ gameId }) {
           <p className={styles.date}>
             {date} {dayMap[dayOfWeek]}
           </p>
+          <p className={styles.time}>{time}</p>
+        </div>
+        <div className={styles.cardInfo}>
           <div className={styles.badges}>
+            <p
+              className={`${styles.badge} ${styles.stadium} ${isHome ? styles.home : styles.away}`}
+            >
+              {stadium}
+            </p>
             <p className={`${styles.badge} ${styles[statusMap[status]]}`}>
               {status}
             </p>
@@ -47,10 +56,7 @@ export default function WishCard({ gameId }) {
             </p>
           </div>
         </div>
-        <div className={styles.cardInfo}>
-          <p className={styles.time}>{time}</p>
-          <p className={styles.stadium}>{stadium}</p>
-        </div>
+
         <div className={styles.teams}>
           <img
             className={styles.logo}

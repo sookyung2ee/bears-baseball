@@ -55,6 +55,7 @@ export default function useWatchRecordManager() {
 
   const deleteWatchRecord = async (record) => {
     if (!user.uid) return;
+    console.log("deleteWatchRecord");
 
     const userRef = doc(db, "users", user.uid);
     const { info, type } = record;
