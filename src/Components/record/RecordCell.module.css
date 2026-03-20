@@ -127,6 +127,9 @@
 
 @media (max-width: 1024px) {
   .stampCell {
-    width: 30px;
+    min-width: 0;
+  }
+  .resultContainer p {
+    font-size: 0.8rem;
   }
 }
