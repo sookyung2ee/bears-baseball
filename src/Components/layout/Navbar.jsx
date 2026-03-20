@@ -18,12 +18,12 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
-        <NavLink>
-          <img src="/images/ball.png" alt="" />
+        <NavLink to="/">
+          <img src="/images/D_logo.png" alt="" />
         </NavLink>
       </div>
       <div className={styles.menu}>
-        <NavLink
+        {/* <NavLink
           className={({ isActive }) =>
             isActive ? `${styles.link} ${styles.active}` : styles.link
           }
@@ -31,7 +31,7 @@ export default function Navbar() {
         >
           <span className={styles.text}>Home</span>
           <FontAwesomeIcon className={styles.icon} icon={faHouse} />
-        </NavLink>
+        </NavLink> */}
         <NavLink
           className={({ isActive }) =>
             isActive ? `${styles.link} ${styles.active}` : styles.link
