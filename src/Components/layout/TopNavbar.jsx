@@ -2,7 +2,13 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import styles from "./TopNavbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faCircleUser } from "@fortawesome/free-solid-svg-icons";
+import { signOutWithEmail } from "../../api/firebase";
+import {
+  faHeart,
+  faCircleUser,
+  faArrowRightFromBracket,
+} from "@fortawesome/free-solid-svg-icons";
+import useUser from "../../hooks/useUser";
 
 const getPageName = (pathname) => {
   if (pathname === "/") return "홈";
@@ -15,7 +21,8 @@ const getPageName = (pathname) => {
 
 export default function TopNavbar() {
   const location = useLocation();
-
+  const { user } = useUser();
+  console.log(user);
   return (
     <nav className={styles.nav}>
       <div className={styles.brand}>
@@ -23,14 +30,27 @@ export default function TopNavbar() {
         <p className={styles.pageName}>{getPageName(location.pathname)}</p>
       </div>
       <div className={styles.links}>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? `${styles.link}  ${styles.active}` : styles.link
-          }
-          to="/login"
-        >
-          <FontAwesomeIcon className={styles.icon} icon={faCircleUser} />
-        </NavLink>
+        {user ? (
+          <button
+            className={styles.logout}
+            onClick={() => signOutWithEmail()}
+            // onClick={logout}
+          >
+            <FontAwesomeIcon
+              className={styles.icon}
+              icon={faArrowRightFromBracket}
+            />
+          </button>
+        ) : (
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? `${styles.link}  ${styles.active}` : styles.link
+            }
+            to="/login"
+          >
+            <FontAwesomeIcon className={styles.icon} icon={faCircleUser} />
+          </NavLink>
+        )}
       </div>
     </nav>
   );

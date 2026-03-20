@@ -46,6 +46,36 @@ p {
   color: var(--color-white);
 }
 
+.guestLoginBtn {
+  margin-top: 10px;
+  padding: 8px 16px;
+
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-white);
+
+  background: rgba(var(--color-white-rgb), 0.08);
+  border: 1px solid rgba(var(--color-white-rgb), 0.2);
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(6px);
+
+  transition: var(--transition-base);
+  text-decoration: none;
+}
+
+.guestLoginBtn:hover {
+  background: rgba(var(--color-white-rgb), 0.15);
+  transform: translateY(-1px);
+}
+
+.guestLoginBtn:active {
+  transform: translateY(0);
+  background: rgba(var(--color-white-rgb), 0.1);
+}
+
 .bubble::before {
   content: "";
   position: absolute;
@@ -94,6 +124,10 @@ p {
     min-width: 0;
     min-height: 0;
     overflow-y: hidden;
+  }
+
+  .bubble {
+    max-width: 220px;
   }
 
   .centerArea {

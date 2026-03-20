@@ -5,6 +5,7 @@ import useGamesSchedule from "../../hooks/usegamesSchedule";
 import LoadingSpinner from "../../Components/loading/LoadingSpinner";
 import YoutubeVideos from "../../Components/youtube/YoutubeVideos";
 import useUser from "../../hooks/useUser";
+import { NavLink } from "react-router-dom";
 
 const todayDate = new Date();
 const FINISHED_STATUS = ["종료", "취소"];
@@ -33,7 +34,14 @@ export default function Home() {
     <section className={styles.home}>
       <div className={styles.bubble}>
         <p>Hello!</p>
-        <p className={styles.nickname}>{user?.nickname ?? "Guest 👋"}</p>
+        <p className={styles.nickname}>
+          {user?.nickname ?? "게스트 모드로 로그인 해 보세요!"}
+        </p>
+        {!user && (
+          <NavLink className={styles.guestLoginBtn} to="/login">
+            로그인하기
+          </NavLink>
+        )}
       </div>
       <article className={styles.centerArea}>
         <MatchCard

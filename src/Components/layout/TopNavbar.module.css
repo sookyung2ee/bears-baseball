@@ -26,6 +26,10 @@
   gap: 0.5rem;
 }
 
+.logout:hover {
+  cursor: pointer;
+}
+
 .link {
   color: var(--color-white);
   text-decoration-line: none;

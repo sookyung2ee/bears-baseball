@@ -26,6 +26,7 @@
 
   .content {
     width: 100%;
+    flex-shrink: 1;
   }
 
   .myRecord {
