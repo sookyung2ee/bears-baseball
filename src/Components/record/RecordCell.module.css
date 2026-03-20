@@ -124,3 +124,9 @@
   transform: scale(1.1);
   color: var(--color-pink-20);
 }
+
+@media (max-width: 1024px) {
+  .stampCell {
+    width: 30px;
+  }
+}
