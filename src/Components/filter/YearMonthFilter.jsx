@@ -1,9 +1,14 @@
 import React from "react";
 import styles from "./YearMonthFilter.module.css";
 
-export default function YearMonthFilter({ filters, date, onChange }) {
+export default function YearMonthFilter({
+  filters,
+  date,
+  onChange,
+  className = "",
+}) {
   return (
-    <div className={styles.select}>
+    <div className={`${styles.select} ${className}`}>
       {filters.map((filter) => (
         <select
           key={filter.name}

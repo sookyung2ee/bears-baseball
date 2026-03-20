@@ -9,6 +9,9 @@ import { logoMap } from "../../constants/logoMap";
 import AddRecordModal from "../../Components/record/AddRecordModal";
 import useWatchRecordManager from "../../hooks/useWatchRecordManager";
 import { getTeams } from "../../utils/getTeams";
+import YearMonthFilter from "../../Components/filter/YearMonthFilter";
+
+const filters = [{ name: "year", options: ["all", 2025, 2026] }];
 
 export default function Tickets() {
   const { user } = useUser();
@@ -20,6 +23,11 @@ export default function Tickets() {
     teams: null,
   });
   const { updateWatchRecord, addWatchRecord } = useWatchRecordManager();
+
+  const [date, setDate] = useState({
+    year: 2026,
+    // year: new Date().getFullYear(),
+  });
 
   const gameMap = useMemo(() => {
     return new Map(games.map((game) => [game.gameId, game]));
@@ -37,6 +45,12 @@ export default function Tickets() {
     );
   }
 
+  const handleChange = (e) => {
+    const targetValue =
+      e.target.value === "all" ? "all" : Number(e.target.value);
+    setDate({ year: targetValue });
+  };
+
   const openRecordModal = (record, teams) => {
     setModal({ type: "detail", record, teams });
   };
@@ -52,6 +66,13 @@ export default function Tickets() {
   const handleSubmit = (record) => {
     updateWatchRecord({ info: record, type: "stadium" });
   };
+
+  const filteredRecords =
+    date.year === "all"
+      ? sortedRecords
+      : sortedRecords.filter((record) =>
+          record.date?.startsWith(String(date.year)),
+        );
 
   return (
     <>
@@ -76,10 +97,15 @@ export default function Tickets() {
       )}
       <div className={styles.ticketsContainer}>
         <header className={styles.ticketsTop}>
-          <p className={styles.title}>티켓 기록</p>
+          <YearMonthFilter
+            filters={filters}
+            date={date}
+            onChange={handleChange}
+            className={styles.filterCustom}
+          />
         </header>
         <div className={styles.ticketsList}>
-          {sortedRecords.map((record) => {
+          {filteredRecords.map((record) => {
             const gameInfo = gameMap.get(record.gameId);
             if (!gameInfo) return null;
             const teams = getTeams(gameInfo);

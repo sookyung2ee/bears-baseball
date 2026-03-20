@@ -20,10 +20,10 @@ input {
   margin-bottom: var(--top-margin-bottom);
 }
 
-.title {
-  font-size: var(--top-title-font-size);
-  font-weight: var(top-title-font-height);
-  color: var(--color-white);
+.filterCustom {
+  margin: 0;
+  padding: 0;
+  background: none;
 }
 
 .addBtn {

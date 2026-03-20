@@ -19,9 +19,10 @@
   align-items: center;
 }
 
-.title {
-  font-size: var(--top-title-font-size);
-  font-weight: var(--top-title-font-height);
+.filterCustom {
+  margin: 0;
+  padding: 0;
+  background: none;
 }
 
 .ticketsList {

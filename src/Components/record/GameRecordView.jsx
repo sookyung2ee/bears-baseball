@@ -99,16 +99,16 @@ export default function GameRecordView({
       )}
       <div className={styles.recordContainer}>
         <section className={styles.recordTop}>
-          <p className={styles.title}>{typeWord} 기록</p>
+          <YearMonthFilter
+            filters={filters}
+            date={date}
+            onChange={handleChange}
+            className={styles.filterCustom}
+          />
           <button className={styles.addBtn} onClick={openAddModal}>
             {typeWord} 기록 추가
           </button>
         </section>
-        <YearMonthFilter
-          filters={filters}
-          date={date}
-          onChange={handleChange}
-        />
         <section className={styles.tableSection}>
           <div className={styles.recordGrid}>
             {nums.map((num) => (
