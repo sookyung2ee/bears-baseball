@@ -53,14 +53,12 @@ export default function useWatchRecordManager() {
   //   });
   // };
 
-  const deleteWatchRecord = async ({ deletedRecord, type }) => {
+  const deleteWatchRecord = async (record) => {
     if (!user.uid) return;
 
     const userRef = doc(db, "users", user.uid);
-
-    const filtered = user.records[type].filter(
-      (record) => record.gameId !== deletedRecord.gameId,
-    );
+    const { info, type } = record;
+    const filtered = user.records[type].filter((r) => r.gameId !== info.gameId);
 
     await updateDoc(userRef, {
       [`records.${type}`]: filtered,
