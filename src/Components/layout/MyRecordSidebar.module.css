@@ -65,7 +65,7 @@
   font-weight: 600;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (min-width: 1024px) {
   .link:hover {
     background-color: var(--color-navy-40);
     color: white;

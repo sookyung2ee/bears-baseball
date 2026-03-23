@@ -22,7 +22,7 @@ const getPageName = (pathname) => {
 export default function TopNavbar() {
   const location = useLocation();
   const { user } = useUser();
-  console.log(user);
+
   return (
     <nav className={styles.nav}>
       <div className={styles.brand}>

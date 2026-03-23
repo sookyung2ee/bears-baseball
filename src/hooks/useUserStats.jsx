@@ -6,7 +6,6 @@ export default function useUserStats() {
   const { games } = useGamesSchedule();
 
   const winningRate = (type, year) => {
-    console.log(year);
     if (
       !user ||
       !user.records?.[type] ||
@@ -17,12 +16,20 @@ export default function useUserStats() {
 
     const records = user.records[type];
     const recordsGameId = records.map((record) => record.gameId);
-    const gameInfoArr = games.filter((game) =>
-      recordsGameId.includes(game.gameId),
+    // const gameInfoArr = games.filter((game) =>
+    //   recordsGameId.includes(game.gameId),
+    // );
+    const gameInfoArr = games.filter(
+      (game) =>
+        recordsGameId.includes(game.gameId) && game.year === Number(year),
     );
+
+    if (gameInfoArr.length === 0) return 0;
+
     const winNum = gameInfoArr.filter(
       (game) => game.resultText === "win",
     ).length;
+
     const rate = ((winNum / gameInfoArr.length) * 100).toFixed(1);
 
     return rate;

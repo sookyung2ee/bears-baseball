@@ -68,4 +68,18 @@ input {
   .recordGrid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .recordTop {
+    align-items: flex-start;
+  }
+
+  .filterArea {
+    flex-wrap: wrap;
+  }
+
+  .notice {
+    width: 100%;
+    order: 3;
+    font-size: 0.8rem;
+  }
 }

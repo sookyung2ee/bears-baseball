@@ -3,7 +3,6 @@ import useUser from "./useUser";
 
 export default function useGameRecords(type) {
   const { user } = useUser();
-  console.log(user);
   const gameRecords = user?.records?.[type] ?? [];
 
   const sortedRecords = useMemo(

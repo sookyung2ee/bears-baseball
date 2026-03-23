@@ -9,7 +9,7 @@ export default function MyRecordSidebar({ date }) {
 
   const stadiumWinningRate = winningRate("stadium", date.year);
 
-  const homemWinningRate = winningRate("home");
+  const homemWinningRate = winningRate("home", date.year);
 
   return (
     <nav className={styles.nav}>
