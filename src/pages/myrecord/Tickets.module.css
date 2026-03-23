@@ -34,6 +34,7 @@
 
 .notice {
   color: var(--color-navy-10);
+  font-size: 0.8rem;
 }
 
 .ticketsList {
@@ -43,6 +44,11 @@
 }
 
 @media (max-width: 1024px) {
+  .filterArea {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .ticketsContainer {
     width: 100%;
     min-width: 0;

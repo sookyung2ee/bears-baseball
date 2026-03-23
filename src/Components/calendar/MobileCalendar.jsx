@@ -66,11 +66,13 @@ export default function MobileCalendar({ monthGames, wishGames, handleWish }) {
                 </p>
                 <p>{stadium}</p>
               </div>
-              <FontAwesomeIcon
-                icon={isWishedDay ? faHeart : faHeartCirclePlus}
-                className={`${styles.heartIcon} ${isWishedDay ? styles.fullHeart : styles.plusHeart}`}
-                onClick={() => handleWish([game])}
-              />
+              {status === "경기전" && (
+                <FontAwesomeIcon
+                  icon={isWishedDay ? faHeart : faHeartCirclePlus}
+                  className={`${styles.heartIcon} ${isWishedDay ? styles.fullHeart : styles.plusHeart}`}
+                  onClick={() => handleWish([game])}
+                />
+              )}
             </div>
             <div className={styles.teamInfo}>
               <div className={styles.leftTeam}>
