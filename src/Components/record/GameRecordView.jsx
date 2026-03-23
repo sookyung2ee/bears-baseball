@@ -6,6 +6,7 @@ import AddRecordModal from "./AddRecordModal";
 import useUser from "../../hooks/useUser";
 import RecordDetailModal from "../Modal/RecordDetailModal";
 import YearMonthFilter from "../filter/YearMonthFilter";
+import { useOutletContext } from "react-router-dom";
 
 const TOTAL = 60;
 
@@ -28,10 +29,12 @@ export default function GameRecordView({
     teams: null,
   });
 
-  const [date, setDate] = useState({
-    year: 2026,
-    // year: new Date().getFullYear(),
-  });
+  // const [date, setDate] = useState({
+  //   year: 2026,
+  //   // year: new Date().getFullYear(),
+  // });
+
+  const { date, setDate } = useOutletContext();
 
   const typeWord = type === "stadium" ? "직관" : "집관";
 

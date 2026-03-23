@@ -18,12 +18,21 @@
 .userName {
   font-size: 1.3rem;
   font-weight: 600;
-  color: white;
+  color: var(--color-white);
+  margin-bottom: 8px;
+}
+
+.winningTitle {
+  color: var(--color-gray-20);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 6px;
 }
 
 .stadiumWinning {
   color: var(--color-lightblue);
   font-weight: 500;
+  margin-bottom: 4px;
 }
 
 .homeWinning {

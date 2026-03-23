@@ -5,7 +5,8 @@ export default function useUserStats() {
   const { user } = useUser();
   const { games } = useGamesSchedule();
 
-  const winningRate = (type) => {
+  const winningRate = (type, year) => {
+    console.log(year);
     if (
       !user ||
       !user.records?.[type] ||

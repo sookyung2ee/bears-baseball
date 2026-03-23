@@ -3,11 +3,11 @@ import styles from "./MyRecordSidebar.module.css";
 import useUser from "../../hooks/useUser";
 import useUserStats from "../../hooks/useUserStats";
 
-export default function MyRecordSidebar() {
+export default function MyRecordSidebar({ date }) {
   const { user } = useUser();
   const { winningRate } = useUserStats();
 
-  const stadiumWinningRate = winningRate("stadium");
+  const stadiumWinningRate = winningRate("stadium", date.year);
 
   const homemWinningRate = winningRate("home");
 
@@ -17,6 +17,7 @@ export default function MyRecordSidebar() {
         {user ? (
           <>
             <p className={styles.userName}>{user.nickname}</p>
+            <p className={styles.winningTitle}>{date.year} 승률</p>
             <p className={styles.stadiumWinning}>
               통산 직관승률: {stadiumWinningRate}%
             </p>

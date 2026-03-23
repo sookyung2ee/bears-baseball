@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <NavLink to="/">
-          <img src="/images/D_logo.png" alt="" />
+          <img src="/images/D_logo2.png" alt="" />
         </NavLink>
       </div>
       <div className={styles.menu}>

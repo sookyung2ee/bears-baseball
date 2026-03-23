@@ -27,7 +27,7 @@ export default function TopNavbar() {
     <nav className={styles.nav}>
       <div className={styles.brand}>
         <NavLink to="/">
-          <img src="/images/D_logo.png" alt="" />
+          <img src="/images/D_logo2.png" alt="" />
         </NavLink>
         <p className={styles.pageName}>{getPageName(location.pathname)}</p>
       </div>
