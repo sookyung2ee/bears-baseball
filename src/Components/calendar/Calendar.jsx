@@ -34,6 +34,10 @@ export default function Calendar({ date, onDateClick, isAdmin }) {
   }, [monthGames]);
 
   const handleWish = (games, info = null) => {
+    if (!user) {
+      alert("로그인 후 이용해 주세요");
+      return;
+    }
     let toggleGameId;
     if (info?.isDH) {
       console.log(info.isDH, info.num);
