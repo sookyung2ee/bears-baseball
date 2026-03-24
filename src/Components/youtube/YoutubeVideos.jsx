@@ -10,9 +10,9 @@ export default function YoutubeVideos() {
   const sliderRef = useRef(null);
   const isDragging = useRef(false);
 
-  //   useEffect(() => {
-  //     fetchYoutubeVideos().then(setVideos);
-  //   }, []);
+  useEffect(() => {
+    fetchYoutubeVideos().then(setVideos);
+  }, []);
 
   useEffect(() => {
     const slider = sliderRef.current;
@@ -76,7 +76,7 @@ export default function YoutubeVideos() {
         <span>BEARS TV</span>
       </p>
       <div ref={sliderRef} className={styles.videos}>
-        {data.map((video) => {
+        {videos.map((video) => {
           const thumbnailUrl = video.snippet.thumbnails.high.url;
           return (
             <div
