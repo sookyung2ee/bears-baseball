@@ -133,12 +133,4 @@
   .input:focus {
     border: 2px solid var(--color-navy-20);
   }
-
-  .joinBtn {
-    background-color: var(--color-gray-90);
-    height: 48px;
-    padding: 0 16px;
-    border-radius: 8px;
-    margin-top: 24px;
-  }
 }

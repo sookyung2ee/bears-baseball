@@ -104,6 +104,7 @@ export default function Join() {
             name="email"
             className={styles.input}
             onChange={handleChange}
+            placeholder="xxx@xxx.xxx"
           />
 
           <label htmlFor="pw">비밀번호</label>
@@ -114,6 +115,7 @@ export default function Join() {
               name="pw"
               className={`${styles.input} ${styles.pw}`}
               onChange={handleChange}
+              placeholder="6자리 이상"
             />
             <FontAwesomeIcon
               icon={showPW ? faEyeSlash : faEye}
