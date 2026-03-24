@@ -5,7 +5,18 @@ import { dayMap } from "../../constants/dayMap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faHeartCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
-export default function MobileCalendar({ monthGames, wishGames, handleWish }) {
+export default function MobileCalendar({
+  monthGames,
+  wishGames,
+  handleWish,
+  onDateClick,
+  isAdmin,
+}) {
+  const handleClick = (gameId) => {
+    if (!isAdmin) return;
+    onDateClick(gameId);
+  };
+
   return (
     <ul className={styles.cards}>
       {monthGames.map((game) => {
@@ -82,7 +93,9 @@ export default function MobileCalendar({ monthGames, wishGames, handleWish }) {
               <p className={styles.score}>
                 {teams.left.score && `${teams.left.score}`}
               </p>
-              <p>{status}</p>
+              <p onClick={isAdmin ? () => handleClick(gameId) : undefined}>
+                {status}
+              </p>
               <p className={styles.score}>
                 {teams.right.score && `${teams.right.score}`}
               </p>

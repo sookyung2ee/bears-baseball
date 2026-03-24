@@ -11,7 +11,6 @@ const todayDate = new Date();
 const FINISHED_STATUS = ["종료", "취소"];
 
 export default function Home() {
-  console.log("hihihih");
   const { games, loading } = useGamesSchedule();
   const { user } = useUser();
 

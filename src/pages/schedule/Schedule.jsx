@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Calendar from "../../Components/calendar/Calendar";
 import styles from "./Schedule.module.css";
 import YearMonthFilter from "../../Components/filter/YearMonthFilter";
+import useUser from "../../hooks/useUser";
+import GameScoreModal from "../../Components/Modal/GameScoreModal";
 
 const filters = [
   { name: "year", options: [2025, 2026] },
@@ -15,6 +17,9 @@ export default function Schedule() {
     month: 3,
     // month: new Date().getMonth() + 1,
   });
+  const [gameId, setGameId] = useState("");
+
+  const { user } = useUser();
 
   const handlePrevMonth = () => {
     setDate((prev) => {
@@ -39,29 +44,46 @@ export default function Schedule() {
     setDate((prev) => ({ ...prev, [name]: parseInt(value) }));
   };
 
+  const isAdmin = user?.role === "admin";
+
+  const [isScoreModalOpen, setIsScoreModalOpen] = useState(false);
+
+  const handleScore = (gameId) => {
+    setGameId(gameId);
+    setIsScoreModalOpen(true);
+  };
+
   return (
-    <section className={styles.schedule}>
-      <header className={styles.header}>
-        <button className={styles.arrowBtn} onClick={handlePrevMonth}>
-          ◀
-        </button>
-        <YearMonthFilter
-          filters={filters}
-          date={date}
-          onChange={handleChange}
+    <>
+      {isScoreModalOpen && (
+        <GameScoreModal
+          gameId={gameId}
+          onClose={() => setIsScoreModalOpen(false)}
         />
-        <button className={styles.arrowBtn} onClick={handleNextMonth}>
-          ▶
-        </button>
-      </header>
-      <p className={styles.notice}>
-        <span className={styles.heart}>하트</span>를 눌러 위시게임에 추가할 수
-        있어요. <span className={styles.accent}>단,</span> 종료된 경기는 추가할
-        수 없어요.
-      </p>
-      <div className={styles.calendar}>
-        <Calendar date={date} />
-      </div>
-    </section>
+      )}
+      <section className={styles.schedule}>
+        <header className={styles.header}>
+          <button className={styles.arrowBtn} onClick={handlePrevMonth}>
+            ◀
+          </button>
+          <YearMonthFilter
+            filters={filters}
+            date={date}
+            onChange={handleChange}
+          />
+          <button className={styles.arrowBtn} onClick={handleNextMonth}>
+            ▶
+          </button>
+        </header>
+        <p className={styles.notice}>
+          <span className={styles.heart}>하트</span>를 눌러 위시게임에 추가할 수
+          있어요. <span className={styles.accent}>단,</span> 종료된 경기는
+          추가할 수 없어요.
+        </p>
+        <div className={styles.calendar}>
+          <Calendar date={date} onDateClick={handleScore} isAdmin={isAdmin} />
+        </div>
+      </section>
+    </>
   );
 }

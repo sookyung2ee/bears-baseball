@@ -7,7 +7,7 @@ import MobileCalendar from "./MobileCalendar";
 import useUser from "../../hooks/useUser";
 import useWishGames from "../../hooks/useWishGames";
 
-export default function Calendar({ date }) {
+export default function Calendar({ date, onDateClick, isAdmin }) {
   const days = ["일", "월", "화", "수", "목", "금", "토"];
   const { year, month } = date;
   const { games } = useGamesSchedule();
@@ -34,7 +34,6 @@ export default function Calendar({ date }) {
   }, [monthGames]);
 
   const handleWish = (games, info = null) => {
-    console.log(games);
     let toggleGameId;
     if (info?.isDH) {
       console.log(info.isDH, info.num);
@@ -82,6 +81,8 @@ export default function Calendar({ date }) {
                   wishGames={wishGames}
                   handleWish={handleWish}
                   isLoading={isLoading}
+                  onDateClick={onDateClick}
+                  isAdmin={isAdmin}
                 />
               ))}
             </tr>
@@ -93,6 +94,8 @@ export default function Calendar({ date }) {
           monthGames={monthGames}
           wishGames={wishGames}
           handleWish={handleWish}
+          onDateClick={onDateClick}
+          isAdmin={isAdmin}
         />
       </div>
     </>

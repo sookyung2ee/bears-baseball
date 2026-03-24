@@ -1,0 +1,35 @@
+.modalForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin: 12px 0 4px 0;
+}
+
+.input {
+  height: 2rem;
+  padding: 0 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-gray-20);
+  border-radius: 4px;
+}
+.statusSelect {
+  width: 100%;
+}
+
+.modalEnter {
+  background-color: var(--color-navy-50);
+  width: 30%;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: var(--transition-base);
+}
+
+.modalEnter:hover {
+  cursor: pointer;
+}

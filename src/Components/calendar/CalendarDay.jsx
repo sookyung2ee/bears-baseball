@@ -3,6 +3,7 @@ import styles from "./CalendarDay.module.css";
 import { logoMap } from "../../constants/logoMap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faHeartCirclePlus } from "@fortawesome/free-solid-svg-icons";
+import useUser from "../../hooks/useUser";
 
 const resultMap = {
   win: "승",
@@ -17,6 +18,8 @@ export default function CalendarDay({
   wishGames,
   handleWish,
   isLoading,
+  onDateClick,
+  isAdmin,
 }) {
   const isGameDay = gamesByDate.length >= 1;
   const isDoubleHeader = gamesByDate.length === 2;
@@ -30,6 +33,8 @@ export default function CalendarDay({
     });
   };
 
+  const canWishGame = (game) => game.status === "경기전";
+
   const isWishedDay = isGameDay
     ? gamesByDate.some((game) => wishGames.includes(game.gameId))
     : false;
@@ -41,6 +46,11 @@ export default function CalendarDay({
   const time = getTime(beginTime);
 
   const isPastDate = new Date(day.fullDate) < new Date();
+
+  const handleClick = (gameId) => {
+    if (!isAdmin) return;
+    onDateClick(gameId);
+  };
 
   return (
     <td className={styles.dayCell}>
@@ -60,43 +70,40 @@ export default function CalendarDay({
               >
                 {day.date}
               </p>
-              {!isPastDate && (
+              {!isDoubleHeader && canWishGame(gamesByDate[0]) && (
+                <FontAwesomeIcon
+                  icon={isWishedDay ? faHeart : faHeartCirclePlus}
+                  className={`${styles.heartIcon} ${isWishedDay ? styles.fullHeart : styles.plusHeart}`}
+                  disabled={isLoading}
+                  onClick={() => handleWish(gamesByDate, { isDH: false })}
+                />
+              )}
+              {isDoubleHeader && (
                 <>
-                  {!isDoubleHeader && (
-                    <FontAwesomeIcon
-                      icon={isWishedDay ? faHeart : faHeartCirclePlus}
-                      className={`${styles.heartIcon} ${isWishedDay ? styles.fullHeart : styles.plusHeart}`}
-                      disabled={isLoading}
-                      onClick={() => handleWish(gamesByDate, { isDH: false })}
-                    />
-                  )}
-                  {isDoubleHeader && (
-                    <>
-                      <div className={styles.dhHearts}>
-                        {[1, 2].map((num) => {
-                          const wishedGame = wishedDHGames.find(
-                            (game) => game.gameId.slice(-1) === String(num),
-                          );
-                          return (
-                            <div key={num} className={styles.heartWrap}>
-                              <FontAwesomeIcon
-                                icon={wishedGame ? faHeart : faHeartCirclePlus}
-                                className={`${styles.heartIcon} ${wishedGame ? styles.fullHeart : styles.plusHeart}`}
-                                disabled={isLoading}
-                                onClick={() =>
-                                  handleWish(gamesByDate, {
-                                    isDH: true,
-                                    num: num,
-                                  })
-                                }
-                              />
-                              <p className={styles.heartNum}>{num}</p>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </>
-                  )}
+                  <div className={styles.dhHearts}>
+                    {gamesByDate.map((game, index) => {
+                      const isWished = wishGames.includes(game.gameId);
+                      const canWish = game.status === "경기전";
+                      if (!canWish) return null;
+
+                      return (
+                        <div key={game.gameId} className={styles.heartWrap}>
+                          <FontAwesomeIcon
+                            icon={isWished ? faHeart : faHeartCirclePlus}
+                            className={`${styles.heartIcon} ${isWished ? styles.fullHeart : styles.plusHeart}`}
+                            disabled={isLoading}
+                            onClick={() =>
+                              handleWish([game], {
+                                isDH: true,
+                                num: index + 1,
+                              })
+                            }
+                          />
+                          <p className={styles.heartNum}>{index + 1}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </>
               )}
             </div>
@@ -116,7 +123,12 @@ export default function CalendarDay({
                 return (
                   <div key={gameId}>
                     {status === "종료" ? (
-                      <div className={styles.gameResultBox}>
+                      <div
+                        className={styles.gameResultBox}
+                        onClick={
+                          isAdmin ? () => handleClick(gameId) : undefined
+                        }
+                      >
                         <div className={styles.gameScore}>
                           {home ? (
                             <>
@@ -144,7 +156,14 @@ export default function CalendarDay({
                       </div>
                     ) : (
                       <div key={gameId}>
-                        <p className={styles.gameStatus}>{game.status}</p>
+                        <p
+                          className={styles.gameStatus}
+                          onClick={
+                            isAdmin ? () => handleClick(gameId) : undefined
+                          }
+                        >
+                          {game.status}
+                        </p>
                       </div>
                     )}
                   </div>

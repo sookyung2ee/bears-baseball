@@ -13,7 +13,7 @@ import useUser from "../../hooks/useUser";
 const getPageName = (pathname) => {
   if (pathname === "/") return "홈";
   if (pathname === "/schedule") return "일정";
-  if (pathname.startsWith("/myrecord")) return "MY";
+  if (pathname.startsWith("/myrecord")) return "기록";
   if (pathname === "/wishgames") return "찜";
   if (pathname === "/login") return "로그인";
   return " ";
