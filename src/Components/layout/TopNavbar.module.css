@@ -10,11 +10,13 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .brand img {
-  width: 3rem;
-  height: auto;
+  width: 2rem;
+  height: 2rem;
+  display: block;
 }
 
 .pageName {
