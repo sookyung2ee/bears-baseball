@@ -50,7 +50,7 @@
   display: inline;
 }
 
-.icon {
+.mobileMenuItem {
   display: none;
 }
 
@@ -61,7 +61,7 @@
 @media (max-width: 1024px) {
   .nav {
     position: fixed;
-    height: 70px;
+    height: 60px;
     top: auto;
     bottom: 0;
     width: 100%;
@@ -104,8 +104,15 @@
     display: none;
   }
 
-  .icon {
-    display: inline;
+  .mobileMenuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .menuName {
+    font-size: 0.6rem;
   }
 
   .login {

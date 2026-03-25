@@ -39,7 +39,10 @@ export default function Navbar() {
           to="/schedule"
         >
           <span className={styles.text}>Schedule</span>
-          <FontAwesomeIcon className={styles.icon} icon={faCalendar} />
+          <div className={styles.mobileMenuItem}>
+            <FontAwesomeIcon className={styles.icon} icon={faCalendar} />
+            <p className={styles.menuName}>일정</p>
+          </div>
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -48,7 +51,10 @@ export default function Navbar() {
           to="/myrecord"
         >
           <span className={styles.text}>MyRecord</span>
-          <FontAwesomeIcon className={styles.icon} icon={faFolderOpen} />
+          <div className={styles.mobileMenuItem}>
+            <FontAwesomeIcon className={styles.icon} icon={faFolderOpen} />
+            <p className={styles.menuName}>기록</p>
+          </div>
           {/* <FontAwesomeIcon className={styles.icon} icon={faPenToSquare} /> */}
           {/* <FontAwesomeIcon className={styles.icon} icon={faClipboardList} /> */}
         </NavLink>
@@ -59,7 +65,11 @@ export default function Navbar() {
           to="/wishgames"
         >
           <span className={styles.text}>WISH</span>
-          <FontAwesomeIcon className={styles.icon} icon={faHeart} />
+
+          <div className={styles.mobileMenuItem}>
+            <FontAwesomeIcon className={styles.icon} icon={faHeart} />
+            <p className={styles.menuName}>찜</p>
+          </div>
         </NavLink>
       </div>
       <div className={styles.login}>

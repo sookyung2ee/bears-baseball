@@ -78,8 +78,12 @@ input {
   }
 
   .notice {
-    width: 100%;
     order: 3;
     font-size: 0.8rem;
+  }
+
+  .addBtn {
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 }

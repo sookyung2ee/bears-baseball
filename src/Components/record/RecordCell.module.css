@@ -61,6 +61,10 @@
   align-items: center;
 }
 
+.resultContainer:hover {
+  cursor: pointer;
+}
+
 .resultContainer p {
   font-size: 0.9rem;
   font-weight: 500;

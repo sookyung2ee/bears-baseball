@@ -158,6 +158,7 @@
 .deleteBtn:hover {
   background: rgba(var(--color-white-rgb), 0.15);
   transform: translateY(-1px);
+  cursor: pointer;
 }
 
 .deleteBtn:active {
