@@ -81,6 +81,7 @@ export default function Tickets() {
           games={games}
           type="stadium"
           initialRecord={modal.record}
+          sortedRecords={filteredRecords}
         />
       )}
       {modal.type === "detail" && (

@@ -62,8 +62,8 @@ export default function Join() {
         },
       });
 
-      alert("회원가입이 완료됐어요! 로그인 해주세요 😊");
-      navigate("/login");
+      alert("회원가입이 완료되었습니다! 😊");
+      navigate("/");
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert("이미 가입된 이메일이에요!");

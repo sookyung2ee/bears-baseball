@@ -12,7 +12,7 @@ const filters = [
 export default function WishGames() {
   const { user } = useUser();
   const wishGames = [...(user?.wishGames || [])].sort();
-  const [date, setDate] = useState({ year: "all", month: "all" });
+  const [date, setDate] = useState({ year: 2026, month: "all" });
 
   const paddedMonth =
     date.month === "all" ? "all" : date.month.padStart(2, "0");
@@ -21,7 +21,7 @@ export default function WishGames() {
     const filterYear = game.slice(0, 4);
     const filterMonth = game.slice(4, 6);
 
-    const matchYear = date.year === "all" || filterYear === date.year;
+    const matchYear = date.year === "all" || filterYear === String(date.year);
     const matchMonth = paddedMonth === "all" || filterMonth === paddedMonth;
 
     return matchYear && matchMonth;

@@ -88,7 +88,8 @@ export default function GameRecordView({
           games={games}
           type={type}
           initialRecord={modal.record}
-          sortedRecords={filteredRecords}
+          sortedRecords={sortedRecords}
+          filteredRecords={filteredRecords}
         />
       )}
       {modal.type === "detail" && (

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Modal from "../Modal/Modal";
 import styles from "./AddRecordModal.module.css";
+import useUser from "../../hooks/useUser";
 
 const STADIUM_INITIAL_FORM = {
   gameId: "",
+  id: "",
   date: "",
   doubleHeader: "",
   memo: "",
@@ -17,6 +19,7 @@ const HOME_INITIAL_FORM = {
   doubleHeader: "",
   memo: "",
   device: "",
+  id: "",
 };
 
 const deviceMap = ["핸드폰", "노트북", "태블릿", "TV"];
@@ -29,10 +32,13 @@ export default function AddRecordModal({
   type,
   initialRecord,
   sortedRecords,
+  filteredRecords,
 }) {
   const isStadium = type === "stadium";
   const isEditType = !!initialRecord;
   const INITIAL_FORM = isStadium ? STADIUM_INITIAL_FORM : HOME_INITIAL_FORM;
+
+  const { user } = useUser();
 
   const [foodInput, setFoodInput] = useState("");
   const [form, setForm] = useState(initialRecord || INITIAL_FORM);
@@ -140,6 +146,23 @@ export default function AddRecordModal({
   }, [initialRecord, games]);
 
   const validate = () => {
+    const oppositeType = type === "home" ? "stadium" : "home";
+    const oppositeTypeRecords = user.records?.[oppositeType] || [];
+    const isDuplicateInOtherType = oppositeTypeRecords.some((record) =>
+      isEditType
+        ? record.gameId === form.gameId && record.id !== initialRecord?.id
+        : record.gameId === form.gameId,
+    );
+    if (isDuplicateInOtherType) {
+      return `이미 ${oppositeType === "home" ? "직관" : "집관"}으로 기록된 경기입니다.`;
+    }
+
+    const isDuplicate = sortedRecords.some((record) =>
+      isEditType
+        ? record.gameId === form.gameId && record.id !== initialRecord?.id
+        : record.gameId === form.gameId,
+    );
+    if (isDuplicate) return "이미 기록된 경기입니다.";
     if (!form.date) return "날짜를 선택해 주세요";
     if (isDoubleHeader && !form.doubleHeader)
       return "더블헤더 경기를 선택해 주세요";
@@ -147,12 +170,6 @@ export default function AddRecordModal({
     if (selectedGame.status === "경기전") return "종료되지 않은 게임입니다.";
     if (isStadium && !form.seat) return "좌석을 기입해 주세요";
     if (!isStadium && !form.device) return "시청 디바이스를 선택해 주세요";
-
-    const isDuplicate = sortedRecords.some(
-      (record) =>
-        record.gameId === form.gameId && record.id !== initialRecord?.id,
-    );
-    if (isDuplicate) return "이미 기록된 경기입니다.";
 
     return null;
   };
@@ -164,7 +181,11 @@ export default function AddRecordModal({
       alert(error);
       return;
     }
-    onSubmit(form, isEditType);
+    const finalData = {
+      ...form,
+      id: isEditType ? form.id : `record-${Date.now()}`,
+    };
+    onSubmit(finalData, isEditType);
     setForm(INITIAL_FORM);
     setFoodInput("");
     onClose();
