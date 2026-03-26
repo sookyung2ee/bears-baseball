@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./WishCard.module.css";
 import { dayMap } from "../../constants/dayMap";
 import useGamesSchedule from "../../hooks/usegamesSchedule";
@@ -6,6 +6,7 @@ import { getTeams } from "../../utils/getTeams";
 import { getTime } from "../../utils/getTime";
 import useUser from "../../hooks/useUser";
 import useWishGames from "../../hooks/useWishGames";
+import DeleteModal from "../Modal/DeleteModal";
 
 const statusMap = {
   종료: "fin",
@@ -15,11 +16,12 @@ const statusMap = {
 
 export default function WishCard({ gameId }) {
   const { games, loading } = useGamesSchedule();
+  const { user } = useUser();
+  const { toggleWishGame } = useWishGames();
+  const [isDeleteModalOpen, setIsdeleteModalOpen] = useState(false);
 
   if (loading) return;
 
-  const { user } = useUser();
-  const { toggleWishGame } = useWishGames();
   const wishGame = games.find((game) => game.gameId === gameId);
   const teams = getTeams(wishGame);
   const { left, right } = teams;
@@ -30,8 +32,20 @@ export default function WishCard({ gameId }) {
   );
   const isHome = stadium === "잠실";
 
+  const handleClick = () => {
+    setIsdeleteModalOpen(true);
+  };
+
   return (
     <>
+      {isDeleteModalOpen && (
+        <DeleteModal
+          date={date}
+          gameId={gameId}
+          onClose={() => setIsdeleteModalOpen(false)}
+          onDelete={toggleWishGame}
+        />
+      )}
       <div className={styles.card}>
         <div className={styles.cardHeader}>
           <p className={styles.date}>
@@ -72,7 +86,12 @@ export default function WishCard({ gameId }) {
         </div>
         <button
           className={styles.deleteBtn}
-          onClick={() => toggleWishGame(gameId)}
+          onClick={handleClick}
+          // onClick={() => {
+          //   if (confirm("찜을 해제할까요?")) {
+          //     toggleWishGame(gameId);
+          //   }
+          // }}
         >
           찜 해제
         </button>
