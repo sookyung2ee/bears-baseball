@@ -90,13 +90,17 @@ export default function MobileCalendar({
                 <p className={styles.teamName}>{teams.left.name}</p>
                 <img src={`/images/logo/${teams.left.logo}.png`} alt="" />
               </div>
-              <p className={styles.score}>
+              <p
+                className={`${styles.score} ${teams.left.logo === "doosan" && styles.doosanScore}`}
+              >
                 {teams.left.score && `${teams.left.score}`}
               </p>
               <p onClick={isAdmin ? () => handleClick(gameId) : undefined}>
                 {status}
               </p>
-              <p className={styles.score}>
+              <p
+                className={`${styles.score} ${teams.right.logo === "doosan" && styles.doosanScore}`}
+              >
                 {teams.right.score && `${teams.right.score}`}
               </p>
               <div className={styles.rightTeam}>

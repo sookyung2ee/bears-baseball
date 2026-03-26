@@ -77,4 +77,8 @@
   .score {
     font-weight: 600;
   }
+
+  .doosanScore {
+    color: var(--color-lightblue);
+  }
 }

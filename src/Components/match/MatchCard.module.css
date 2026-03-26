@@ -67,10 +67,18 @@
   gap: 0.4rem;
 }
 
+.doosanScore {
+  color: var(--color-lightblue);
+}
+
+.colon {
+  color: var(--color-gray-60);
+}
+
 .gameStatus {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-lightblue);
+  color: var(--color-pink-40);
 }
 
 @media (max-width: 1024px) {

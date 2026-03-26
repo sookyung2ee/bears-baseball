@@ -44,9 +44,17 @@ export default function MatchCard({ className = "", type, game }) {
         </div>
         {isFinished ? (
           <section className={styles.gameScore}>
-            <p>{teams.left.score}</p>
-            <p>:</p>
-            <p>{teams.right.score}</p>
+            <p
+              className={`${teams.left.logo === "doosan" && styles.doosanScore}`}
+            >
+              {teams.left.score}
+            </p>
+            <p className={styles.colon}>:</p>
+            <p
+              className={`${teams.right.logo === "doosan" && styles.doosanScore}`}
+            >
+              {teams.right.score}
+            </p>
           </section>
         ) : (
           <p className={styles.gameStatus}>{game.status}</p>
