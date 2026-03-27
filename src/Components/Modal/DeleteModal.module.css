@@ -18,6 +18,10 @@
   transition: var(--transition-base);
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .modalCancle {
   background-color: var(--color-red);
 }
